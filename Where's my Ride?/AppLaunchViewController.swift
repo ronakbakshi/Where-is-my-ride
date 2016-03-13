@@ -8,15 +8,12 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class AppLaunchViewController: UIViewController {
 
     @IBOutlet weak var userBTN: UIButton!
     
-    
     @IBOutlet weak var driverBTN: UIButton!
-    
-    
-    
+
     @IBAction func userNextViewFunction(sender: AnyObject) {
         
         
@@ -25,15 +22,13 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
     @IBAction func driverNextViewFunction(sender: AnyObject) {
         
         
         //Code to be written for the drivers next view
         
         
-          }
+    }
     
     override func viewWillAppear(animated: Bool) {
         self.navigationItem.title = "Where's my Ride?"
