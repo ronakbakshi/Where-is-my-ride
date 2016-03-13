@@ -20,20 +20,16 @@ class DriverLoginViewController: UIViewController {
         passwordTF.text = ""
     }
     
-    func transition(Sender: UIButton!) {
-        let routesViewController:DriverRoutesViewController = DriverRoutesViewController()
-        
-        self.presentViewController(routesViewController, animated: true, completion: nil)
-        
-    }
     
     @IBAction func loginBTN(sender: AnyObject) {
         KCSUser.loginWithUsername(usernameTF.text!,password: passwordTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
                     //the log-in was successful and the user is now the active user and credentials saved
-                    self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
+                    //self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
+                    let routesViewController:DriverRoutesViewController = DriverRoutesViewController()
                     
+                    self.presentViewController(routesViewController, animated: true, completion: nil)
                     //hide log-in view and show main app content
                     
                 } else {
