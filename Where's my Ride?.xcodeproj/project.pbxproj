@@ -8,24 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		7EA15F001C94726D00F0649D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA15EFF1C94726D00F0649D /* AppDelegate.swift */; };
-		7EA15F021C94726D00F0649D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA15F011C94726D00F0649D /* ViewController.swift */; };
 		7EA15F051C94726D00F0649D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F031C94726D00F0649D /* Main.storyboard */; };
 		7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F061C94726D00F0649D /* Assets.xcassets */; };
 		7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */; };
 		7EA15F141C9482B100F0649D /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA15F131C9482B100F0649D /* UserMapViewController.swift */; };
 		7EA15F171C94907200F0649D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA15F161C94907200F0649D /* MapKit.framework */; };
+		8A8969EB1C9744E6006AD45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E11C9744E6006AD45F /* AppDelegate.swift */; };
+		8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */; };
+		8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */; };
+		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
+		8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */; };
+		8A8969F01C9744E6006AD45F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8969E61C9744E6006AD45F /* Info.plist */; };
+		8A8969F11C9744E6006AD45F /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E71C9744E6006AD45F /* Ride.m */; };
+		8A8969F21C9744E6006AD45F /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */; };
+		8A8969F31C9744E6006AD45F /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E91C9744E6006AD45F /* UserMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7EA15EFC1C94726D00F0649D /* Where's my Ride?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where's my Ride?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA15EFF1C94726D00F0649D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7EA15F011C94726D00F0649D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7EA15F041C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EA15F061C94726D00F0649D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EA15F091C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EA15F0B1C94726D00F0649D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA15F131C9482B100F0649D /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
 		7EA15F161C94907200F0649D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8A8969E11C9744E6006AD45F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
+		8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverLoginViewController.swift; sourceTree = "<group>"; };
+		8A8969E41C9744E6006AD45F /* DriverRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutes.swift; sourceTree = "<group>"; };
+		8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutesViewController.swift; sourceTree = "<group>"; };
+		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Where's my Ride?/Info.plist"; sourceTree = "<group>"; };
+		8A8969E71C9744E6006AD45F /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ride.m; path = "Where's my Ride?/Ride.m"; sourceTree = "<group>"; };
+		8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
+		8A8969E91C9744E6006AD45F /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
+		8A8969EA1C9744E6006AD45F /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Where's my Ride?-Bridging-Header.h"; path = "Where's my Ride?/Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +60,9 @@
 		7EA15EF31C94726D00F0649D = {
 			isa = PBXGroup;
 			children = (
+				8A8969E61C9744E6006AD45F /* Info.plist */,
+				8A8969E71C9744E6006AD45F /* Ride.m */,
+				8A8969EA1C9744E6006AD45F /* Where's my Ride?-Bridging-Header.h */,
 				7EA15F151C94904300F0649D /* Frameworks */,
 				7EA15EFE1C94726D00F0649D /* Where's my Ride? */,
 				7EA15EFD1C94726D00F0649D /* Products */,
@@ -60,8 +80,14 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
+				8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */,
+				8A8969E91C9744E6006AD45F /* UserMapViewController.swift */,
+				8A8969E11C9744E6006AD45F /* AppDelegate.swift */,
+				8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */,
+				8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */,
+				8A8969E41C9744E6006AD45F /* DriverRoutes.swift */,
+				8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */,
 				7EA15EFF1C94726D00F0649D /* AppDelegate.swift */,
-				7EA15F011C94726D00F0649D /* ViewController.swift */,
 				7EA15F031C94726D00F0649D /* Main.storyboard */,
 				7EA15F061C94726D00F0649D /* Assets.xcassets */,
 				7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */,
@@ -137,6 +163,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8969F01C9744E6006AD45F /* Info.plist in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
 				7EA15F051C94726D00F0649D /* Main.storyboard in Resources */,
@@ -150,9 +177,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A8969F11C9744E6006AD45F /* Ride.m in Sources */,
+				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
+				8A8969EB1C9744E6006AD45F /* AppDelegate.swift in Sources */,
 				7EA15F141C9482B100F0649D /* UserMapViewController.swift in Sources */,
-				7EA15F021C94726D00F0649D /* ViewController.swift in Sources */,
+				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
 				7EA15F001C94726D00F0649D /* AppDelegate.swift in Sources */,
+				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
+				8A8969F31C9744E6006AD45F /* UserMapViewController.swift in Sources */,
+				8A8969F21C9744E6006AD45F /* RouteDetailsViewController.swift in Sources */,
+				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,10 +299,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Where's my Ride?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Where-s-my-Ride-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -276,10 +313,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Where's my Ride?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Where-s-my-Ride-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -302,6 +341,7 @@
 				7EA15F101C94726D00F0649D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
