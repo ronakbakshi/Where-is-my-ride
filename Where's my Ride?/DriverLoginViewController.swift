@@ -27,8 +27,9 @@ class DriverLoginViewController: UIViewController {
                 if errorOrNil == nil {
                     //the log-in was successful and the user is now the active user and credentials saved
                     //self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
-                    let routesViewController:DriverRoutesViewController = DriverRoutesViewController()
-//                    let routesView = self.storyboard?.instantiateViewControllerWithIdentifier("DriverRoutesViewController")
+                   let routesViewController:DriverRoutesViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DriverRoutesViewController") as! DriverRoutesViewController
+                 
+                    
                     self.navigationController?.pushViewController(routesViewController, animated: true)
                     //hide log-in view and show main app content
                     
@@ -67,6 +68,9 @@ class DriverLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Driver Login"
+        usernameTF.text = "driver1"
+        passwordTF.text = "driver1"
+       
 
         // Do any additional setup after loading the view.
     }

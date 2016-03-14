@@ -10,11 +10,8 @@ import UIKit
 
 class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var routes:DriverRoutes!
-    override func viewWillAppear(animated: Bool) {
-        routes = DriverRoutes()
-        self.view.backgroundColor = UIColor.whiteColor()
-        
-    }
+    
+    
     
     //This fucntion displays the alert box showing the message for user  to turn on the location
     func displayAlertControllerWithTitle(title:String, message:String) {
@@ -26,8 +23,9 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Select Route"
-        displayAlertControllerWithTitle("Location", message: "Turn On Location Services to Allow Maps To Determine your Location")
-        // Do any additional setup after loading the view.
+        routes = DriverRoutes()
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,7 +39,7 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("route_cell")!
-        var keysArray:[String]!
+        var keysArray:[String] =  []
         for key in routes.routeDictionary.keys{
             keysArray.append(key)
         }

@@ -7,42 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7EA15F001C94726D00F0649D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA15EFF1C94726D00F0649D /* AppDelegate.swift */; };
+		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
+		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
+		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
+		71BA226C1C9762FC00B70A34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22631C9762FC00B70A34 /* CoreGraphics.framework */; };
+		71BA226D1C9762FC00B70A34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22641C9762FC00B70A34 /* CoreLocation.framework */; };
+		71BA226E1C9762FC00B70A34 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22651C9762FC00B70A34 /* libsqlite3.tbd */; };
+		71BA226F1C9762FC00B70A34 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22661C9762FC00B70A34 /* MobileCoreServices.framework */; };
+		71BA22701C9762FC00B70A34 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22671C9762FC00B70A34 /* Security.framework */; };
+		71BA22711C9762FC00B70A34 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22681C9762FC00B70A34 /* Social.framework */; };
+		71BA22721C9762FC00B70A34 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22691C9762FC00B70A34 /* SystemConfiguration.framework */; };
+		71BA22731C9762FC00B70A34 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA226A1C9762FC00B70A34 /* WebKit.framework */; };
+		71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22741C97644D00B70A34 /* UserMapViewController.swift */; };
+		71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22761C97655A00B70A34 /* AppDelegate.swift */; };
 		7EA15F051C94726D00F0649D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F031C94726D00F0649D /* Main.storyboard */; };
 		7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F061C94726D00F0649D /* Assets.xcassets */; };
 		7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */; };
-		7EA15F141C9482B100F0649D /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EA15F131C9482B100F0649D /* UserMapViewController.swift */; };
 		7EA15F171C94907200F0649D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA15F161C94907200F0649D /* MapKit.framework */; };
-		8A8969EB1C9744E6006AD45F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E11C9744E6006AD45F /* AppDelegate.swift */; };
 		8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */; };
 		8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */; };
 		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
 		8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */; };
 		8A8969F01C9744E6006AD45F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8969E61C9744E6006AD45F /* Info.plist */; };
-		8A8969F11C9744E6006AD45F /* Ride.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E71C9744E6006AD45F /* Ride.m */; };
-		8A8969F21C9744E6006AD45F /* RouteDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */; };
-		8A8969F31C9744E6006AD45F /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E91C9744E6006AD45F /* UserMapViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
+		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
+		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
+		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		71BA22631C9762FC00B70A34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		71BA22641C9762FC00B70A34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		71BA22651C9762FC00B70A34 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		71BA22661C9762FC00B70A34 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		71BA22671C9762FC00B70A34 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		71BA22681C9762FC00B70A34 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		71BA22691C9762FC00B70A34 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		71BA226A1C9762FC00B70A34 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		71BA22741C97644D00B70A34 /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
+		71BA22761C97655A00B70A34 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EA15EFC1C94726D00F0649D /* Where's my Ride?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where's my Ride?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7EA15EFF1C94726D00F0649D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7EA15F041C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EA15F061C94726D00F0649D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EA15F091C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EA15F0B1C94726D00F0649D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7EA15F131C9482B100F0649D /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
 		7EA15F161C94907200F0649D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
-		8A8969E11C9744E6006AD45F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
 		8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverLoginViewController.swift; sourceTree = "<group>"; };
 		8A8969E41C9744E6006AD45F /* DriverRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutes.swift; sourceTree = "<group>"; };
 		8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutesViewController.swift; sourceTree = "<group>"; };
 		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Where's my Ride?/Info.plist"; sourceTree = "<group>"; };
-		8A8969E71C9744E6006AD45F /* Ride.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Ride.m; path = "Where's my Ride?/Ride.m"; sourceTree = "<group>"; };
-		8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsViewController.swift; sourceTree = "<group>"; };
-		8A8969E91C9744E6006AD45F /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
-		8A8969EA1C9744E6006AD45F /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Where's my Ride?-Bridging-Header.h"; path = "Where's my Ride?/Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,19 +64,89 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */,
+				71BA226C1C9762FC00B70A34 /* CoreGraphics.framework in Frameworks */,
+				71BA226D1C9762FC00B70A34 /* CoreLocation.framework in Frameworks */,
+				71BA226E1C9762FC00B70A34 /* libsqlite3.tbd in Frameworks */,
+				71BA226F1C9762FC00B70A34 /* MobileCoreServices.framework in Frameworks */,
+				71BA22701C9762FC00B70A34 /* Security.framework in Frameworks */,
+				71BA22711C9762FC00B70A34 /* Social.framework in Frameworks */,
+				71BA22721C9762FC00B70A34 /* SystemConfiguration.framework in Frameworks */,
+				71BA22731C9762FC00B70A34 /* WebKit.framework in Frameworks */,
 				7EA15F171C94907200F0649D /* MapKit.framework in Frameworks */,
+				71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		71154B9B1C97715400EFCF5B /* DriverLogin */ = {
+			isa = PBXGroup;
+			children = (
+				8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */,
+			);
+			name = DriverLogin;
+			sourceTree = "<group>";
+		};
+		71154B9C1C9771A500EFCF5B /* User */ = {
+			isa = PBXGroup;
+			children = (
+				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		71154B9D1C97722A00EFCF5B /* Driver */ = {
+			isa = PBXGroup;
+			children = (
+				71154B9E1C97729600EFCF5B /* DriverRoutes */,
+				71154B9B1C97715400EFCF5B /* DriverLogin */,
+			);
+			name = Driver;
+			sourceTree = "<group>";
+		};
+		71154B9E1C97729600EFCF5B /* DriverRoutes */ = {
+			isa = PBXGroup;
+			children = (
+				8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */,
+				8A8969E41C9744E6006AD45F /* DriverRoutes.swift */,
+			);
+			name = DriverRoutes;
+			sourceTree = "<group>";
+		};
+		71154B9F1C9772F300EFCF5B /* Application files */ = {
+			isa = PBXGroup;
+			children = (
+				71154B971C9766F600EFCF5B /* donottouch.m */,
+				71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */,
+				7EA15F0B1C94726D00F0649D /* Info.plist */,
+				7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */,
+				71BA22761C97655A00B70A34 /* AppDelegate.swift */,
+			);
+			name = "Application files";
+			sourceTree = "<group>";
+		};
+		71154BA01C97734F00EFCF5B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				7EA15F061C94726D00F0649D /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
+		71154BA11C97736900EFCF5B /* Home page */ = {
+			isa = PBXGroup;
+			children = (
+				8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */,
+			);
+			name = "Home page";
+			sourceTree = "<group>";
+		};
 		7EA15EF31C94726D00F0649D = {
 			isa = PBXGroup;
 			children = (
 				8A8969E61C9744E6006AD45F /* Info.plist */,
-				8A8969E71C9744E6006AD45F /* Ride.m */,
-				8A8969EA1C9744E6006AD45F /* Where's my Ride?-Bridging-Header.h */,
 				7EA15F151C94904300F0649D /* Frameworks */,
 				7EA15EFE1C94726D00F0649D /* Where's my Ride? */,
 				7EA15EFD1C94726D00F0649D /* Products */,
@@ -80,19 +164,12 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
-				8A8969E81C9744E6006AD45F /* RouteDetailsViewController.swift */,
-				8A8969E91C9744E6006AD45F /* UserMapViewController.swift */,
-				8A8969E11C9744E6006AD45F /* AppDelegate.swift */,
-				8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */,
-				8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */,
-				8A8969E41C9744E6006AD45F /* DriverRoutes.swift */,
-				8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */,
-				7EA15EFF1C94726D00F0649D /* AppDelegate.swift */,
 				7EA15F031C94726D00F0649D /* Main.storyboard */,
-				7EA15F061C94726D00F0649D /* Assets.xcassets */,
-				7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */,
-				7EA15F0B1C94726D00F0649D /* Info.plist */,
-				7EA15F131C9482B100F0649D /* UserMapViewController.swift */,
+				71154BA11C97736900EFCF5B /* Home page */,
+				71154BA01C97734F00EFCF5B /* Assets */,
+				71154B9F1C9772F300EFCF5B /* Application files */,
+				71154B9D1C97722A00EFCF5B /* Driver */,
+				71154B9C1C9771A500EFCF5B /* User */,
 			);
 			path = "Where's my Ride?";
 			sourceTree = "<group>";
@@ -100,6 +177,16 @@
 		7EA15F151C94904300F0649D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				71BA22621C9762FC00B70A34 /* Accounts.framework */,
+				71BA22631C9762FC00B70A34 /* CoreGraphics.framework */,
+				71BA22641C9762FC00B70A34 /* CoreLocation.framework */,
+				71BA22651C9762FC00B70A34 /* libsqlite3.tbd */,
+				71BA22661C9762FC00B70A34 /* MobileCoreServices.framework */,
+				71BA22671C9762FC00B70A34 /* Security.framework */,
+				71BA22681C9762FC00B70A34 /* Social.framework */,
+				71BA22691C9762FC00B70A34 /* SystemConfiguration.framework */,
+				71BA226A1C9762FC00B70A34 /* WebKit.framework */,
+				71BA22601C9762AA00B70A34 /* KinveyKit.framework */,
 				7EA15F161C94907200F0649D /* MapKit.framework */,
 			);
 			name = Frameworks;
@@ -177,15 +264,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8969F11C9744E6006AD45F /* Ride.m in Sources */,
+				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
-				8A8969EB1C9744E6006AD45F /* AppDelegate.swift in Sources */,
-				7EA15F141C9482B100F0649D /* UserMapViewController.swift in Sources */,
+				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
-				7EA15F001C94726D00F0649D /* AppDelegate.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
-				8A8969F31C9744E6006AD45F /* UserMapViewController.swift in Sources */,
-				8A8969F21C9744E6006AD45F /* RouteDetailsViewController.swift in Sources */,
+				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,11 +384,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Where's my Ride?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Where-s-my-Ride-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?/Where's my Ride?-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -314,11 +403,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Where's my Ride?/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = "nwmissouri.edu.Where-s-my-Ride-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Where's my Ride?/Where's my Ride?-Bridging-Header.h";
 			};
 			name = Release;
 		};
