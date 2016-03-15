@@ -22,10 +22,8 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Select Route"
+        self.navigationItem.title = "Select a Route"
         routes = DriverRoutes()
-        
-        
     }
     
     override func didReceiveMemoryWarning() {
@@ -50,6 +48,27 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
+    }
+    
+    
+    @IBOutlet weak var tableVIew: UITableView!
+    
+    
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueID1"{
+            if let rdTVC:RouteDetailsTableViewController = segue.destinationViewController as? RouteDetailsTableViewController{
+                if let comingView = tableVIew.indexPathForSelectedRow?.row{
+                    var route:[String] = []
+                    for value:String in routes.routeDictionary.values{
+                        route.append(value)
+                    }
+                    
+                   rdTVC.routes  = route[comingView]
+                }
+            }
+        }
+        
     }
     
     /*

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
+		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
 		71BA226C1C9762FC00B70A34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22631C9762FC00B70A34 /* CoreGraphics.framework */; };
@@ -34,6 +35,7 @@
 /* Begin PBXFileReference section */
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
+		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		71BA22631C9762FC00B70A34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 			children = (
 				8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */,
 				8A8969E41C9744E6006AD45F /* DriverRoutes.swift */,
+				71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
+				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
