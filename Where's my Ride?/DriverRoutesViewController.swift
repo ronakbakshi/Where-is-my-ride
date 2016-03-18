@@ -71,6 +71,19 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
         
     }
     
+    override func viewWillAppear(animated: Bool) {
+        //self.navigationItem.title = "Navigation Map"
+        displayAlertController("Location", message: "Turn On Location Services to Allow Maps To Determine your Location")
+    }
+    
+    //This fucntion displays the alert box showing the message for user  to turn on the location
+    func displayAlertController(title:String, message:String) {
+        let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        uiAlertController.addAction(UIAlertAction(title: "OK", style:UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))
+        self.presentViewController(uiAlertController, animated: true, completion: nil)
+        
+    }
+    
     /*
     // MARK: - Navigation
     

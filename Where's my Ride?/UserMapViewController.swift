@@ -14,17 +14,21 @@ class UserMapViewController: UIViewController {
     @IBOutlet weak var locationSwitch: UISwitch!
     
     
+   
+    
     @IBAction func userSwitchFunction(sender: AnyObject) {
         if locationSwitch.on {
             displayAlertControllerWithTitle("Location", message: "Your Location access permission is granted")
             //Write code for fetching the data to represent the user location on the map
+            
+            
         }
         
     }
     
     
     override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Navigation Map"
+        //self.navigationItem.title = "Navigation Map"
         displayAlertControllerWithTitle("Location", message: "Turn On Location Services to Allow Maps To Determine your Location")
     }
     

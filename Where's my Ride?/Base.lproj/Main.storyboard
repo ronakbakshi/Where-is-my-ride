@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="1sX-L0-hR1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -64,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k9U-Jy-kHt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="773" y="-629"/>
+            <point key="canvasLocation" x="890" y="-624"/>
         </scene>
         <!--Driver Routes View Controller-->
         <scene sceneID="FHU-tf-Kgj">
@@ -122,7 +122,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oYl-ef-NR8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1417" y="-629"/>
+            <point key="canvasLocation" x="1796" y="-624"/>
         </scene>
         <!--Route Details Table View Controller-->
         <scene sceneID="mlQ-VV-xEy">
@@ -159,58 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u55-jy-jhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2103" y="-624"/>
-        </scene>
-        <!--Home Page View Controller-->
-        <scene sceneID="aCU-2c-Rsc">
-            <objects>
-                <viewController id="1sX-L0-hR1" customClass="HomePageViewController" customModule="Where_s_my_Ride_" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="ZI1-EV-BDS"/>
-                        <viewControllerLayoutGuide type="bottom" id="6uX-Gk-3Zm"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="ii1-Uk-hJZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where's my Ride?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BBn-pA-3Th">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="329" y="83" width="240" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPp-7H-JVU">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Go Ahead"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="366" y="146" width="68" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="iky-Y2-hRc" kind="presentation" id="mGL-lP-eaP"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="BBn-pA-3Th"/>
-                                <exclude reference="sPp-7H-JVU"/>
-                            </mask>
-                        </variation>
-                        <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="BBn-pA-3Th"/>
-                                <include reference="sPp-7H-JVU"/>
-                            </mask>
-                        </variation>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8rb-c1-wQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1348.5" y="38"/>
+            <point key="canvasLocation" x="1828" y="143"/>
         </scene>
         <!--User-->
         <scene sceneID="zoV-vD-aD7">
@@ -224,24 +173,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-4p-gVt">
-                                <rect key="frame" x="0.0" y="20" width="600" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="08q-xq-ddf">
-                                        <barButtonItem key="rightBarButtonItem" style="plain" id="GIE-PE-oiV">
-                                            <switch key="customView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="kbw-29-woG">
-                                                <rect key="frame" x="531" y="6" width="51" height="31"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            </switch>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="20" width="800" height="44"/>
-                                </variation>
-                            </navigationBar>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9v2-24-YRe">
-                                <rect key="frame" x="0.0" y="64" width="600" height="528"/>
+                                <rect key="frame" x="0.0" y="72" width="600" height="487"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="805" id="qeP-dp-33C"/>
                                 </constraints>
@@ -251,48 +184,51 @@
                                     </mask>
                                 </variation>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="0.0" y="56" width="800" height="544"/>
+                                    <rect key="frame" x="0.0" y="64" width="800" height="487"/>
                                     <mask key="constraints">
                                         <include reference="qeP-dp-33C"/>
                                     </mask>
                                 </variation>
                             </mapView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UN1-3Q-OhN">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Rides Location Map" id="8Xt-NB-xad"/>
+                                </items>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="20" width="800" height="44"/>
+                                </variation>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="leading" secondItem="hze-Nv-EbD" secondAttribute="leading" id="1IC-2e-agU"/>
-                            <constraint firstItem="9v2-24-YRe" firstAttribute="top" secondItem="NRo-4p-gVt" secondAttribute="bottom" id="OJL-5b-cOm"/>
-                            <constraint firstItem="9v2-24-YRe" firstAttribute="leading" secondItem="NRo-4p-gVt" secondAttribute="leading" id="Pxx-VY-cXS"/>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="top" secondItem="tVl-8C-B4i" secondAttribute="bottom" id="cCq-bZ-eGh"/>
-                            <constraint firstItem="9v2-24-YRe" firstAttribute="trailing" secondItem="NRo-4p-gVt" secondAttribute="trailing" id="fba-cW-O3P"/>
                             <constraint firstAttribute="trailing" secondItem="9v2-24-YRe" secondAttribute="trailing" id="uIK-qH-cYj"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="1IC-2e-agU"/>
-                                <exclude reference="OJL-5b-cOm"/>
-                                <exclude reference="Pxx-VY-cXS"/>
                                 <exclude reference="cCq-bZ-eGh"/>
-                                <exclude reference="fba-cW-O3P"/>
                                 <exclude reference="uIK-qH-cYj"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
                                 <include reference="1IC-2e-agU"/>
-                                <include reference="OJL-5b-cOm"/>
-                                <include reference="Pxx-VY-cXS"/>
                                 <include reference="cCq-bZ-eGh"/>
-                                <include reference="fba-cW-O3P"/>
                                 <include reference="uIK-qH-cYj"/>
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="User" id="GSA-5R-kba"/>
+                    <tabBarItem key="tabBarItem" title="User" image="User Group Filled-25.png" id="GSA-5R-kba"/>
+                    <connections>
+                        <outlet property="UserTitle" destination="UN1-3Q-OhN" id="mJ2-Yi-E0k"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmg-EW-8nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-35.25" y="192"/>
+            <point key="canvasLocation" x="-36" y="192"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Sgx-CV-DAr">
@@ -316,7 +252,7 @@
         <scene sceneID="H2b-ha-8cN">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fww-Ax-uaO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Driver" id="0sH-Vm-SY4"/>
+                    <tabBarItem key="tabBarItem" title="Driver" image="Taxi Filled-25.png" selectedImage="Taxi Filled-25.png" id="0sH-Vm-SY4"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EV8-md-wCQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -332,4 +268,8 @@
             <point key="canvasLocation" x="-39" y="-629"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Taxi Filled-25.png" width="25" height="25"/>
+        <image name="User Group Filled-25.png" width="25" height="25"/>
+    </resources>
 </document>

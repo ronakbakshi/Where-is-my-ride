@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618961C9C66D900098147 /* Taxi Filled-25.png */; };
+		3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618981C9C679F00098147 /* User Group Filled-25.png */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
@@ -21,7 +23,6 @@
 		71BA22731C9762FC00B70A34 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA226A1C9762FC00B70A34 /* WebKit.framework */; };
 		71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22741C97644D00B70A34 /* UserMapViewController.swift */; };
 		71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22761C97655A00B70A34 /* AppDelegate.swift */; };
-		7E7E35681C98F71C0080D0A2 /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E7E35671C98F71C0080D0A2 /* HomePageViewController.swift */; };
 		7EA15F051C94726D00F0649D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F031C94726D00F0649D /* Main.storyboard */; };
 		7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F061C94726D00F0649D /* Assets.xcassets */; };
 		7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3E1618961C9C66D900098147 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Taxi Filled-25.png"; sourceTree = "<group>"; };
+		3E1618981C9C679F00098147 /* User Group Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Group Filled-25.png"; sourceTree = "<group>"; };
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +52,6 @@
 		71BA226A1C9762FC00B70A34 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71BA22741C97644D00B70A34 /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
 		71BA22761C97655A00B70A34 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E7E35671C98F71C0080D0A2 /* HomePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
 		7EA15EFC1C94726D00F0649D /* Where's my Ride?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where's my Ride?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA15F041C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7EA15F061C94726D00F0649D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -85,6 +87,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E1618911C9C66A900098147 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		71154B9B1C97715400EFCF5B /* DriverLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,7 +152,6 @@
 		71154BA11C97736900EFCF5B /* Home page */ = {
 			isa = PBXGroup;
 			children = (
-				7E7E35671C98F71C0080D0A2 /* HomePageViewController.swift */,
 				8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */,
 			);
 			name = "Home page";
@@ -152,6 +160,9 @@
 		7EA15EF31C94726D00F0649D = {
 			isa = PBXGroup;
 			children = (
+				3E1618911C9C66A900098147 /* Images */,
+				3E1618961C9C66D900098147 /* Taxi Filled-25.png */,
+				3E1618981C9C679F00098147 /* User Group Filled-25.png */,
 				8A8969E61C9744E6006AD45F /* Info.plist */,
 				7EA15F151C94904300F0649D /* Frameworks */,
 				7EA15EFE1C94726D00F0649D /* Where's my Ride? */,
@@ -257,6 +268,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A8969F01C9744E6006AD45F /* Info.plist in Resources */,
+				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
+				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
 				7EA15F051C94726D00F0649D /* Main.storyboard in Resources */,
@@ -272,7 +285,6 @@
 			files = (
 				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
-				7E7E35681C98F71C0080D0A2 /* HomePageViewController.swift in Sources */,
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
 				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
