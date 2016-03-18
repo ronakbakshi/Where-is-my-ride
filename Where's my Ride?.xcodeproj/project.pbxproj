@@ -35,8 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3E1618961C9C66D900098147 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Taxi Filled-25.png"; sourceTree = "<group>"; };
-		3E1618981C9C679F00098147 /* User Group Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "User Group Filled-25.png"; sourceTree = "<group>"; };
+		3E1618961C9C66D900098147 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Taxi Filled-25.png"; path = "../Taxi Filled-25.png"; sourceTree = "<group>"; };
+		3E1618981C9C679F00098147 /* User Group Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Group Filled-25.png"; path = "../User Group Filled-25.png"; sourceTree = "<group>"; };
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverLoginViewController.swift; sourceTree = "<group>"; };
 		8A8969E41C9744E6006AD45F /* DriverRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutes.swift; sourceTree = "<group>"; };
 		8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutesViewController.swift; sourceTree = "<group>"; };
-		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = "Where's my Ride?/Info.plist"; sourceTree = "<group>"; };
+		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,13 +87,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E1618911C9C66A900098147 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Images;
-			sourceTree = "<group>";
-		};
 		71154B9B1C97715400EFCF5B /* DriverLogin */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,6 +137,7 @@
 		71154BA01C97734F00EFCF5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3E1618961C9C66D900098147 /* Taxi Filled-25.png */,
 				7EA15F061C94726D00F0649D /* Assets.xcassets */,
 			);
 			name = Assets;
@@ -160,10 +154,6 @@
 		7EA15EF31C94726D00F0649D = {
 			isa = PBXGroup;
 			children = (
-				3E1618911C9C66A900098147 /* Images */,
-				3E1618961C9C66D900098147 /* Taxi Filled-25.png */,
-				3E1618981C9C679F00098147 /* User Group Filled-25.png */,
-				8A8969E61C9744E6006AD45F /* Info.plist */,
 				7EA15F151C94904300F0649D /* Frameworks */,
 				7EA15EFE1C94726D00F0649D /* Where's my Ride? */,
 				7EA15EFD1C94726D00F0649D /* Products */,
@@ -181,9 +171,11 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
+				8A8969E61C9744E6006AD45F /* Info.plist */,
 				7EA15F031C94726D00F0649D /* Main.storyboard */,
 				71154BA11C97736900EFCF5B /* Home page */,
 				71154BA01C97734F00EFCF5B /* Assets */,
+				3E1618981C9C679F00098147 /* User Group Filled-25.png */,
 				71154B9F1C9772F300EFCF5B /* Application files */,
 				71154B9D1C97722A00EFCF5B /* Driver */,
 				71154B9C1C9771A500EFCF5B /* User */,
