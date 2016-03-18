@@ -29,8 +29,8 @@ class DriverLoginViewController: UIViewController {
                     //self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
                    let routesViewController:DriverRoutesViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DriverRoutesViewController") as! DriverRoutesViewController
                  
-                    self.presentViewController(routesViewController, animated: true, completion: nil)
-//                    self.navigationController?.pushViewController(routesViewController, animated: true)
+                    self.navigationController?.pushViewController(routesViewController, animated: true)
+                    //                 self.navigationController?.pushViewController(routesViewController, animated: true)
                     //hide log-in view and show main app content
                     
                 } else {
