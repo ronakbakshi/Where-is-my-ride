@@ -13,10 +13,16 @@ class RouteDetailsTableViewController: UITableViewController {
    // var routes:DriverRoutes!
     var routes:String = ""
     var subRoutes:[String] = []
+    
     override func viewDidLoad() {
         subRoutes = routes.componentsSeparatedByString(",")
         super.viewDidLoad()
         self.navigationItem.title = "Route details"
+        
+        //For confirming the route
+        let rightButton = UIBarButtonItem(title: "Confirm", style: UIBarButtonItemStyle.Plain, target: self, action: "saveRoute:")
+        rightButton.tintColor = UIColor.redColor()
+        navigationItem.rightBarButtonItem  = rightButton
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,7 +30,22 @@ class RouteDetailsTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
-
+    
+    //Takes the driver to a DriverMapViewController with a Map after confirmation
+//    func saveRoute(){
+//        let driverMapViewController:DriverMapViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("DriverMapViewController") as! DriverMapViewController
+//        
+//        self.navigationController?.pushViewController(driverMapViewController, animated: true)
+//    }
+    
+    func saveRoute(sender:UIButton!){
+        
+        
+        let driverMapViewController:DriverMapViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("DriverMapViewController") as! DriverMapViewController
+        
+        self.navigationController?.pushViewController(driverMapViewController, animated: true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -38,7 +38,7 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("route_cell")!
         var keysArray:[String] =  []
-        for key in routes.routeDictionary.keys{
+        for key in routes.routeDictionary.keys.sort(){
             keysArray.append(key)
         }
         cell.textLabel?.text = keysArray[indexPath.row]
