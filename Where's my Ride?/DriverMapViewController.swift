@@ -15,6 +15,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     let locationManager = CLLocationManager()
     
+    var store:KCSAppdataStore!
+    
     var myLocations: [CLLocation] = []
     
     override func viewDidLoad() {
@@ -33,6 +35,11 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.showsUserLocation = true
         
+        store = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
+            KCSStoreKeyCollectionName : "DriversLocation",
+            KCSStoreKeyCollectionTemplateClass : Driver.self
+            ])
+        
         // Do any additional setup after loading the view.
     }
     
@@ -47,9 +54,27 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         
-        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
         
         self.locationView.setRegion(region, animated: true)
+        
+        let authorizedDriver:Driver = Driver(location: location!)
+        
+        store.saveObject(
+            authorizedDriver,
+            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+                if errorOrNil != nil {
+                    //save failed
+                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
+                } else {
+                    //save was successful
+                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+                }
+            },
+            withProgressBlock: nil
+        )
+
+        
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

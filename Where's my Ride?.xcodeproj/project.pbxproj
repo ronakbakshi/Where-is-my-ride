@@ -28,6 +28,7 @@
 		7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F061C94726D00F0649D /* Assets.xcassets */; };
 		7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */; };
 		7EA15F171C94907200F0649D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA15F161C94907200F0649D /* MapKit.framework */; };
+		7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EFA014C1CADE82500742E50 /* DriverEntity.swift */; };
 		8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */; };
 		8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */; };
 		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
@@ -60,6 +61,7 @@
 		7EA15F091C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7EA15F0B1C94726D00F0649D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7EA15F161C94907200F0649D /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		7EFA014C1CADE82500742E50 /* DriverEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverEntity.swift; sourceTree = "<group>"; };
 		8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppLaunchViewController.swift; sourceTree = "<group>"; };
 		8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverLoginViewController.swift; sourceTree = "<group>"; };
 		8A8969E41C9744E6006AD45F /* DriverRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutes.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				8A8969E41C9744E6006AD45F /* DriverRoutes.swift */,
 				71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */,
 				39BF124E1CA5B24800EB2D07 /* DriverMapViewController.swift */,
+				7EFA014C1CADE82500742E50 /* DriverEntity.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -278,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
 				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
