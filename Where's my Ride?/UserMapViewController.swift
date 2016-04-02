@@ -38,16 +38,10 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         self.locationView.showsUserLocation = true
         
-        
         locationService = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
-            KCSStoreKeyCollectionName : "driverLocations",
+            KCSStoreKeyCollectionName : "DriversLocation",
             KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
-        //
-        driversLocations()
-        
-        // Do any additional setup after loading the view, typically from a nib.
-        
     }
     
 
@@ -62,14 +56,24 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
         let location = locations.last
-
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
-
-        self.locationView.setRegion(region, animated: true)
+        let center = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
+        
+        
+        //        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
+        //
+        //        self.locationView.setRegion(region, animated: true)
+        //
+        let userAnnotation = MKPointAnnotation()
+        
+        userAnnotation.title = "My Location"
+        
+        userAnnotation.coordinate = center
+        
+        self.locationView.addAnnotation(userAnnotation)
         
     }
+
     
     //    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
@@ -99,104 +103,26 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     
     func driversLocations() {
         
-        //        let query:KCSQuery = KCSQuery()
-        locationService.queryWithQuery(KCSQuery(), withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+        let query:KCSQuery = KCSQuery()
+        locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
             for obj in objectsOrNil {
                 print(obj)
             }
             self.driverLocations = objectsOrNil as! [Driver]
+            
             let driver0Coordinate = CLLocationCoordinate2DMake(self.driverLocations[0].location!.coordinate.latitude,self.driverLocations[0].location!.coordinate.longitude)
             
-            //span
-            let latDelta:CLLocationDegrees = 1
-            let longDelta:CLLocationDegrees = 1
-            let driver0Span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
+            //            //span
+            //            let latDelta:CLLocationDegrees = 1
+            //            let longDelta:CLLocationDegrees = 1
+            //            let driver1Span = MKCoordinateSpan(latitudeDelta: latDelta, longitudeDelta: longDelta)
             
+            let driver1Annotation = MKPointAnnotation()
+            driver1Annotation.title = "Driver1 Location"
+            driver1Annotation.coordinate = driver0Coordinate
+            self.locationView.addAnnotation(driver1Annotation)
             
-            
-            let driver0Region = MKCoordinateRegion(center: driver0Coordinate, span: driver0Span)
-            self.locationView.setRegion(driver0Region, animated: true)
-            
-            
-            
-            let driver0Annotation = MKPointAnnotation()
-            driver0Annotation.title = "Driver1 Location"
-            driver0Annotation.coordinate = driver0Coordinate
-            self.locationView.addAnnotation(driver0Annotation)
             }, withProgressBlock: nil)
-        
-        
-        
-        
-        //        driver0 location
-        
-        
-        
-        
-        
-        
-        
-        //
-        //        let query:KCSQuery = KCSQuery(onField: "locations", usingConditional: KCSQueryConditional.KCSLessThanOrEqual,   forValue: NSNumber(double:Double(priceTF.text!)!))
-        //        store.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-        ////            self.results = objectsOrNil as! [Lot] // store values for use in UITableViewDataSource
-        ////            self.resultsTV.reloadData()
-        //            },
-        //            withProgressBlock: nil)
-        
-        
-        //User Location
-        //        let userLat = locationManager.location!.coordinate.latitude
-        //        let userLong = locationManager.location!.coordinate.longitude
-        //        let userCoordinate = CLLocationCoordinate2DMake(userLat, userLong)
-        
-        
-        
-        //        let userRegion = MKCoordinateRegion(center: userCoordinate, span: driver1Span)
-        //        locationView.setRegion(userRegion, animated: true)
-        //
-        //        let userAnnotation = MKPointAnnotation()
-        //        userAnnotation.title = "My Location"
-        //        userAnnotation.coordinate = userCoordinate
-        //        locationView.addAnnotation(userAnnotation)
-        
-        
-        //        //driver1Coordinates
-        //        let driver1lat:CLLocationDegrees = 40.3
-        //        let driver1long:CLLocationDegrees = -94.9
-        //        let driver1Coordinate = CLLocationCoordinate2D(latitude: driver1lat, longitude: driver1long)
-        //
-        //
-        //
-        //        let driver1Region = MKCoordinateRegion(center: driver1Coordinate, span: driver1Span)
-        //        locationView.setRegion(driver1Region, animated: true)
-        //
-        //
-        //
-        //
-        //
-        //
-        //
-        //        //Driver2 Location
-        //
-        //        let driver2lat:CLLocationDegrees = 40
-        //        let driver2long:CLLocationDegrees = -94.9
-        //        let driver2Coordinate = CLLocationCoordinate2D(latitude: driver2lat, longitude: driver2long)
-        //
-        //
-        //        let driver2Region = MKCoordinateRegion(center: driver2Coordinate, span: driver1Span)
-        //        locationView.setRegion(driver2Region, animated: true)
-        //
-        //
-        //
-        //        let driver2Annotation = MKPointAnnotation()
-        //        driver2Annotation.title = "Driver2 Location"
-        //        driver2Annotation.coordinate = driver2Coordinate
-        //        locationView.addAnnotation(driver2Annotation)
-        //
-        //
-        
-        
         
         
     }
