@@ -33,7 +33,6 @@
 		8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */; };
 		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
 		8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */; };
-		8A8969F01C9744E6006AD45F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8A8969E61C9744E6006AD45F /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -265,7 +264,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8A8969F01C9744E6006AD45F /* Info.plist in Resources */,
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
