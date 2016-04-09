@@ -42,6 +42,8 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             KCSStoreKeyCollectionName : "DriversLocation",
             KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
+        
+        self.driversLocations()
     }
     
 

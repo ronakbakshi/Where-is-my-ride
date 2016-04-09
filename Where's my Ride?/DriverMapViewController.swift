@@ -13,6 +13,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     @IBOutlet weak var locationView: MKMapView!
     
+    var driverLogin:DriverLoginViewController!
+    
     let locationManager = CLLocationManager()
     
     var store:KCSAppdataStore!
@@ -58,7 +60,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.setRegion(region, animated: true)
         
-        let authorizedDriver:Driver = Driver(location: location!)
+        let authorizedDriver:Driver = Driver(location: location!, user: "driver1")
         
         store.saveObject(
             authorizedDriver,
