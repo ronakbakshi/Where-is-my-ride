@@ -43,9 +43,14 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
         
-        self.driversLocations()
+        
     }
     
+    
+    override func viewWillAppear(animated: Bool) {
+        self.driversLocations()
+       
+    }
 
     override func didReceiveMemoryWarning() {
         
@@ -107,12 +112,15 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         let query:KCSQuery = KCSQuery()
         locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-            for obj in objectsOrNil {
-                print(obj)
-            }
+            print(objectsOrNil[objectsOrNil.count-1])
+            var latitude = objectsOrNil[objectsOrNil.count-1].location!!.coordinate.latitude
+            var longitude = objectsOrNil[objectsOrNil.count-1].location!!.coordinate.longitude
+            
+            print("********\(latitude)")
+            print("******\(longitude)")
             self.driverLocations = objectsOrNil as! [Driver]
             
-            let driver0Coordinate = CLLocationCoordinate2DMake(self.driverLocations[0].location!.coordinate.latitude,self.driverLocations[0].location!.coordinate.longitude)
+            let driver0Coordinate = CLLocationCoordinate2DMake(objectsOrNil[objectsOrNil.count-1].location!!.coordinate.latitude,objectsOrNil[objectsOrNil.count-1].location!!.coordinate.longitude)
             
             //            //span
             //            let latDelta:CLLocationDegrees = 1
@@ -122,6 +130,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             let driver1Annotation = MKPointAnnotation()
             driver1Annotation.title = "Driver1 Location"
             driver1Annotation.coordinate = driver0Coordinate
+            print(driver0Coordinate)
             self.locationView.addAnnotation(driver1Annotation)
             
             }, withProgressBlock: nil)
