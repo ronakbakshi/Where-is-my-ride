@@ -1,39 +1,38 @@
 //
-//  DriverEntity.swift
+//  DriverData.swift
 //  Where's my Ride?
 //
-//  Created by Alle,Sai Teja on 3/31/16.
+//  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/11/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
 
 import Foundation
 
+class DriverData: NSObject{
 
-
-
-
-class Driver: NSObject{
-    
-    
-    var location:CLLocation!
     var user:String!
+    var password:String!
+    var emailId:String!
     var entityId: String?
     
     override init() {
         super.init()
     }
     
-    init(location:CLLocation, user:String) {
-        self.location = location
+    init(user:String,password:String,emailId:String) {
         self.user = user
+        self.password = password
+        self.emailId = emailId
+        
+        
     }
-    
-    
+
     override func hostToKinveyPropertyMapping() -> [NSObject : AnyObject]! {
         return [
             "entityId" : KCSEntityKeyId, //the required _id field
-            "location" : "location",
             "user" : "user",
+            "password" : "password",
+            "emailId" : "emailId"
             
         ]
     }

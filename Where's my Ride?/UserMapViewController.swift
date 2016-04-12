@@ -112,7 +112,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         let query:KCSQuery = KCSQuery()
         locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-            print(objectsOrNil[objectsOrNil.count-1])
+            //print(objectsOrNil[objectsOrNil.count-1])
             var latitude = objectsOrNil[objectsOrNil.count-1].location!!.coordinate.latitude
             var longitude = objectsOrNil[objectsOrNil.count-1].location!!.coordinate.longitude
             

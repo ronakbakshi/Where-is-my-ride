@@ -80,9 +80,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-        
-        
-        
+
         print("Errors"+error.localizedDescription)
         
     }

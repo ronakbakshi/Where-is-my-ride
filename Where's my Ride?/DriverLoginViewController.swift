@@ -68,8 +68,8 @@ class DriverLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Driver Login"
-        usernameTF.text = "driver1"
-        passwordTF.text = "driver1"
+        //usernameTF.text = "driver1"
+        //passwordTF.text = "driver1"
        
 
         // Do any additional setup after loading the view.
