@@ -23,10 +23,7 @@ class RegisterDriverViewController: UIViewController, Operation {
     override func viewDidLoad() {
         super.viewDidLoad()
         kinveyObject = KinveyOperations(operations: self)
-//        storeDriver = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
-//            KCSStoreKeyCollectionName : "RegisteredDrivers",
-//            KCSStoreKeyCollectionTemplateClass : DriverData.self
-//            ])
+
     }
     @IBAction func registerDriverBTN(sender: AnyObject) {
         

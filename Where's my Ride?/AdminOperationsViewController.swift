@@ -21,9 +21,10 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         
         super.viewDidLoad()
         
-        let leftButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.Plain, target: self, action: "back:")
+        let leftButton = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout:")
         leftButton.tintColor = UIColor.redColor()
         navigationItem.leftBarButtonItem  = leftButton
+        
         kinveyObject = KinveyOperations(operations: self)
         kinveyObject.fetchingDriverDetails()
     }
@@ -37,22 +38,15 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     }
 
     
-    func back(Any:AnyObject!){
-        
-        
-        let destinationVC:AdminViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("AdminViewController") as! AdminViewController
-        
-        self.navigationController?.pushViewController(destinationVC, animated: true)
-    }
+
     
-//    func logout(Any:AnyObject){
-//        if KCSUser.activeUser() != nil {
-//            KCSUser.activeUser().logout()
-//            //displayAlertControllerWithTitle("Success", message:"logged out!")
-//            let login =  self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("login") as! LoginViewController
-//            self.navigationController?.pushViewController(login, animated: true)
-//        }
-//    }
+ func logout(Any:AnyObject){
+       if KCSUser.activeUser() != nil {
+           KCSUser.activeUser().logout()
+          //displayAlertControllerWithTitle("Success", message:"logged out!")
+            let destinationVC:AdminViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("AdminViewController") as! AdminViewController
+        self.navigationController?.pushViewController(destinationVC, animated: true)
+       }   }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -79,7 +73,9 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
 //        }
 //    }
     
-
+//    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
+//        
+//    }
     
 
     func onSuccess() {

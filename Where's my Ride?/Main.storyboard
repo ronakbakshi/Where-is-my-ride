@@ -390,7 +390,7 @@
                                 <state key="normal" title="Login"/>
                                 <connections>
                                     <action selector="adminLoginBTN:" destination="eBu-Xv-Udd" eventType="touchUpInside" id="qzo-A8-bN0"/>
-                                    <segue destination="Bvx-i1-6J0" kind="show" identifier="admin_Driver" id="DBZ-Q5-IPW"/>
+                                    <segue destination="KU6-1z-LKE" kind="show" identifier="admin_Driver" id="DBZ-Q5-IPW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Gd-KU-rs1">
@@ -597,7 +597,8 @@
                                         <exclude reference="oaO-2W-uBB"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular">
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="10" y="230" width="785" height="313"/>
                                     <mask key="constraints">
                                         <include reference="oaO-2W-uBB"/>
                                     </mask>
@@ -618,6 +619,9 @@
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="0.0" y="47" width="800" height="44"/>
+                                </variation>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -658,13 +662,14 @@
                             </mask>
                         </variation>
                     </view>
+                    <navigationItem key="navigationItem" id="RK0-oC-W8N"/>
                     <connections>
                         <outlet property="tableView" destination="txr-qO-kYa" id="zgW-8q-RI1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dEr-Sh-yKC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-822.75" y="1298"/>
+            <point key="canvasLocation" x="-63.75" y="1298"/>
         </scene>
         <!--Register Driver View Controller-->
         <scene sceneID="BxJ-hM-gJA">
@@ -737,7 +742,7 @@
                                 </variation>
                                 <connections>
                                     <action selector="registerDriverBTN:" destination="7M8-ze-anT" eventType="touchUpInside" id="tBv-Ib-0xl"/>
-                                    <segue destination="Bvx-i1-6J0" kind="show" identifier="register" id="bYU-jQ-TZD"/>
+                                    <segue destination="KU6-1z-LKE" kind="show" identifier="register" id="bYU-jQ-TZD"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J2-np-OB1">
@@ -795,7 +800,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e4E-83-Qgf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-30" y="1105"/>
+            <point key="canvasLocation" x="729" y="1105"/>
         </scene>
         <!--Driver-->
         <scene sceneID="H2b-ha-8cN">
@@ -816,6 +821,24 @@
             </objects>
             <point key="canvasLocation" x="-39" y="-629"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="il3-hE-H07">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KU6-1z-LKE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="y0O-wo-1QX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Bvx-i1-6J0" kind="relationship" relationship="rootViewController" id="dDP-4P-b5V"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WGH-Th-JwG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-822.75" y="1298"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Find User Male Filled-25.png" width="25" height="25"/>
@@ -824,6 +847,6 @@
         <image name="User Group Filled-25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="DBZ-Q5-IPW"/>
+        <segue reference="bYU-jQ-TZD"/>
     </inferredMetricsTieBreakers>
 </document>

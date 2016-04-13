@@ -13,14 +13,14 @@ class DriverStatus: NSObject{
     
     
     var user:String!
-    var status :Bool!
+    var status : NSNumber!
     var entityId: String?
     
     override init() {
         super.init()
     }
     
-    init(status:Bool!, user:String) {
+    init(status:NSNumber!, user:String) {
         self.status = status
         self.user = user
        

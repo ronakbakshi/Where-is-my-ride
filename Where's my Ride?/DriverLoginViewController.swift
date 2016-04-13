@@ -47,11 +47,9 @@ class DriverLoginViewController: UIViewController,Operation {
                    let routesViewController:DriverRoutesViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DriverRoutesViewController") as! DriverRoutesViewController
                  
                     self.navigationController?.pushViewController(routesViewController, animated: true)
-                    //                 self.navigationController?.pushViewController(routesViewController, animated: true)
-                    //hide log-in view and show main app content
-                    let driver :DriverStatus = DriverStatus(status: true, user: self.usernameTF.text!)
-                  //self.activeDriver = driver
-                    
+                 
+                    let driver :DriverStatus = DriverStatus(status: 0, user: self.usernameTF.text!)
+                    print(driver)
                   self.kinveyObject.driverStatusUpdate(driver)
                     
                     
