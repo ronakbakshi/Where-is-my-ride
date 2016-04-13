@@ -13,16 +13,18 @@ class DriverData: NSObject{
     var user:String!
     var password:String!
     var emailId:String!
+    var status:Bool!
     var entityId: String?
     
     override init() {
         super.init()
     }
     
-    init(user:String,password:String,emailId:String) {
+    init(user:String,password:String,emailId:String, status:Bool) {
         self.user = user
         self.password = password
         self.emailId = emailId
+        self.status = status
         
         
     }
@@ -32,8 +34,8 @@ class DriverData: NSObject{
             "entityId" : KCSEntityKeyId, //the required _id field
             "user" : "user",
             "password" : "password",
-            "emailId" : "emailId"
-            
+            "emailId" : "emailId",
+            "status" : "status"
         ]
     }
     

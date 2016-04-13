@@ -13,6 +13,8 @@
 		3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */; };
 		3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618961C9C66D900098147 /* Taxi Filled-25.png */; };
 		3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618981C9C679F00098147 /* User Group Filled-25.png */; };
+		3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2988D61CBDD2BE007BCBDC /* KCSUserExtension.swift */; };
+		3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */; };
 		3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149E91CBC3BF3008634F3 /* Find User Male Filled-25.png */; };
 		3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149EB1CBC47D2008634F3 /* Main.storyboard */; };
 		3E3149EF1CBC53AA008634F3 /* KinveyOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3149EE1CBC53AA008634F3 /* KinveyOperations.swift */; };
@@ -50,6 +52,8 @@
 		3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminOperationsViewController.swift; sourceTree = "<group>"; };
 		3E1618961C9C66D900098147 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Taxi Filled-25.png"; path = "../Taxi Filled-25.png"; sourceTree = "<group>"; };
 		3E1618981C9C679F00098147 /* User Group Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Group Filled-25.png"; path = "../User Group Filled-25.png"; sourceTree = "<group>"; };
+		3E2988D61CBDD2BE007BCBDC /* KCSUserExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCSUserExtension.swift; sourceTree = "<group>"; };
+		3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverStatus.swift; sourceTree = "<group>"; };
 		3E3149E91CBC3BF3008634F3 /* Find User Male Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Find User Male Filled-25.png"; sourceTree = "<group>"; };
 		3E3149EB1CBC47D2008634F3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		3E3149EE1CBC53AA008634F3 /* KinveyOperations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KinveyOperations.swift; path = ../KinveyOperations.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				3E3149EE1CBC53AA008634F3 /* KinveyOperations.swift */,
+				3E2988D61CBDD2BE007BCBDC /* KCSUserExtension.swift */,
 			);
 			name = kinvey;
 			sourceTree = "<group>";
@@ -160,6 +165,7 @@
 				71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */,
 				39BF124E1CA5B24800EB2D07 /* DriverMapViewController.swift */,
 				7EFA014C1CADE82500742E50 /* DriverEntity.swift */,
+				3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -324,6 +330,7 @@
 				3E1395B81CBC04DC00F09E44 /* AdminViewController.swift in Sources */,
 				3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */,
 				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
+				3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */,
 				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				3E3149F11CBC5480008634F3 /* RegisterDriverViewController.swift in Sources */,
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
@@ -335,6 +342,7 @@
 				3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
+				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 				3E3149EF1CBC53AA008634F3 /* KinveyOperations.swift in Sources */,
 			);

@@ -30,7 +30,7 @@ class RegisterDriverViewController: UIViewController, Operation {
     }
     @IBAction func registerDriverBTN(sender: AnyObject) {
         
-        let driver :DriverData = DriverData (user: driverNameTF.text!, password: driverPwdTF.text! , emailId: driverEmailTF.text!)
+        let driver :DriverData = DriverData (user: driverNameTF.text!, password: driverPwdTF.text! , emailId: driverEmailTF.text!,status:false)
         kinveyObject.addDriver(driver)
 //        KCSUser.userWithUsername(
 //            driverNameTF.text!,

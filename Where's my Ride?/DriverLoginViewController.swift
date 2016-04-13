@@ -8,13 +8,30 @@
 
 import UIKit
 
-class DriverLoginViewController: UIViewController {
+class DriverLoginViewController: UIViewController,Operation {
 
     @IBOutlet weak var usernameTF: UITextField!
     
     @IBOutlet weak var passwordTF: UITextField!
     
+   // var activeDriver : DriverStatus!
 
+    var kinveyObject :KinveyOperations!
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationItem.title = "Driver Login"
+        
+        kinveyObject = KinveyOperations(operations: self)
+        //usernameTF.text = "driver1"
+        //passwordTF.text = "driver1"
+        
+       //self.activeDriver = DriverStatus()
+        // Do any additional setup after loading the view.
+    }
+    
     @IBAction func ResetBTN(sender: AnyObject) {
         usernameTF.text = ""
         passwordTF.text = ""
@@ -32,6 +49,11 @@ class DriverLoginViewController: UIViewController {
                     self.navigationController?.pushViewController(routesViewController, animated: true)
                     //                 self.navigationController?.pushViewController(routesViewController, animated: true)
                     //hide log-in view and show main app content
+                    let driver :DriverStatus = DriverStatus(status: true, user: self.usernameTF.text!)
+                  //self.activeDriver = driver
+                    
+                  self.kinveyObject.driverStatusUpdate(driver)
+                    
                     
                 } else {
                     //there was an error with the update save
@@ -40,6 +62,9 @@ class DriverLoginViewController: UIViewController {
                 }
             }
         )
+        
+        
+        
     }
     //the below code is required when a new user needs to be added, also need to comment the above code
 //            KCSUser.userWithUsername(
@@ -64,16 +89,7 @@ class DriverLoginViewController: UIViewController {
 //        }
 //    }
     
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationItem.title = "Driver Login"
-        //usernameTF.text = "driver1"
-        //passwordTF.text = "driver1"
-       
-
-        // Do any additional setup after loading the view.
-    }
+   
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -86,15 +102,17 @@ class DriverLoginViewController: UIViewController {
         self.presentViewController(uiAlertController, animated: true, completion: nil)
         
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    func onSuccess() {
+       print("status updated successfully")
     }
-    */
+    func onError(message: String) {
+        
+        
+    }
+    func fetchDriverData(driver: [DriverData]) {
+       
+    }
+    
 
-}
+    }
