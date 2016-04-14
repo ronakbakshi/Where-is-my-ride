@@ -9,12 +9,11 @@
 import UIKit
 import MapKit
 
-class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate {
+class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate ,Operation{
     
     @IBOutlet weak var locationView: MKMapView!
     
-    var driverLogin:DriverLoginViewController!
-    
+ 
     let locationManager = CLLocationManager()
     
   
@@ -22,11 +21,15 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     var myLocations: [CLLocation] = []
     
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
         self.navigationItem.title = "Current Route"
+        
+        kinveyObject = KinveyOperations(operations: self)
         
         self.locationManager.delegate = self
         
@@ -38,14 +41,13 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.showsUserLocation = true
         
-       
-        
-        // Do any additional setup after loading the view.
+
     }
     
     override func didReceiveMemoryWarning() {
+        
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+      
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -58,7 +60,9 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.setRegion(region, animated: true)
         
-        let driverLocation:Driver = Driver(location:CLLocation(latitude:67, longitude: 43.5), user: Constants.driver)
+        let driverName : String! = defaults.valueForKey(Constants.driver) as! String
+        
+        let driverLocation:Driver = Driver(location: location!, username : driverName)
         
         self.kinveyObject.updateDriverLocation(driverLocation)
         
@@ -72,14 +76,15 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
     }
     
-    /*
-    // MARK: - Navigation
-    
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-    // Get the new view controller using segue.destinationViewController.
-    // Pass the selected object to the new view controller.
+    func onSuccess() {
+        
     }
-    */
+    func onError(message: String) {
+        
+        
+    }
+    func fetchDriverData(driver: [DriverData]) {
+      
+    }
     
 }

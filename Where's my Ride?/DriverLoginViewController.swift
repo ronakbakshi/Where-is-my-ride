@@ -40,15 +40,16 @@ class DriverLoginViewController: UIViewController,Operation {
         KCSUser.loginWithUsername(usernameTF.text!,password: passwordTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
-                    
+                    print(sender)
                  
                     //let driver :DriverStatus = DriverStatus(status: 0, user: self.usernameTF.text!)
-                    let authorizedDriver:Driver = Driver(location:CLLocation(latitude:17.8, longitude: 40.5), user: self.usernameTF.text!)
+                    let authorizedDriver:Driver = Driver(location:CLLocation(latitude:17.8, longitude: 40.5), username : self.usernameTF.text!)
 
                    
                     self.kinveyObject.driverLocation(authorizedDriver)
                     
-                    self.defaults.setValue(sender.username, forKey: Constants.driver)
+                    self.defaults.setValue(self.usernameTF.description, forKey: Constants.driver)
+                    
                     
                     self.defaults.synchronize()
                     

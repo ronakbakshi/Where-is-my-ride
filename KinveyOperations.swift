@@ -142,13 +142,25 @@ class KinveyOperations {
     
     func updateDriverLocation(driver:Driver)
     {
-        let userValue = defaults.valueForKey(Constants.driver) as! String
-        let query = KCSQuery(onField: "user", withExactMatchForValue: userValue)
+        var driverLocation:[Driver]!
         
-    deleteExistingLocation(query)
+        let userValue = driver.username
+        
+        let query = KCSQuery(onField: "username", withExactMatchForValue: userValue)
+        
+       storeLocation.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+        
+
+        driverLocation = objectsOrNil as! [Driver]
+        
+         self.deleteExistingLocation(driverLocation)
+        
+        }, withProgressBlock: nil)
+        
+   
         
     storeLocation.saveObject(
-            query,
+            driver,
         withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
             if errorOrNil != nil {
                 //save failed
@@ -161,10 +173,11 @@ class KinveyOperations {
     }
     
     
-    func deleteExistingLocation(query:KCSQuery)
+    func deleteExistingLocation(driverLocation:[Driver])
     {
         storeLocation.removeObject(
-            query,
+            
+            driverLocation,
             withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
                 if errorOrNil != nil {
                     print("Delete object Failed")

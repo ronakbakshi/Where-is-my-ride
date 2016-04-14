@@ -16,16 +16,16 @@ class Driver: NSObject{
     
     
     var location:CLLocation!
-    var user:String!
+    var username:String!
     var entityId: String?
     
     override init() {
         super.init()
     }
     
-    init(location:CLLocation, user:String) {
+    init(location:CLLocation, username:String) {
         self.location = location
-        self.user = user
+        self.username = username
         //self.time = time
     }
     
@@ -34,7 +34,7 @@ class Driver: NSObject{
         return [
             "entityId" : KCSEntityKeyId, //the required _id field
             "location" : "location",
-            "user" : "user",
+            "username" : "username",
            // "time" : "time"
         ]
     }
