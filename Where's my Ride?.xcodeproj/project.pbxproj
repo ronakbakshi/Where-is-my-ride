@@ -21,6 +21,7 @@
 		3E3149F11CBC5480008634F3 /* RegisterDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3149F01CBC5480008634F3 /* RegisterDriverViewController.swift */; };
 		3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3149F21CBC5828008634F3 /* DriverData.swift */; };
 		3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149F41CBC7F5D008634F3 /* Info-25.png */; };
+		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
@@ -60,6 +61,7 @@
 		3E3149F01CBC5480008634F3 /* RegisterDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterDriverViewController.swift; path = ../RegisterDriverViewController.swift; sourceTree = "<group>"; };
 		3E3149F21CBC5828008634F3 /* DriverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverData.swift; sourceTree = "<group>"; };
 		3E3149F41CBC7F5D008634F3 /* Info-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-25.png"; sourceTree = "<group>"; };
+		3E77B96D1CBFF2AB0074C566 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 				39BF124E1CA5B24800EB2D07 /* DriverMapViewController.swift */,
 				7EFA014C1CADE82500742E50 /* DriverEntity.swift */,
 				3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */,
+				3E77B96D1CBFF2AB0074C566 /* Constants.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E1395B81CBC04DC00F09E44 /* AdminViewController.swift in Sources */,
+				3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */,
 				3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */,
 				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
 				3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */,

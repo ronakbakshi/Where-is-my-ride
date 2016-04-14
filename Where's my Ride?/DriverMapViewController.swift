@@ -17,7 +17,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     let locationManager = CLLocationManager()
     
-    var store:KCSAppdataStore!
+  
+    var kinveyObject :KinveyOperations!
     
     var myLocations: [CLLocation] = []
     
@@ -37,10 +38,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.showsUserLocation = true
         
-        store = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
-            KCSStoreKeyCollectionName : "DriversLocation",
-            KCSStoreKeyCollectionTemplateClass : Driver.self
-            ])
+       
         
         // Do any additional setup after loading the view.
     }
@@ -60,21 +58,10 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationView.setRegion(region, animated: true)
         
-        let authorizedDriver:Driver = Driver(location: location!, user: "driver1")
+        let driverLocation:Driver = Driver(location:CLLocation(latitude:67, longitude: 43.5), user: Constants.driver)
         
-        store.saveObject(
-            authorizedDriver,
-            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-                if errorOrNil != nil {
-                    //save failed
-                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
-                } else {
-                    //save was successful
-                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
-                }
-            },
-            withProgressBlock: nil
-        )
+        self.kinveyObject.updateDriverLocation(driverLocation)
+        
 
         
     }
