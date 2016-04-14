@@ -22,7 +22,9 @@ class KinveyOperations {
     
      var storeDriver:KCSAppdataStore!
     var storeDriverStatus:KCSAppdataStore!
+    var storeLocation:KCSAppdataStore!
     var operationDelegate:Operation!
+    let defaults = NSUserDefaults.standardUserDefaults()
     
     init(operations:Operation)
     {
@@ -35,6 +37,11 @@ class KinveyOperations {
         storeDriverStatus = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "DriverStatus",
             KCSStoreKeyCollectionTemplateClass : DriverData.self
+            ])
+        
+        storeLocation = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
+            KCSStoreKeyCollectionName : "DriversLocation",
+            KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
     }
     
@@ -110,6 +117,65 @@ class KinveyOperations {
                 }
             },
             withProgressBlock: nil )
+        
             }
+    
+    
+    func driverLocation (driver:Driver) {
+         storeLocation.saveObject(
+            driver,
+            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+                if errorOrNil != nil {
+                    //save failed
+                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
+                } else {
+                    //save was successful
+                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+                }
+            },
+            withProgressBlock: nil )
+        
+    }
+    
+    
+    
+    
+    func updateDriverLocation(driver:Driver)
+    {
+        let userValue = defaults.valueForKey(Constants.driver) as! String
+        let query = KCSQuery(onField: "user", withExactMatchForValue: userValue)
+        
+    deleteExistingLocation(query)
+        
+    storeLocation.saveObject(
+            query,
+        withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+            if errorOrNil != nil {
+                //save failed
+                print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
+            } else {
+                //save was successful
+                print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+            }            },
+            withProgressBlock: nil)
+    }
+    
+    
+    func deleteExistingLocation(query:KCSQuery)
+    {
+        storeLocation.removeObject(
+            query,
+            withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
+                if errorOrNil != nil {
+                    print("Delete object Failed")
+                  
+                } else {
+                     print("driver location deleted successfully")
+                   
+                }
+            },
+            withProgressBlock: nil
+        )
+    }
 
 }
