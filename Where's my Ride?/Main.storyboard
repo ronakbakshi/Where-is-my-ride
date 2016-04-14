@@ -302,8 +302,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-M1-Zc8">
-                                <rect key="frame" x="20" y="505" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="26" y="505" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="00R-bY-bbq" kind="show" id="9cy-JQ-asY"/>
                                 </connections>
@@ -343,8 +343,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-Vr-lzs">
-                                <rect key="frame" x="20" y="505" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="26" y="505" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="00R-bY-bbq" kind="show" id="yKg-hH-cK0"/>
                                 </connections>
@@ -355,7 +355,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oyz-qT-lVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2265" y="646"/>
+            <point key="canvasLocation" x="-2258" y="595"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="osh-Pu-zGI">
@@ -398,8 +398,8 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjF-qH-GTe">
-                                <rect key="frame" x="20" y="502" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="26" y="502" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="00R-bY-bbq" kind="show" id="SyU-c0-aDv"/>
                                 </connections>
@@ -433,8 +433,8 @@
                                 <dataDetectorType key="dataDetectorTypes" address="YES"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymC-qc-WR5">
-                                <rect key="frame" x="20" y="486" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
+                                <rect key="frame" x="26" y="486" width="34" height="30"/>
+                                <state key="normal" title="Back"/>
                                 <connections>
                                     <segue destination="00R-bY-bbq" kind="show" id="C6B-2c-KyU"/>
                                 </connections>
@@ -450,7 +450,7 @@
         <!--More Info-->
         <scene sceneID="fIE-q5-veV">
             <objects>
-                <viewController id="00R-bY-bbq" sceneMemberID="viewController">
+                <viewController id="00R-bY-bbq" customClass="MoreInfoViewController" customModule="Where_s_my_Ride_" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aJS-Y0-pdJ"/>
                         <viewControllerLayoutGuide type="bottom" id="iia-Pk-87t"/>
@@ -980,7 +980,7 @@
         <image name="User Group Filled-25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="yKg-hH-cK0"/>
         <segue reference="DBZ-Q5-IPW"/>
+        <segue reference="SyU-c0-aDv"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -44,6 +44,7 @@
 		8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E31C9744E6006AD45F /* DriverLoginViewController.swift */; };
 		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
 		8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */; };
+		9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,6 +89,7 @@
 		8A8969E41C9744E6006AD45F /* DriverRoutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutes.swift; sourceTree = "<group>"; };
 		8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutesViewController.swift; sourceTree = "<group>"; };
 		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +225,7 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
+				9656D4481CC022AE0098C1F5 /* MoreInfo */,
 				3E3149ED1CBC5379008634F3 /* kinvey */,
 				3E1395B41CBC045A00F09E44 /* Admin */,
 				8A8969E61C9744E6006AD45F /* Info.plist */,
@@ -253,6 +256,14 @@
 				7EA15F161C94907200F0649D /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9656D4481CC022AE0098C1F5 /* MoreInfo */ = {
+			isa = PBXGroup;
+			children = (
+				9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */,
+			);
+			name = MoreInfo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,6 +358,7 @@
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
+				9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 				3E3149EF1CBC53AA008634F3 /* KinveyOperations.swift in Sources */,
 			);
