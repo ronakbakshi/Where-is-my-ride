@@ -282,6 +282,143 @@
             </objects>
             <point key="canvasLocation" x="153.75" y="287"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="4CR-Fp-2YU">
+            <objects>
+                <viewController id="qcw-g1-QSW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Xpe-Rn-8d5"/>
+                        <viewControllerLayoutGuide type="bottom" id="afS-TN-3ad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="bvn-nC-E0h">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-op-qXE">
+                                <rect key="frame" x="88" y="48" width="458" height="452"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Where's My Ride provides a solution for Passengers who wants to go for a ride, they can trace the rides available and if he turns on the GPS, it will display the available rides around his location.Driver needs to Turn On GPS in his device. Whoever willing to use should have to download this App.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="31"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KYk-LY-ZpB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2432" y="151"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="BqA-Mo-tJA">
+            <objects>
+                <viewController id="0in-Rb-Hai" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="J8r-AD-zLa"/>
+                        <viewControllerLayoutGuide type="bottom" id="Dcv-05-oMj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="oUG-sp-6Tg">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="unb-Ac-MGU">
+                                <rect key="frame" x="141" y="306" width="400" height="128"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Late Night Taxi Hours: (no retail stops)        Thursday	10 p.m. - 2 a.m                            Friday	10 p.m. - 4 a.m                                 Saturday	10 p.m. - 4 a.m       </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NAY-2q-NSg">
+                                <rect key="frame" x="141" y="96" width="282" height="162"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Shuttle Hours: (for retail stops)     Monday	          4 p.m. - 8 p.m Tuesday	          3 p.m. - 5 p.m    Wednesday	    4 p.m. - 8 p.m     Thursday	          4 p.m. - 8 p.m     Friday	               4 p.m. - 8 p.m      </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oyz-qT-lVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2818" y="919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="osh-Pu-zGI">
+            <objects>
+                <viewController id="TUE-qK-9Bi" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mS0-aS-seo"/>
+                        <viewControllerLayoutGuide type="bottom" id="9ni-2Q-hXB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="I3q-yU-oL1">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hox-Y7-MU7">
+                                <rect key="frame" x="159" y="50" width="368" height="175"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Route 1: East Maryville                                                             Stop	           Location                                                               1                   	Lot 29                                                         2	                 Lot 12                                                                               3	                 Dollar General (North)                                      4	                 Parkway Terrace Apartments                  5	                 4th St. and Market St.</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-ar-d0v">
+                                <rect key="frame" x="159" y="271" width="359" height="238"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">Route 2: West Maryville                                                             Stop	           Location                                                               1                   	Lot 29                                                         2	                 The Station, Lot 39                                                                               3	                 College Ave. and Munn Ave                                      4	                 Mary Mart Shopping Center                5	                 JC Penny                             6	                 Wal-Mart                               7	                 Hy-Vee</string>
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FSK-rQ-82n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2197" y="919"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="z5P-by-me1">
+            <objects>
+                <viewController id="363-Ef-cMS" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Nmg-qz-JUj"/>
+                        <viewControllerLayoutGuide type="bottom" id="1xi-iV-08t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="DUp-IN-BEd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MKO-pA-qGp">
+                                <rect key="frame" x="148" y="164" width="373" height="191"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Contact Details:                                  Team We!                                     NorthWest Missouri State University       Maryville, Missouri 64468                        Phone Numbers : 000-000-0000                                   </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qmj-If-X0U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1555" y="1038"/>
+        </scene>
         <!--More Info-->
         <scene sceneID="fIE-q5-veV">
             <objects>
@@ -294,6 +431,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gel-gU-EtL">
+                                <rect key="frame" x="232" y="122" width="91" height="30"/>
+                                <state key="normal" title="How it Works"/>
+                                <connections>
+                                    <segue destination="qcw-g1-QSW" kind="show" id="gSO-5g-X8r"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idS-Wk-pzh">
+                                <rect key="frame" x="246" y="229" width="55" height="30"/>
+                                <state key="normal" title="Timings"/>
+                                <connections>
+                                    <segue destination="0in-Rb-Hai" kind="show" id="Tku-ZH-NkD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xxt-96-zbl">
+                                <rect key="frame" x="249" y="324" width="48" height="30"/>
+                                <state key="normal" title="Routes"/>
+                                <connections>
+                                    <segue destination="TUE-qK-9Bi" kind="show" id="JFt-f4-UVV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hoo-Gp-3AF">
+                                <rect key="frame" x="220" y="416" width="106" height="30"/>
+                                <state key="normal" title="Contact Details"/>
+                                <connections>
+                                    <segue destination="363-Ef-cMS" kind="show" id="KLu-cn-e3j"/>
+                                </connections>
+                            </button>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="KJa-h9-cQA">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -460,14 +625,14 @@
                                 <exclude reference="JZl-8Q-pPj"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="m4f-co-jAT"/>
-                                <exclude reference="501-Ba-e6o"/>
                                 <exclude reference="7gy-hk-P6v"/>
                                 <exclude reference="AuJ-QI-hvR"/>
                                 <exclude reference="AzT-kA-O6n"/>
                                 <exclude reference="Wal-sK-Ag2"/>
                                 <exclude reference="iUz-3G-ueT"/>
                                 <exclude reference="xL5-0W-thc"/>
+                                <exclude reference="501-Ba-e6o"/>
+                                <exclude reference="m4f-co-jAT"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -481,14 +646,14 @@
                                 <include reference="JZl-8Q-pPj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="m4f-co-jAT"/>
-                                <include reference="501-Ba-e6o"/>
                                 <include reference="7gy-hk-P6v"/>
                                 <include reference="AuJ-QI-hvR"/>
                                 <include reference="AzT-kA-O6n"/>
                                 <include reference="Wal-sK-Ag2"/>
                                 <include reference="iUz-3G-ueT"/>
                                 <include reference="xL5-0W-thc"/>
+                                <include reference="501-Ba-e6o"/>
+                                <include reference="m4f-co-jAT"/>
                             </mask>
                         </variation>
                     </view>
@@ -522,7 +687,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u5Q-y9-WkD" id="lwf-io-6wE">
-                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="47"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="driverlabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gMi-x8-Gv6">
