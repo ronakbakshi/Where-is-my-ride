@@ -673,7 +673,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otX-3T-URe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-767.25" y="299"/>
+            <point key="canvasLocation" x="-674" y="433"/>
         </scene>
         <!--Admin Operations View Controller-->
         <scene sceneID="jse-ww-Qqc">
