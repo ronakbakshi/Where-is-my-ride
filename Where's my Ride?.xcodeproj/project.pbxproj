@@ -24,6 +24,12 @@
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
+		71592E111CC05DF900640EE0 /* TimingsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */; };
+		71592E131CC05E0800640EE0 /* LocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */; };
+		71592E151CC05E2A00640EE0 /* RoutesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E141CC05E2A00640EE0 /* RoutesInfoViewController.swift */; };
+		71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */; };
+		71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71592E181CC0647800640EE0 /* backgroundImage.jpg */; };
+		71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
 		71BA226C1C9762FC00B70A34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22631C9762FC00B70A34 /* CoreGraphics.framework */; };
@@ -66,6 +72,12 @@
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
+		71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingsInfoViewController.swift; sourceTree = "<group>"; };
+		71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInfoViewController.swift; sourceTree = "<group>"; };
+		71592E141CC05E2A00640EE0 /* RoutesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesInfoViewController.swift; sourceTree = "<group>"; };
+		71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowItWorksInfoViewController.swift; sourceTree = "<group>"; };
+		71592E181CC0647800640EE0 /* backgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage.jpg; path = "Where's my Ride?/backgroundImage.jpg"; sourceTree = "<group>"; };
+		71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundImageView.swift; path = "Where's my Ride?/BackgroundImageView.swift"; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		71BA22631C9762FC00B70A34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -190,6 +202,7 @@
 		71154BA01C97734F00EFCF5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				3E1618981C9C679F00098147 /* User Group Filled-25.png */,
 				3E3149F41CBC7F5D008634F3 /* Info-25.png */,
 				3E1618961C9C66D900098147 /* Taxi Filled-25.png */,
 				7EA15F061C94726D00F0649D /* Assets.xcassets */,
@@ -203,6 +216,16 @@
 				8A8969E21C9744E6006AD45F /* AppLaunchViewController.swift */,
 			);
 			name = "Home page";
+			sourceTree = "<group>";
+		};
+		71592E1C1CC0696200640EE0 /* BackgroundImage */ = {
+			isa = PBXGroup;
+			children = (
+				71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */,
+				71592E181CC0647800640EE0 /* backgroundImage.jpg */,
+			);
+			name = BackgroundImage;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		7EA15EF31C94726D00F0649D = {
@@ -225,6 +248,7 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
+				71592E1C1CC0696200640EE0 /* BackgroundImage */,
 				9656D4481CC022AE0098C1F5 /* MoreInfo */,
 				3E3149ED1CBC5379008634F3 /* kinvey */,
 				3E1395B41CBC045A00F09E44 /* Admin */,
@@ -232,7 +256,6 @@
 				71154BA11C97736900EFCF5B /* Home page */,
 				3E3149EB1CBC47D2008634F3 /* Main.storyboard */,
 				71154BA01C97734F00EFCF5B /* Assets */,
-				3E1618981C9C679F00098147 /* User Group Filled-25.png */,
 				71154B9F1C9772F300EFCF5B /* Application files */,
 				71154B9D1C97722A00EFCF5B /* Driver */,
 				71154B9C1C9771A500EFCF5B /* User */,
@@ -262,6 +285,10 @@
 			isa = PBXGroup;
 			children = (
 				9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */,
+				71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */,
+				71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */,
+				71592E141CC05E2A00640EE0 /* RoutesInfoViewController.swift */,
+				71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */,
 			);
 			name = MoreInfo;
 			sourceTree = "<group>";
@@ -330,6 +357,7 @@
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
+				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
 			);
@@ -344,6 +372,8 @@
 			files = (
 				3E1395B81CBC04DC00F09E44 /* AdminViewController.swift in Sources */,
 				3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */,
+				71592E151CC05E2A00640EE0 /* RoutesInfoViewController.swift in Sources */,
+				71592E111CC05DF900640EE0 /* TimingsInfoViewController.swift in Sources */,
 				3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */,
 				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
 				3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */,
@@ -353,13 +383,16 @@
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
 				3E1395BA1CBC062600F09E44 /* Admin.swift in Sources */,
 				39BF124F1CA5B24800EB2D07 /* DriverMapViewController.swift in Sources */,
+				71592E131CC05E0800640EE0 /* LocationInfoViewController.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
+				71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */,
 				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
 				3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
 				9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */,
+				71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 				3E3149EF1CBC53AA008634F3 /* KinveyOperations.swift in Sources */,
 			);

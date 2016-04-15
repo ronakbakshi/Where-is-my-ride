@@ -85,6 +85,13 @@ class AdminViewController: UIViewController {
         )
     }
     
+    @IBOutlet weak var resetBTN: UIButton!
+    
+    
+    @IBAction func resetBTNaction(sender: AnyObject) {
+        adminUserNameTF.text = ""
+        adminPwdTF.text = ""
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
