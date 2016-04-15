@@ -180,7 +180,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-li-ZAR">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="k1w-li-ZAR">
                                 <rect key="frame" x="0.0" y="11" width="767" height="530"/>
                                 <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
@@ -907,25 +907,25 @@
                                 <exclude reference="JZl-8Q-pPj"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="5mk-rL-HyD"/>
-                                <exclude reference="AJf-hd-mIh"/>
-                                <exclude reference="HPU-Bu-N0p"/>
-                                <exclude reference="SjW-Ru-8Gs"/>
-                                <exclude reference="pr0-TO-6Ct"/>
-                                <exclude reference="vcb-sT-lSp"/>
-                                <exclude reference="pmf-rc-fxK"/>
                                 <exclude reference="16K-Zf-5uw"/>
                                 <exclude reference="QU3-3G-hei"/>
                                 <exclude reference="Vf7-nA-kJv"/>
-                                <exclude reference="ENK-F5-fj3"/>
-                                <exclude reference="gni-VW-irC"/>
                                 <exclude reference="31K-3h-oFx"/>
                                 <exclude reference="ssg-0T-Zit"/>
                                 <exclude reference="RVs-DG-dbu"/>
+                                <exclude reference="ENK-F5-fj3"/>
+                                <exclude reference="gni-VW-irC"/>
                                 <exclude reference="HJj-jB-b1F"/>
                                 <exclude reference="LxY-Ru-2hb"/>
                                 <exclude reference="Nyz-2n-Y6N"/>
                                 <exclude reference="VK2-u1-efi"/>
+                                <exclude reference="pmf-rc-fxK"/>
+                                <exclude reference="SjW-Ru-8Gs"/>
+                                <exclude reference="pr0-TO-6Ct"/>
+                                <exclude reference="vcb-sT-lSp"/>
+                                <exclude reference="5mk-rL-HyD"/>
+                                <exclude reference="AJf-hd-mIh"/>
+                                <exclude reference="HPU-Bu-N0p"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -940,25 +940,25 @@
                                 <include reference="JZl-8Q-pPj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="5mk-rL-HyD"/>
-                                <include reference="AJf-hd-mIh"/>
-                                <include reference="HPU-Bu-N0p"/>
-                                <include reference="SjW-Ru-8Gs"/>
-                                <include reference="pr0-TO-6Ct"/>
-                                <include reference="vcb-sT-lSp"/>
-                                <include reference="pmf-rc-fxK"/>
                                 <include reference="16K-Zf-5uw"/>
                                 <include reference="QU3-3G-hei"/>
                                 <include reference="Vf7-nA-kJv"/>
-                                <include reference="ENK-F5-fj3"/>
-                                <include reference="gni-VW-irC"/>
                                 <include reference="31K-3h-oFx"/>
                                 <include reference="ssg-0T-Zit"/>
                                 <include reference="RVs-DG-dbu"/>
+                                <include reference="ENK-F5-fj3"/>
+                                <include reference="gni-VW-irC"/>
                                 <include reference="HJj-jB-b1F"/>
                                 <include reference="LxY-Ru-2hb"/>
                                 <include reference="Nyz-2n-Y6N"/>
                                 <include reference="VK2-u1-efi"/>
+                                <include reference="pmf-rc-fxK"/>
+                                <include reference="SjW-Ru-8Gs"/>
+                                <include reference="pr0-TO-6Ct"/>
+                                <include reference="vcb-sT-lSp"/>
+                                <include reference="5mk-rL-HyD"/>
+                                <include reference="AJf-hd-mIh"/>
+                                <include reference="HPU-Bu-N0p"/>
                             </mask>
                         </variation>
                     </view>

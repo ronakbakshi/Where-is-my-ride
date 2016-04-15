@@ -22,11 +22,13 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     let locationManager = CLLocationManager()
     
     var driverLocations:[Driver]!
-
- 
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
+        
+        
         
         self.locationManager.delegate = self
         
@@ -50,9 +52,9 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     
     override func viewWillAppear(animated: Bool) {
         self.driversLocations()
-       
+        
     }
-
+    
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
@@ -70,7 +72,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
         
         self.locationView.setRegion(region, animated: true)
- 
+        
         let userAnnotation = MKPointAnnotation()
         
         userAnnotation.title = "My Location"
@@ -80,50 +82,67 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.locationView.addAnnotation(userAnnotation)
         
     }
-
+    
     
     
     func driversLocations() {
         
         let query:KCSQuery = KCSQuery()
         locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-
             
-            print(objectsOrNil)
-            for var i=0;i<objectsOrNil.count;i++ {
+            if let _ = objectsOrNil {
+                
+                
+                // print(objectsOrNil)
+                for var i=0;i<objectsOrNil.count;i++ {
                     let driver1Coordinate = CLLocationCoordinate2DMake(objectsOrNil[i].location!!.coordinate.latitude,objectsOrNil[i].location!!.coordinate.longitude)
                     let driver1Annotation = MKPointAnnotation()
                     driver1Annotation.title =  (objectsOrNil[i].username)+" Location"
                     driver1Annotation.coordinate = driver1Coordinate
                     self.locationView.addAnnotation(driver1Annotation)
-                
+                    
+                }
             }
-            
+            else{
+                self.displayAlertControllerWithTitle("Oops!☹️", message: "Drivers are yet to start!")
+                let driver1Coordinate = CLLocationCoordinate2DMake(40.3497,94.8806)
+                let driver1Annotation = MKPointAnnotation()
+//                driver1Annotation.title =  (objectsOrNil[0].username)+" Location"
+                driver1Annotation.coordinate = driver1Coordinate
+//                self.locationView.addAnnotation(driver1Annotation)
+
+            }
             
             }, withProgressBlock: nil)
         
         
     }
     
+    func displayAlertControllerWithTitle(title:String, message:String) {
+        let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))
+        self.presentViewController(uiAlertController, animated: true, completion: nil)
+        
+    }
     
-//    
-//    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
-//        -> MKAnnotationView! {
-//            
-//            var pinView:MKPinAnnotationView! =
-//            mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as! MKPinAnnotationView!
-//            
-//            if pinView == nil {
-//                
-//                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
-//                pinView.pinTintColor = UIColor.greenColor()
-//                
-//            }
-//            return pinView
-//            
-//    }
-//
-   
+    //
+    //    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
+    //        -> MKAnnotationView! {
+    //
+    //            var pinView:MKPinAnnotationView! =
+    //            mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as! MKPinAnnotationView!
+    //
+    //            if pinView == nil {
+    //
+    //                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+    //                pinView.pinTintColor = UIColor.greenColor()
+    //
+    //            }
+    //            return pinView
+    //
+    //    }
+    //
+    
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         
         print("Errors"+error.localizedDescription)
