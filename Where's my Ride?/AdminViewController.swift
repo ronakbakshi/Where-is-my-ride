@@ -17,7 +17,7 @@ class AdminViewController: UIViewController {
     var store1:KCSAppdataStore!
     
     override func viewDidLoad() {
-        
+        self.view.addBackground1()
         super.viewDidLoad()
 
         store1 = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
