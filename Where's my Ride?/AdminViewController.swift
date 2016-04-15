@@ -24,6 +24,8 @@ class AdminViewController: UIViewController {
             KCSStoreKeyCollectionName : "Admin",
             KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
+        
+        self.navigationItem.backBarButtonItem = nil
        
     }
 

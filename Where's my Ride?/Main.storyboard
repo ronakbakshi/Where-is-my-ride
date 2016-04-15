@@ -973,7 +973,7 @@
             </objects>
             <point key="canvasLocation" x="-719.25" y="316"/>
         </scene>
-        <!--Admin Operations View Controller-->
+        <!--DriverList-->
         <scene sceneID="jse-ww-Qqc">
             <objects>
                 <viewController storyboardIdentifier="admin_Driver" id="Bvx-i1-6J0" customClass="AdminOperationsViewController" customModule="Where_s_my_Ride_" customModuleProvider="target" sceneMemberID="viewController">
@@ -1033,61 +1033,46 @@
                                     <outlet property="delegate" destination="Bvx-i1-6J0" id="IPO-7m-xby"/>
                                 </connections>
                             </tableView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a1H-Ek-b77">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Driver List" id="v8v-vc-hLd">
-                                        <barButtonItem key="rightBarButtonItem" title="Add Driver" id="7kp-LL-ERt">
-                                            <connections>
-                                                <segue destination="7M8-ze-anT" kind="show" identifier="register" id="8Kh-7C-0Ie"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="a1H-Ek-b77" secondAttribute="trailing" id="8HM-dg-gfZ"/>
-                            <constraint firstItem="a1H-Ek-b77" firstAttribute="top" secondItem="XhA-c0-XJd" secondAttribute="bottom" constant="27" id="OkL-Rl-T8e"/>
-                            <constraint firstItem="a1H-Ek-b77" firstAttribute="leading" secondItem="UQR-K7-n2Y" secondAttribute="leading" id="RCs-lx-eLh"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="txr-qO-kYa" secondAttribute="bottom" constant="11" id="b5b-Mw-cls"/>
-                            <constraint firstItem="txr-qO-kYa" firstAttribute="top" secondItem="a1H-Ek-b77" secondAttribute="bottom" id="mcI-IU-bsq"/>
-                            <constraint firstItem="txr-qO-kYa" firstAttribute="centerX" secondItem="a1H-Ek-b77" secondAttribute="centerX" id="p2o-ee-Xo9"/>
+                            <constraint firstItem="txr-qO-kYa" firstAttribute="top" secondItem="XhA-c0-XJd" secondAttribute="bottom" constant="69" id="FUX-Mp-Y7T"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="txr-qO-kYa" secondAttribute="bottom" constant="11" id="b5b-Mw-cls">
+                                <variation key="widthClass=regular" constant="13"/>
+                            </constraint>
+                            <constraint firstItem="txr-qO-kYa" firstAttribute="centerX" secondItem="UQR-K7-n2Y" secondAttribute="centerX" id="bgI-04-ADc"/>
                             <constraint firstItem="txr-qO-kYa" firstAttribute="leading" secondItem="UQR-K7-n2Y" secondAttribute="leadingMargin" constant="-12" id="u4V-2i-Bxg"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="txr-qO-kYa"/>
-                                <exclude reference="a1H-Ek-b77"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="8HM-dg-gfZ"/>
-                                <exclude reference="OkL-Rl-T8e"/>
-                                <exclude reference="RCs-lx-eLh"/>
+                                <exclude reference="FUX-Mp-Y7T"/>
                                 <exclude reference="b5b-Mw-cls"/>
-                                <exclude reference="mcI-IU-bsq"/>
-                                <exclude reference="p2o-ee-Xo9"/>
+                                <exclude reference="bgI-04-ADc"/>
                                 <exclude reference="u4V-2i-Bxg"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="txr-qO-kYa"/>
-                                <include reference="a1H-Ek-b77"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="8HM-dg-gfZ"/>
-                                <include reference="OkL-Rl-T8e"/>
-                                <include reference="RCs-lx-eLh"/>
+                                <include reference="FUX-Mp-Y7T"/>
                                 <include reference="b5b-Mw-cls"/>
-                                <include reference="mcI-IU-bsq"/>
-                                <include reference="p2o-ee-Xo9"/>
+                                <include reference="bgI-04-ADc"/>
                                 <include reference="u4V-2i-Bxg"/>
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="RK0-oC-W8N"/>
+                    <navigationItem key="navigationItem" title="DriverList" id="RK0-oC-W8N">
+                        <barButtonItem key="rightBarButtonItem" title="Add Driver" id="7kp-LL-ERt">
+                            <connections>
+                                <segue destination="7M8-ze-anT" kind="show" identifier="register" id="gcv-fl-ydy"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="txr-qO-kYa" id="zgW-8q-RI1"/>
                     </connections>
@@ -1170,15 +1155,6 @@
                                     <rect key="frame" x="242" y="312" width="74" height="21"/>
                                 </variation>
                             </label>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWT-K7-hkV">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
-                                <items>
-                                    <navigationItem title="Register Driver" id="585-iS-mcA"/>
-                                </items>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="64" width="800" height="44"/>
-                                </variation>
-                            </navigationBar>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wZz-At-aRF">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -1199,7 +1175,6 @@
                                 <exclude reference="5rL-bi-Vw2"/>
                                 <exclude reference="4TV-Ja-k2a"/>
                                 <exclude reference="0J2-np-OB1"/>
-                                <exclude reference="EWT-K7-hkV"/>
                                 <exclude reference="wZz-At-aRF"/>
                             </mask>
                         </variation>
@@ -1212,7 +1187,6 @@
                                 <include reference="5rL-bi-Vw2"/>
                                 <include reference="4TV-Ja-k2a"/>
                                 <include reference="0J2-np-OB1"/>
-                                <include reference="EWT-K7-hkV"/>
                                 <include reference="wZz-At-aRF"/>
                             </mask>
                         </variation>

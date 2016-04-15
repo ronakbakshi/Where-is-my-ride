@@ -11,9 +11,9 @@ import UIKit
 class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,Operation {
 
     
-    @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var tableView: UITableView!
     
-    var driverDetails:[DriverData]!
+    var driverDetails:[DriverData] = []
     
    var kinveyObject :KinveyOperations!
     
@@ -24,21 +24,21 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         let leftButton = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout:")
         leftButton.tintColor = UIColor.redColor()
         navigationItem.leftBarButtonItem  = leftButton
-        
+        navigationItem.backBarButtonItem  = nil
         kinveyObject = KinveyOperations(operations: self)
+          tableView.reloadData()
+        
         kinveyObject.fetchingDriverDetails()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+         tableView.reloadData()
+        
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-
-    
-
     
  func logout(Any:AnyObject){
        if KCSUser.activeUser() != nil {
@@ -48,13 +48,21 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         self.navigationController?.pushViewController(destinationVC, animated: true)
        }   }
     
+    
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1
+    }
+    
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        if driverDetails != nil {
+//        
+//        if driverDetails != nil {
+//        return driverDetails.count
+//        }else{
+//            return 0
+//        }
+        print(driverDetails.count)
         return driverDetails.count
-        }else{
-            return 0
-        }
 
     }
 

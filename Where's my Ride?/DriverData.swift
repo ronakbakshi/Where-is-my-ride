@@ -13,7 +13,7 @@ class DriverData: NSObject{
     var user:String!
     var password:String!
     var emailId:String!
-    var status:Bool!
+    
     var entityId: String?
     
     override init() {
@@ -24,7 +24,6 @@ class DriverData: NSObject{
         self.user = user
         self.password = password
         self.emailId = emailId
-        self.status = status
         
         
     }
@@ -35,8 +34,7 @@ class DriverData: NSObject{
             "user" : "user",
             "password" : "password",
             "emailId" : "emailId",
-            "status" : "status"
-        ]
+                   ]
     }
     
 }

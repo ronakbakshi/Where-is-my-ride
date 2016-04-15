@@ -29,6 +29,7 @@ class KinveyOperations {
     init(operations:Operation)
     {
         self.operationDelegate = operations
+        
         storeDriver = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "RegisteredDrivers",
             KCSStoreKeyCollectionTemplateClass : DriverData.self
@@ -52,7 +53,7 @@ class KinveyOperations {
             password:driver.password,
             fieldsAndValues:[
                 KCSUserAttributeEmail : driver.emailId ,
-                status : driver.status ,
+                //status : driver.status ,
             ],
             withCompletionBlock: { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
@@ -72,15 +73,16 @@ class KinveyOperations {
             withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
                 if errorOrNil != nil {
                     //save failed
-                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
+                    print("Save failed in register driver, with error: %@", errorOrNil.localizedFailureReason)
                 } else {
                     //save was successful
-                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+                    print("Successfully saved in register driver (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
                 }
             },
             withProgressBlock: nil
         )
     }
+    
     func fetchingDriverDetails() {
         
         let query = KCSQuery()
@@ -93,6 +95,7 @@ class KinveyOperations {
             else {
                 
                 let driverDetails = objectsOrNil as! [DriverData]
+                 
                 
                 print("Successfully (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
                 print(driverDetails)

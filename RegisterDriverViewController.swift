@@ -23,6 +23,7 @@ class RegisterDriverViewController: UIViewController, Operation {
     override func viewDidLoad() {
         super.viewDidLoad()
         kinveyObject = KinveyOperations(operations: self)
+        navigationItem.title = "Register Driver"
 
     }
     @IBAction func registerDriverBTN(sender: AnyObject) {
