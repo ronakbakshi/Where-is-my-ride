@@ -28,7 +28,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         super.viewDidLoad()
         
-        
+        self.locationView.delegate = self
         
         self.locationManager.delegate = self
         
@@ -69,7 +69,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         let center = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
         
-        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01))
+        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 100, longitudeDelta: 100))
         
         self.locationView.setRegion(region, animated: true)
         
@@ -125,23 +125,23 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
     }
     
-    //
-    //    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
-    //        -> MKAnnotationView! {
-    //
-    //            var pinView:MKPinAnnotationView! =
-    //            mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as! MKPinAnnotationView!
-    //
-    //            if pinView == nil {
-    //
-    //                pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
-    //                pinView.pinTintColor = UIColor.greenColor()
-    //
-    //            }
-    //            return pinView
-    //
-    //    }
-    //
+    
+        func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
+            -> MKAnnotationView! {
+    
+                var pinView:MKPinAnnotationView! =
+                mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as! MKPinAnnotationView!
+    
+                if pinView == nil {
+    
+                    pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: "pin")
+                    pinView.pinTintColor = UIColor.greenColor()
+    
+                }
+                return pinView
+    
+        }
+    
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
         
