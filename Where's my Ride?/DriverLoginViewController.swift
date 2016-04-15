@@ -9,43 +9,51 @@
 import UIKit
 
 class DriverLoginViewController: UIViewController,Operation {
-
+    
     @IBOutlet weak var usernameTF: UITextField!
-
+    
     @IBOutlet weak var passwordTF: UITextField!
-
+    
     // var activeDriver : DriverStatus!
-
-     var kinveyObject :KinveyOperations!
-
-       let defaults = NSUserDefaults.standardUserDefaults()
-
-        override func viewDidLoad() {
+    
+    var kinveyObject :KinveyOperations!
+    
+    let defaults = NSUserDefaults.standardUserDefaults()
+    
+    override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = "Driver Login"
         
         kinveyObject = KinveyOperations(operations: self)
-
-       
+        self.view.addBackground()
     }
-
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Driver Login"
+        usernameTF.text = ""
+        passwordTF.text = ""
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+        self.navigationItem.title = "Logout"
+    }
+    
     @IBAction func ResetBTN(sender: AnyObject) {
         usernameTF.text = ""
         passwordTF.text = ""
     }
-
-
+    
+    
     @IBAction func loginBTN(sender: AnyObject) {
         
         KCSUser.loginWithUsername(usernameTF.text!,password: passwordTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
                     print(sender)
-                 
+                    
                     //let driver :DriverStatus = DriverStatus(status: 0, user: self.usernameTF.text!)
                     let authorizedDriver:Driver = Driver(location:CLLocation(latitude:17.8, longitude: 40.5), username : self.usernameTF.text!)
-
-                   
+                    
+                    
                     self.kinveyObject.driverLocation(authorizedDriver)
                     
                     self.defaults.setValue(self.usernameTF.description, forKey: Constants.driver)
@@ -60,17 +68,15 @@ class DriverLoginViewController: UIViewController,Operation {
                     
                     self.navigationController?.pushViewController(routesViewController, animated: true)
                     
-
+                    
                 } else {
                     //there was an error with the update save
-                    let message = errorOrNil.localizedDescription
-                    self.displayAlertControllerWithTitle("Login failed", message: message)
+                    //let message = errorOrNil.localizedDescription
+                    let message = "Username/Password is invalid"
+                    self.displayAlertControllerWithTitle("Login Failed", message: message)
                 }
             }
         )
-        
-        
-        
     }
     //the below code is required when a new user needs to be added, also need to comment the above code
     //            KCSUser.userWithUsername(
@@ -94,32 +100,32 @@ class DriverLoginViewController: UIViewController,Operation {
     //            )
     //        }
     //    }
-
-
-
+    
+    
+    
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
     func displayAlertControllerWithTitle(title:String, message:String) {
         let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))
         self.presentViewController(uiAlertController, animated: true, completion: nil)
         
     }
-
+    
     func onSuccess() {
-       print("status updated successfully")
+        print("status updated successfully")
     }
     func onError(message: String) {
         
         
     }
     func fetchDriverData(driver: [DriverData]) {
-       
+        
     }
-
-
-    }
+    
+    
+}
