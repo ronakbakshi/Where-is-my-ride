@@ -28,6 +28,17 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         super.viewDidLoad()
         
+        
+        
+        let initialLocation = CLLocation(latitude: 48.85, longitude: 2.35)
+        
+        let regionRadius: CLLocationDistance = 5000
+        
+        let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,regionRadius * 2.0, regionRadius * 2.0)
+       
+        locationView.setRegion(coordinateRegion, animated: true)
+
+        
         self.locationView.delegate = self
         
         self.locationManager.delegate = self
@@ -46,10 +57,23 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             ])
         self.driversLocations()
         
-        
+       
+        let circle = MKCircle(centerCoordinate: CLLocationCoordinate2D(latitude: 48.852513, longitude: 2.340345), radius: 5000)
+        locationView.addOverlay(circle)
     }
     
-    
+    func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer! {
+        if overlay is MKCircle {
+            let circleRenderer = MKCircleRenderer(overlay: overlay)
+            circleRenderer.fillColor = UIColor.redColor().colorWithAlphaComponent(0.2)
+            circleRenderer.strokeColor = UIColor.yellowColor().colorWithAlphaComponent(0.7)
+            circleRenderer.lineWidth = 2
+            
+            return circleRenderer
+        }
+        
+        return nil
+    }
     override func viewWillAppear(animated: Bool) {
         self.driversLocations()
         

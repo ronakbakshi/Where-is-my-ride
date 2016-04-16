@@ -56,8 +56,8 @@ class DriverLoginViewController: UIViewController,Operation {
                     
                     self.kinveyObject.driverLocation(authorizedDriver)
                     
-                    self.defaults.setValue(self.usernameTF.description, forKey: Constants.driver)
-                    
+                    self.defaults.setValue(self.usernameTF.text, forKey: Constants.driver)
+                    print(self.defaults.valueForKey(Constants.driver)!)
                     
                     self.defaults.synchronize()
                     

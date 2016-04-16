@@ -12,14 +12,12 @@ import MapKit
 class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate ,Operation{
     
     @IBOutlet weak var locationView: MKMapView!
-    
  
     let locationManager = CLLocationManager()
     
-  
     var kinveyObject :KinveyOperations!
     
-    var myLocations: [CLLocation] = []
+    var previousLocation:CLLocation = CLLocation(latitude: 0.0, longitude: 0.0)
     
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -39,9 +37,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         self.locationManager.startUpdatingLocation()
         
-        self.locationView.showsUserLocation = true
-        
-
+        //self.locationView.showsUserLocation = true
+  
     }
     
     override func didReceiveMemoryWarning() {
@@ -52,21 +49,50 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        let location = locations.last
+ 
+        if previousLocation.coordinate.latitude == 0.0 &&  previousLocation.coordinate.longitude == 0.0 {
+            
+            print("initial location \(previousLocation)")
+            
+            previousLocation = locations.last!
+             print("updated previous location \(previousLocation)")
+        }
+        else {
+            let location = CLLocation(latitude: 48.85, longitude: 2.35)
+            let distance = location.distanceFromLocation(previousLocation)
+            
+            print("distance between \(distance)")
+            
+            if distance == 0 {
+                
+                self.locationManager.stopUpdatingLocation()
+            }
+            
+            else {
+                let location = locations.last
+                
+                let timeUpdated = location?.timestamp
+                
+                print("time captured \(timeUpdated)")
+                
+                let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+                
+                let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
+                
+                self.locationView.setRegion(region, animated: true)
+                
+                let driverName : String = defaults.valueForKey(Constants.driver)! as! String
+                print(driverName)
+                let driverLocation:Driver = Driver(location: location!, username : driverName)
+                
+                self.kinveyObject.updateDriverLocation(driverLocation)
+                
+            }
+                
+            }
         
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
         
-        let region =  MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10))
         
-        self.locationView.setRegion(region, animated: true)
-        
-        let driverName : String! = defaults.valueForKey(Constants.driver) as! String
-        
-        let driverLocation:Driver = Driver(location: location!, username : driverName)
-        
-        self.kinveyObject.updateDriverLocation(driverLocation)
-        
-
         
     }
     
