@@ -9,7 +9,7 @@
 import Foundation
 extension UIView {
 func addBackground2() {
-    // screen width and height:
+    // screen width and height: size bounds
     let width = UIScreen.mainScreen().bounds.size.width
     let height = UIScreen.mainScreen().bounds.size.height
     
