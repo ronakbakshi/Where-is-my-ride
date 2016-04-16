@@ -790,7 +790,8 @@
                                         <exclude reference="jvZ-gx-JVy"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular">
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="431" y="67" width="160" height="30"/>
                                     <mask key="constraints">
                                         <include reference="jvZ-gx-JVy"/>
                                     </mask>
@@ -806,16 +807,24 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="267" y="70" width="79" height="21"/>
+                                </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ai-Yr-dDt">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="267" y="169" width="74" height="21"/>
+                                </variation>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kH2-G4-XM3">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <state key="normal" title="Register"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" red="0.84957869764397909" green="0.066606884491028626" blue="0.16283107145264475" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="adminRegisterBTN:" destination="eBu-Xv-Udd" eventType="touchUpInside" id="tI4-Sc-FGg"/>
                                 </connections>
@@ -826,7 +835,9 @@
                                     <constraint firstAttribute="height" constant="14" id="Khy-mZ-r6n"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Reset"/>
+                                <state key="normal" title="Reset">
+                                    <color key="titleColor" red="0.89803921568627454" green="0.070406184234030431" blue="0.17211906101483584" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="Khy-mZ-r6n"/>
@@ -848,7 +859,9 @@
                                     <constraint firstAttribute="height" constant="24" id="hsF-55-Z9I"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <state key="normal" title="Login"/>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.89803921568627454" green="0.062745098039215685" blue="0.16078431372549021" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="DG7-7h-PBL"/>
@@ -866,6 +879,14 @@
                                     <segue destination="Bvx-i1-6J0" kind="show" identifier="admin_Driver" id="R8u-FE-0fP"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bRM-1i-Puz">
+                                <rect key="frame" x="-25" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="431" y="130" width="160" height="30"/>
+                                </variation>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -899,6 +920,7 @@
                                 <exclude reference="kH2-G4-XM3"/>
                                 <exclude reference="3Gd-KU-rs1"/>
                                 <exclude reference="JZl-8Q-pPj"/>
+                                <exclude reference="bRM-1i-Puz"/>
                             </mask>
                             <mask key="constraints">
                                 <exclude reference="bME-25-Dcu"/>
@@ -928,6 +950,7 @@
                                 <include reference="kH2-G4-XM3"/>
                                 <include reference="3Gd-KU-rs1"/>
                                 <include reference="JZl-8Q-pPj"/>
+                                <include reference="bRM-1i-Puz"/>
                             </mask>
                             <mask key="constraints">
                                 <include reference="bME-25-Dcu"/>
@@ -1286,5 +1309,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="R8u-FE-0fP"/>
         <segue reference="9cy-JQ-asY"/>
+        <segue reference="DBZ-Q5-IPW"/>
     </inferredMetricsTieBreakers>
 </document>
