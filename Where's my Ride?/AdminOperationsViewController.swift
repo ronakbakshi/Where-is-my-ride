@@ -73,18 +73,7 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
             driverLBL.text = driverDetails[indexPath.row].user
             return cell
         }
-    
-//    func tableView(tableView: UITableView, editingStyleForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCellEditingStyle {
-//        if editingStyle == UITableViewCellEditingStyle.Delete {
-//            driverDetails.removeAtIndex(indexPath.row)
-//            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-//        }
-//    }
-    
-//    func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
-//        
-//    }
-    
+
 
     func onSuccess() {
         
