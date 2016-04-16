@@ -24,15 +24,16 @@
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
+		715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 715512941CC1CED0007DCFD5 /* MoreInfo.jpg */; };
+		715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */; };
+		7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */; };
 		71592E111CC05DF900640EE0 /* TimingsInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */; };
 		71592E131CC05E0800640EE0 /* LocationInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */; };
 		71592E151CC05E2A00640EE0 /* RoutesInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E141CC05E2A00640EE0 /* RoutesInfoViewController.swift */; };
 		71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */; };
 		71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71592E181CC0647800640EE0 /* backgroundImage.jpg */; };
 		71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */; };
-		71AAD3291CC190E600CE6B73 /* adminbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD3281CC190E600CE6B73 /* adminbackground.jpg */; };
 		71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */; };
-		71AAD32D1CC1933900CE6B73 /* adminbackground2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71AAD32C1CC1933900CE6B73 /* adminbackground2.jpg */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
 		71BA226C1C9762FC00B70A34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22631C9762FC00B70A34 /* CoreGraphics.framework */; };
@@ -75,15 +76,16 @@
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
+		715512941CC1CED0007DCFD5 /* MoreInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MoreInfo.jpg; sourceTree = "<group>"; };
+		715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoImage.swift; sourceTree = "<group>"; };
+		7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightgreybackground.jpg; sourceTree = "<group>"; };
 		71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimingsInfoViewController.swift; sourceTree = "<group>"; };
 		71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationInfoViewController.swift; sourceTree = "<group>"; };
 		71592E141CC05E2A00640EE0 /* RoutesInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoutesInfoViewController.swift; sourceTree = "<group>"; };
 		71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowItWorksInfoViewController.swift; sourceTree = "<group>"; };
 		71592E181CC0647800640EE0 /* backgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage.jpg; path = "Where's my Ride?/backgroundImage.jpg"; sourceTree = "<group>"; };
 		71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundImageView.swift; path = "Where's my Ride?/BackgroundImageView.swift"; sourceTree = "<group>"; };
-		71AAD3281CC190E600CE6B73 /* adminbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = adminbackground.jpg; path = "Where's my Ride?/adminbackground.jpg"; sourceTree = "<group>"; };
 		71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageAdmin.swift; sourceTree = "<group>"; };
-		71AAD32C1CC1933900CE6B73 /* adminbackground2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = adminbackground2.jpg; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		71BA22631C9762FC00B70A34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -227,11 +229,12 @@
 		71592E1C1CC0696200640EE0 /* BackgroundImage */ = {
 			isa = PBXGroup;
 			children = (
+				7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */,
+				715512941CC1CED0007DCFD5 /* MoreInfo.jpg */,
 				71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */,
-				71AAD3281CC190E600CE6B73 /* adminbackground.jpg */,
 				71592E181CC0647800640EE0 /* backgroundImage.jpg */,
-				71AAD32C1CC1933900CE6B73 /* adminbackground2.jpg */,
 				71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */,
+				715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */,
 			);
 			name = BackgroundImage;
 			path = ..;
@@ -362,14 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */,
+				7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */,
 				3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */,
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
-				71AAD3291CC190E600CE6B73 /* adminbackground.jpg in Resources */,
-				71AAD32D1CC1933900CE6B73 /* adminbackground2.jpg in Resources */,
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
+				715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +402,7 @@
 				71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */,
 				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
 				71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */,
+				715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */,
 				3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,

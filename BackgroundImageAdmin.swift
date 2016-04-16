@@ -14,12 +14,15 @@ extension UIView {
         let height = UIScreen.mainScreen().bounds.size.height
         
         let imageViewBackground = UIImageView(frame: CGRectMake(0, 0, width, height))
-        imageViewBackground.image = UIImage(named: "adminbackground2.jpg")
+        imageViewBackground.image = UIImage(named: "lightgreybackground.jpg")
         
         // you can change the content mode:
-        imageViewBackground.contentMode = UIViewContentMode.ScaleToFill
+        imageViewBackground.contentMode = UIViewContentMode.ScaleAspectFill
         
         self.addSubview(imageViewBackground)
         self.sendSubviewToBack(imageViewBackground)
     
-    }}
+    }
+  
+
+}
