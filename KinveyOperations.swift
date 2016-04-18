@@ -150,13 +150,17 @@ class KinveyOperations {
         let userValue = driver.username
         
         print(userValue)
+        
         let query = KCSQuery(onField: "username", withExactMatchForValue: userValue)
         
        storeLocation.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
         
         if errorOrNil != nil {
+            
             //save failed
+            
             print("Update failed, with error: %@", errorOrNil.localizedFailureReason)
+            
         } else {
             
             print(objectsOrNil.count)
@@ -167,7 +171,7 @@ class KinveyOperations {
             
             self.deleteExistingLocation(driverLocation)
 
-            //save was successful
+            
             print("Successfully updated new location (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
         }
         

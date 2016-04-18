@@ -19,7 +19,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     
     var previousLocation:CLLocation = CLLocation(latitude: 0.0, longitude: 0.0)
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    //let defaults = NSUserDefaults.standardUserDefaults()
     
     override func viewDidLoad() {
         
@@ -55,10 +55,13 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
             print("initial location \(previousLocation)")
             
             previousLocation = locations.last!
-             print("updated previous location \(previousLocation)")
+            
+          print("updated previous location second time\(previousLocation)")   // current location
         }
         else {
-            let location = CLLocation(latitude: 48.85, longitude: 2.35)
+            
+            let location = CLLocation(latitude: 48.85, longitude: 2.35) // assuming driver change to this location
+            
             let distance = location.distanceFromLocation(previousLocation)
             
             print("distance between \(distance)")
@@ -71,9 +74,9 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
             else {
                 let location = locations.last
                 
-                let timeUpdated = location?.timestamp
+                //let timeUpdated = location?.timestamp
                 
-                print("time captured \(timeUpdated)")
+                //print("time captured \(timeUpdated)")
                 
                 let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
                 
@@ -81,9 +84,17 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
                 
                 self.locationView.setRegion(region, animated: true)
                 
-                let driverName : String = defaults.valueForKey(Constants.driver)! as! String
-                print(driverName)
-                let driverLocation:Driver = Driver(location: location!, username : driverName)
+                //let driverName : String = defaults.valueForKey(Constants.driver)! as! String
+                
+                let appy = UIApplication.sharedApplication().delegate as! AppDelegate
+                
+                
+                
+                print("Value of app delegate object \(appy.name) ")
+                
+                let driverLocation:Driver = Driver(location: location!, username : appy.name )
+                
+                print(driverLocation)
                 
                 self.kinveyObject.updateDriverLocation(driverLocation)
                 

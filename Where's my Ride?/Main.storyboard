@@ -1251,8 +1251,8 @@
         <image name="Taxi Filled-25.png" width="25" height="25"/>
         <image name="User Group Filled-25.png" width="25" height="25"/>
     </resources>
-    <inferredMetricsTieBreakers>
+   <!-- <inferredMetricsTieBreakers>
         <segue reference="C6B-2c-KyU"/>
         <segue reference="DBZ-Q5-IPW"/>
-    </inferredMetricsTieBreakers>
+    </inferredMetricsTieBreakers> -->
 </document>

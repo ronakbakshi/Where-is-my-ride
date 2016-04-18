@@ -45,10 +45,17 @@ class DriverLoginViewController: UIViewController,Operation {
     
     @IBAction func loginBTN(sender: AnyObject) {
         
+        let appy = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        appy.name = self.usernameTF.text!
+        
         KCSUser.loginWithUsername(usernameTF.text!,password: passwordTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
-                    print(sender)
+                   
+                    let user = KCSUser.activeUser().username
+                    
+                    print ("from KCSUser Activer User \(user) ")
                     
                     //let driver :DriverStatus = DriverStatus(status: 0, user: self.usernameTF.text!)
                     let authorizedDriver:Driver = Driver(location:CLLocation(latitude:17.8, longitude: 40.5), username : self.usernameTF.text!)
@@ -56,8 +63,8 @@ class DriverLoginViewController: UIViewController,Operation {
                     
                     self.kinveyObject.driverLocation(authorizedDriver)
                     
-                    self.defaults.setValue(self.usernameTF.text, forKey: Constants.driver)
-                    print(self.defaults.valueForKey(Constants.driver)!)
+                    //self.defaults.setValue(self.usernameTF.text, forKey: Constants.driver)
+                    //print(self.defaults.valueForKey(Constants.driver)!)
                     
                     self.defaults.synchronize()
                     
