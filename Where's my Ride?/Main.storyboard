@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-w2-o08">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-w2-o08">
                                 <rect key="frame" x="190" y="238" width="38" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Login">
@@ -32,7 +32,7 @@
                                     <action selector="loginBTN:" destination="qHN-ah-l4s" eventType="touchUpInside" id="tDj-70-VvJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-Bp-ZHf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-Bp-ZHf">
                                 <rect key="frame" x="331" y="164" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -40,7 +40,7 @@
                                     <rect key="frame" x="428" y="148" width="128" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-wi-65X">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Cg-wi-65X">
                                 <rect key="frame" x="172" y="164" width="74" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,7 +49,7 @@
                                     <rect key="frame" x="236" y="152" width="131" height="21"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-JH-FLP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-JH-FLP">
                                 <rect key="frame" x="331" y="79" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="H5g-jE-By2"/>
@@ -72,7 +72,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-E7-sXg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yL7-E7-sXg">
                                 <rect key="frame" x="170" y="82" width="79" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -81,7 +81,7 @@
                                     <rect key="frame" x="236" y="99" width="131" height="21"/>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21s-NV-KCG">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21s-NV-KCG">
                                 <rect key="frame" x="360" y="238" width="39" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Reset">
@@ -138,7 +138,6 @@
                                 <exclude reference="jAf-uX-RhK"/>
                                 <exclude reference="0U5-ZU-syl"/>
                                 <exclude reference="GAE-ig-w8V"/>
-                                <exclude reference="kVe-6J-CNy"/>
                                 <exclude reference="1ej-oi-ufY"/>
                                 <exclude reference="7r2-u3-JLE"/>
                                 <exclude reference="G05-85-7Aq"/>
@@ -160,7 +159,6 @@
                                 <exclude reference="FzK-5o-lil"/>
                                 <include reference="GAE-ig-w8V"/>
                                 <exclude reference="PxL-sH-RY0"/>
-                                <include reference="kVe-6J-CNy"/>
                                 <exclude reference="1XU-qy-eeQ"/>
                                 <exclude reference="17t-vQ-eRJ"/>
                                 <include reference="1ej-oi-ufY"/>
@@ -818,7 +816,7 @@
                                     <rect key="frame" x="434" y="99" width="160" height="30"/>
                                 </variation>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Admin Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-NK-2G7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Admin Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-NK-2G7">
                                 <rect key="frame" x="-42" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
                                 <nil key="highlightedColor"/>
@@ -895,7 +893,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="DNa-l5-HEe"/>
-                                <exclude reference="bRM-1i-Puz"/>
                                 <exclude reference="gJO-Zz-rNX"/>
                                 <exclude reference="5Ai-Yr-dDt"/>
                                 <exclude reference="3Gd-KU-rs1"/>
@@ -907,7 +904,6 @@
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="DNa-l5-HEe"/>
-                                <include reference="bRM-1i-Puz"/>
                                 <include reference="gJO-Zz-rNX"/>
                                 <include reference="5Ai-Yr-dDt"/>
                                 <include reference="3Gd-KU-rs1"/>
@@ -1004,10 +1000,10 @@
                                 <exclude reference="txr-qO-kYa"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="2sr-38-yIe"/>
                                 <exclude reference="UMN-rw-OUM"/>
                                 <exclude reference="wkB-Mh-aK2"/>
                                 <exclude reference="zzX-d6-Qgc"/>
-                                <exclude reference="2sr-38-yIe"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -1015,10 +1011,10 @@
                                 <include reference="txr-qO-kYa"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="2sr-38-yIe"/>
                                 <include reference="UMN-rw-OUM"/>
                                 <include reference="wkB-Mh-aK2"/>
                                 <include reference="zzX-d6-Qgc"/>
-                                <include reference="2sr-38-yIe"/>
                             </mask>
                         </variation>
                     </view>
@@ -1143,24 +1139,24 @@
                                 <exclude reference="4TV-Ja-k2a"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="9my-s7-6Uo"/>
-                                <exclude reference="mw8-re-GHa"/>
-                                <exclude reference="2DI-Hx-CLp"/>
-                                <exclude reference="g0a-gs-FsR"/>
+                                <exclude reference="QDf-TD-j3a"/>
+                                <exclude reference="frX-0B-lqW"/>
+                                <exclude reference="gFA-fb-zEG"/>
+                                <exclude reference="l4R-9Y-tgd"/>
                                 <exclude reference="DM0-gp-Wkq"/>
                                 <exclude reference="YiO-1S-7ii"/>
                                 <exclude reference="dkv-eH-NQn"/>
                                 <exclude reference="xGT-rd-YD6"/>
-                                <exclude reference="7Qh-T9-j2d"/>
                                 <exclude reference="0ee-Gj-jrO"/>
                                 <exclude reference="ZRB-Aa-pQ0"/>
                                 <exclude reference="ZUv-dV-Mq4"/>
                                 <exclude reference="Yre-gL-QEA"/>
                                 <exclude reference="l74-hJ-hn5"/>
-                                <exclude reference="QDf-TD-j3a"/>
-                                <exclude reference="frX-0B-lqW"/>
-                                <exclude reference="gFA-fb-zEG"/>
-                                <exclude reference="l4R-9Y-tgd"/>
+                                <exclude reference="2DI-Hx-CLp"/>
+                                <exclude reference="g0a-gs-FsR"/>
+                                <exclude reference="7Qh-T9-j2d"/>
+                                <exclude reference="9my-s7-6Uo"/>
+                                <exclude reference="mw8-re-GHa"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -1175,24 +1171,24 @@
                                 <include reference="4TV-Ja-k2a"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="9my-s7-6Uo"/>
-                                <include reference="mw8-re-GHa"/>
-                                <include reference="2DI-Hx-CLp"/>
-                                <include reference="g0a-gs-FsR"/>
+                                <include reference="QDf-TD-j3a"/>
+                                <include reference="frX-0B-lqW"/>
+                                <include reference="gFA-fb-zEG"/>
+                                <include reference="l4R-9Y-tgd"/>
                                 <include reference="DM0-gp-Wkq"/>
                                 <include reference="YiO-1S-7ii"/>
                                 <include reference="dkv-eH-NQn"/>
                                 <include reference="xGT-rd-YD6"/>
-                                <include reference="7Qh-T9-j2d"/>
                                 <include reference="0ee-Gj-jrO"/>
                                 <include reference="ZRB-Aa-pQ0"/>
                                 <include reference="ZUv-dV-Mq4"/>
                                 <include reference="Yre-gL-QEA"/>
                                 <include reference="l74-hJ-hn5"/>
-                                <include reference="QDf-TD-j3a"/>
-                                <include reference="frX-0B-lqW"/>
-                                <include reference="gFA-fb-zEG"/>
-                                <include reference="l4R-9Y-tgd"/>
+                                <include reference="2DI-Hx-CLp"/>
+                                <include reference="g0a-gs-FsR"/>
+                                <include reference="7Qh-T9-j2d"/>
+                                <include reference="9my-s7-6Uo"/>
+                                <include reference="mw8-re-GHa"/>
                             </mask>
                         </variation>
                     </view>
@@ -1252,7 +1248,7 @@
         <image name="User Group Filled-25.png" width="25" height="25"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C6B-2c-KyU"/>
-        <segue reference="DBZ-Q5-IPW"/>
+        <segue reference="R8u-FE-0fP"/>
+        <segue reference="yKg-hH-cK0"/>
     </inferredMetricsTieBreakers>
 </document>

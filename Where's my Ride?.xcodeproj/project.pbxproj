@@ -33,6 +33,7 @@
 		71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */; };
 		71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71592E181CC0647800640EE0 /* backgroundImage.jpg */; };
 		71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */; };
+		716BF7ED1CC533BD002DD02D /* giphy.gif in Resources */ = {isa = PBXBuildFile; fileRef = 716BF7EC1CC533BD002DD02D /* giphy.gif */; };
 		71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
@@ -85,6 +86,7 @@
 		71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowItWorksInfoViewController.swift; sourceTree = "<group>"; };
 		71592E181CC0647800640EE0 /* backgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage.jpg; path = "Where's my Ride?/backgroundImage.jpg"; sourceTree = "<group>"; };
 		71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundImageView.swift; path = "Where's my Ride?/BackgroundImageView.swift"; sourceTree = "<group>"; };
+		716BF7EC1CC533BD002DD02D /* giphy.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = giphy.gif; sourceTree = "<group>"; };
 		71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageAdmin.swift; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -229,6 +231,7 @@
 		71592E1C1CC0696200640EE0 /* BackgroundImage */ = {
 			isa = PBXGroup;
 			children = (
+				716BF7EC1CC533BD002DD02D /* giphy.gif */,
 				7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */,
 				715512941CC1CED0007DCFD5 /* MoreInfo.jpg */,
 				71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */,
@@ -369,6 +372,7 @@
 				3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */,
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
+				716BF7ED1CC533BD002DD02D /* giphy.gif in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
