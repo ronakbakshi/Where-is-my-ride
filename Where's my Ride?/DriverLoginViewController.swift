@@ -29,6 +29,14 @@ class DriverLoginViewController: UIViewController,Operation {
     
     override func viewWillAppear(animated: Bool) {
         self.navigationItem.title = "Driver Login"
+        
+//        let filePath = NSBundle.mainBundle().pathForResource("giphy", ofType: "gif")
+//        let gif = NSData(contentsOfFile: filePath!)
+//        
+//        let webViewBG = UIWebView(frame: self.view.frame)
+//        webViewBG.loadData(gif!, MIMEType: "image/gif", textEncodingName: String(), baseURL: NSURL())
+//        webViewBG.userInteractionEnabled = false;
+//        self.view.addSubview(webViewBG)
         usernameTF.text = ""
         passwordTF.text = ""
     }
