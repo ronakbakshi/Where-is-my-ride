@@ -23,6 +23,10 @@
 		3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149F41CBC7F5D008634F3 /* Info-25.png */; };
 		3E52BF821CC70D2E0004FA6E /* RideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */; };
 		3E52BF841CC70D960004FA6E /* RequestLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */; };
+		3E52BF861CC70EDD0004FA6E /* RideRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF851CC70EDD0004FA6E /* RideRequest.swift */; };
+		3E52BF881CC71E070004FA6E /* UserRegsiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */; };
+		3E52BF8A1CC71E1A0004FA6E /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */; };
+		3E52BF8C1CC726610004FA6E /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF8B1CC726610004FA6E /* UserDetails.swift */; };
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
@@ -86,6 +90,10 @@
 		3E3149F41CBC7F5D008634F3 /* Info-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-25.png"; sourceTree = "<group>"; };
 		3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequestViewController.swift; sourceTree = "<group>"; };
 		3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogViewController.swift; sourceTree = "<group>"; };
+		3E52BF851CC70EDD0004FA6E /* RideRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequest.swift; sourceTree = "<group>"; };
+		3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegsiterViewController.swift; sourceTree = "<group>"; };
+		3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		3E52BF8B1CC726610004FA6E /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		3E77B96D1CBFF2AB0074C566 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
@@ -193,6 +201,10 @@
 			children = (
 				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
 				3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */,
+				3E52BF851CC70EDD0004FA6E /* RideRequest.swift */,
+				3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */,
+				3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */,
+				3E52BF8B1CC726610004FA6E /* UserDetails.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -437,6 +449,7 @@
 				71592E111CC05DF900640EE0 /* TimingsInfoViewController.swift in Sources */,
 				3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */,
 				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
+				3E52BF861CC70EDD0004FA6E /* RideRequest.swift in Sources */,
 				3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */,
 				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				3E3149F11CBC5480008634F3 /* RegisterDriverViewController.swift in Sources */,
@@ -444,9 +457,12 @@
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
 				3E1395BA1CBC062600F09E44 /* Admin.swift in Sources */,
 				39BF124F1CA5B24800EB2D07 /* DriverMapViewController.swift in Sources */,
+				3E52BF8A1CC71E1A0004FA6E /* UserLoginViewController.swift in Sources */,
 				71592E131CC05E0800640EE0 /* LocationInfoViewController.swift in Sources */,
+				3E52BF8C1CC726610004FA6E /* UserDetails.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
 				71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */,
+				3E52BF881CC71E070004FA6E /* UserRegsiterViewController.swift in Sources */,
 				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
 				71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */,
 				715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */,

@@ -12,7 +12,7 @@ import UIKit
 
 
 @objc protocol Operation{
-    func onSuccess()
+    func onSuccess(sender:AnyObject)
     func onError(message:String)
     func fetchDriverData(driver:[DriverData])
     
@@ -59,7 +59,7 @@ class KinveyOperations {
                 if errorOrNil == nil {
                     //was successful!
                     //self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
-                    self.operationDelegate.onSuccess()
+                    self.operationDelegate.onSuccess(driver)
                 } else {
                     //there was an error with the update save
                     let message = errorOrNil.localizedDescription

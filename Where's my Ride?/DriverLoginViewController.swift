@@ -131,7 +131,7 @@ class DriverLoginViewController: UIViewController,Operation {
         
     }
     
-    func onSuccess() {
+    func onSuccess(sender:AnyObject) {
         print("status updated successfully")
     }
     func onError(message: String) {

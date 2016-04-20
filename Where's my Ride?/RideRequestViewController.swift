@@ -8,12 +8,41 @@
 
 import UIKit
 
-class RideRequestViewController: UIViewController {
+class RideRequestViewController: UIViewController,Operation{
+    
+    
+    @IBOutlet weak var contactNumberTF: UITextField!
+    
+    @IBOutlet weak var pickUpLocationTF: UITextField!
+    
 
+    @IBOutlet weak var dropLocationTF: UITextField!
+    
+    @IBOutlet weak var passengersTF: UITextField!
+    
+    
+    //var  kinveyObject :KinveyOperations!
+    
+     var store:KCSAppdataStore!
+    
+    var request :RideRequest!
+    
+    var pickupArray:[RideRequest]!
+    
+    
+   
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        pickupArray = []
+        
+        //self.kinveyObject = KinveyOperations(operations: self)
+        
+        store = KCSAppdataStore.storeWithOptions([
+            KCSStoreKeyCollectionName : "RideRequests",
+            KCSStoreKeyCollectionTemplateClass : RideRequest.self
+            ])
     }
 
     override func didReceiveMemoryWarning() {
@@ -22,5 +51,62 @@ class RideRequestViewController: UIViewController {
     }
     
 
+    @IBAction func submitBTN(sender: AnyObject) {
+        
+        
+        
+         request = RideRequest(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
+       
+      
+            store.saveObject(
+                
+                request,
+                
+                withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+                    if errorOrNil != nil {
+                        //save failed
+                        print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
+                    } else {
+                        
+                        print("Successfully saved Pickup Details (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+                        self.displayAlertControllerWithTitle("Success!!!", message: "Pickup details are updated")
+                    }
+                },
+                
+                withProgressBlock: nil
+            )
+            
+            
+        }
+    
+    
+    func displayAlertControllerWithTitle(title:String, message:String) {
+        let uiAlertController:UIAlertController = UIAlertController(title: title,
+            message: message, preferredStyle: UIAlertControllerStyle.Alert)
+        uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel,
+            handler:  nil))
+        self.presentViewController(uiAlertController, animated: true, completion: nil)
+        
+        
+        
+        
+    }
+    
+    func onSuccess(sender:AnyObject) {
+        
+        self.pickupArray = sender as! [RideRequest]
+        
+    }
+    func onError(message: String) {
+        
+        
+    }
+    func fetchDriverData(driver: [DriverData]) {
+        
+    }
+    
+
+        
+  
 
 }

@@ -75,7 +75,7 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         }
 
 
-    func onSuccess() {
+    func onSuccess(sender:AnyObject) {
         
     }
     func onError(message: String) {
