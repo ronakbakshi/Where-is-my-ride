@@ -1,20 +1,21 @@
 //
-//  RideRequest.swift
+//  RideRequests.swift
 //  Where's my Ride?
 //
-//  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/19/16.
+//  Created by Bakshi,Ronak on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
 
 import Foundation
 
-class RideRequest :NSObject {
+class RideRequests: NSObject {
+    
     var pickUpLocation:String!
     var dropOffLocation:String!
     var noOfPassengers:String!
     var phone:String!
     var entityId:String?
-    var requestArray:[RideRequest]!
+    var requestArray:[RideRequests]!
     init(pickUp:String,dropOffLocation:String,noOfPassengers:String,phone:String){
         
         self.pickUpLocation = pickUp

@@ -21,13 +21,13 @@ class RideRequestViewController: UIViewController,Operation{
     @IBOutlet weak var passengersTF: UITextField!
     
     
-    //var  kinveyObject :KinveyOperations!
+    var  kinveyObject :KinveyOperations!
     
      var store:KCSAppdataStore!
     
-    var request :RideRequest!
+    var request:RideRequests!
     
-    var pickupArray:[RideRequest]!
+    var pickupArray:[RideRequests]!
     
     
    
@@ -37,11 +37,11 @@ class RideRequestViewController: UIViewController,Operation{
 
         pickupArray = []
         
-        //self.kinveyObject = KinveyOperations(operations: self)
+        self.kinveyObject = KinveyOperations(operations: self)
         
         store = KCSAppdataStore.storeWithOptions([
             KCSStoreKeyCollectionName : "RideRequests",
-            KCSStoreKeyCollectionTemplateClass : RideRequest.self
+            KCSStoreKeyCollectionTemplateClass : RideRequests.self
             ])
     }
 
@@ -55,7 +55,7 @@ class RideRequestViewController: UIViewController,Operation{
         
         
         
-         request = RideRequest(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
+         request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
        
       
             store.saveObject(
@@ -94,7 +94,7 @@ class RideRequestViewController: UIViewController,Operation{
     
     func onSuccess(sender:AnyObject) {
         
-        self.pickupArray = sender as! [RideRequest]
+        self.pickupArray = sender as! [RideRequests]
         
     }
     func onError(message: String) {
