@@ -69,7 +69,7 @@ class RegisterDriverViewController: UIViewController, Operation {
     func onError(message:String) {
         self.displayAlertControllerWithFailure("Create account failed", message: message)
     }
-    func onSuccess() {
+    func onSuccess(sender:AnyObject) {
         self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
     }
     func fetchDriverData(driver: [DriverData]) {
