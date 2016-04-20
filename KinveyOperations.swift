@@ -14,15 +14,16 @@ import UIKit
 @objc protocol Operation{
     func onSuccess(sender:AnyObject)
     func onError(message:String)
-    func fetchDriverData(driver:[DriverData])
+    func fetchDriverData(driver:AnyObject)
     
 }
 
 class KinveyOperations {
     
-     var storeDriver:KCSAppdataStore!
+    var storeDriver:KCSAppdataStore!
     var storeDriverStatus:KCSAppdataStore!
     var storeLocation:KCSAppdataStore!
+    var storeRequests:KCSAppdataStore!
     var operationDelegate:Operation!
     let defaults = NSUserDefaults.standardUserDefaults()
     
@@ -43,8 +44,45 @@ class KinveyOperations {
         storeLocation = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "DriversLocation",
             KCSStoreKeyCollectionTemplateClass : Driver.self
+    
             ])
+        storeRequests = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
+            KCSStoreKeyCollectionName : "RideRequests",
+            KCSStoreKeyCollectionTemplateClass : Driver.self
+            ])
+        
     }
+    
+    
+    func retrieveData() {
+        print("inretrieve data")
+        let query = KCSQuery()
+        print(query.description)
+        storeRequests.queryWithQuery(
+            query,
+            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+                
+                if errorOrNil == nil{
+                    print("fetching")
+                    print(objectsOrNil[0])
+                    
+                    let objects = objectsOrNil as [AnyObject]
+                    for object in objects{
+                        let rideRequests = object as! RideRequests
+                        self.operationDelegate.fetchDriverData(rideRequests)
+                    }
+                    
+                }
+                else{
+                    print(errorOrNil.description)
+                }
+                
+            },
+            withProgressBlock: nil
+        )
+        
+    }
+    
     
     func addDriver(driver:DriverData) {
         
@@ -64,7 +102,7 @@ class KinveyOperations {
                     //there was an error with the update save
                     let message = errorOrNil.localizedDescription
                     //self.displayAlertControllerWithFailure("Create account failed", message: message)
-                     self.operationDelegate.onError(message)
+                    self.operationDelegate.onError(message)
                 }
             }
         )
@@ -95,7 +133,7 @@ class KinveyOperations {
             else {
                 
                 let driverDetails = objectsOrNil as! [DriverData]
-                 
+                
                 
                 print("Successfully (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
                 print(driverDetails)
@@ -121,11 +159,11 @@ class KinveyOperations {
             },
             withProgressBlock: nil )
         
-            }
+    }
     
     
     func driverLocation (driver:Driver) {
-         storeLocation.saveObject(
+        storeLocation.saveObject(
             driver,
             withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
                 if errorOrNil != nil {
@@ -153,44 +191,44 @@ class KinveyOperations {
         
         let query = KCSQuery(onField: "username", withExactMatchForValue: userValue)
         
-       storeLocation.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-        
-        if errorOrNil != nil {
+        storeLocation.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
             
-            //save failed
-            
-            print("Update failed, with error: %@", errorOrNil.localizedFailureReason)
-            
-        } else {
-            
-            print(objectsOrNil.count)
-            
-            driverLocation = objectsOrNil as! [Driver]
-            
-            print("driver data to be update\(driverLocation)")
-            
-            self.deleteExistingLocation(driverLocation)
-
-            
-            print("Successfully updated new location (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
-        }
-        
-        
-        }, withProgressBlock: nil)
-        
-        
-        
-        
-    storeLocation.saveObject(
-            driver,
-        withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
             if errorOrNil != nil {
+                
                 //save failed
+                
                 print("Update failed, with error: %@", errorOrNil.localizedFailureReason)
+                
             } else {
-                //save was successful
+                
+                print(objectsOrNil.count)
+                
+                driverLocation = objectsOrNil as! [Driver]
+                
+                print("driver data to be update\(driverLocation)")
+                
+                self.deleteExistingLocation(driverLocation)
+                
+                
                 print("Successfully updated new location (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
-            }            },
+            }
+            
+            
+            }, withProgressBlock: nil)
+        
+        
+        
+        
+        storeLocation.saveObject(
+            driver,
+            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+                if errorOrNil != nil {
+                    //save failed
+                    print("Update failed, with error: %@", errorOrNil.localizedFailureReason)
+                } else {
+                    //save was successful
+                    print("Successfully updated new location (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
+                }            },
             withProgressBlock: nil)
     }
     
@@ -203,14 +241,14 @@ class KinveyOperations {
             withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
                 if errorOrNil != nil {
                     print("Delete object Failed")
-                  
+                    
                 } else {
-                     print("driver location deleted successfully")
-                   
+                    print("driver location deleted successfully")
+                    
                 }
             },
             withProgressBlock: nil
         )
     }
-
+    
 }

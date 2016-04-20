@@ -12,7 +12,7 @@ import MapKit
 class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate ,Operation{
     
     @IBOutlet weak var locationView: MKMapView!
- 
+    
     let locationManager = CLLocationManager()
     
     var kinveyObject :KinveyOperations!
@@ -38,25 +38,25 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         self.locationManager.startUpdatingLocation()
         
         //self.locationView.showsUserLocation = true
-  
+        
     }
     
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
-      
+        
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
- 
+        
         if previousLocation.coordinate.latitude == 0.0 &&  previousLocation.coordinate.longitude == 0.0 {
             
             print("initial location \(previousLocation)")
             
             previousLocation = locations.last!
             
-          print("updated previous location second time\(previousLocation)")   // current location
+            print("updated previous location second time\(previousLocation)")   // current location
         }
         else {
             
@@ -70,7 +70,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
                 
                 self.locationManager.stopUpdatingLocation()
             }
-            
+                
             else {
                 let location = locations.last
                 
@@ -99,16 +99,14 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
                 self.kinveyObject.updateDriverLocation(driverLocation)
                 
             }
-                
-            }
-        
-        
+            
+        }
         
         
     }
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-
+        
         print("Errors"+error.localizedDescription)
         
     }
@@ -120,8 +118,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
         
     }
-    func fetchDriverData(driver: [DriverData]) {
-      
+    func fetchDriverData(driver: AnyObject) {
+        
     }
     
 }

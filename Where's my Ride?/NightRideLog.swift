@@ -9,6 +9,6 @@
 import Foundation
 class NightRideLog{
     
-    
-    
+    //fetching all owner posts from ownerPosts collection in kinvey
+        
 }

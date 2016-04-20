@@ -87,8 +87,8 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         
         
     }
-    func fetchDriverData(driver: [DriverData]) {
-        driverDetails = driver
+    func fetchDriverData(driver: AnyObject) {
+        driverDetails = driver as! [DriverData]
         print(driverDetails)
         tableView.reloadData()
     }
