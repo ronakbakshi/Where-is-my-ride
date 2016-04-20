@@ -55,6 +55,8 @@ class KinveyOperations {
     }
     
     
+    
+    
     func retrieveData() {
         print("inretrieve data")
         let query = KCSQuery()
