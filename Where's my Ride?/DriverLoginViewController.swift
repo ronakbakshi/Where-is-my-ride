@@ -142,9 +142,11 @@ class DriverLoginViewController: UIViewController,Operation {
         
         
     }
-    func fetchDriverData(driver: AnyObject) {
+    func fetchDriverData(driver: [DriverData]) {
         
     }
-    
+    func fetchRequests(request:RideRequests){
+        
+    }
     
 }

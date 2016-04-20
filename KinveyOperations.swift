@@ -14,7 +14,8 @@ import UIKit
 @objc protocol Operation{
     func onSuccess(sender:AnyObject)
     func onError(message:String)
-    func fetchDriverData(driver:AnyObject)
+    func fetchDriverData(driver:[DriverData])
+    func fetchRequests(request:RideRequests)
     
 }
 
@@ -62,14 +63,14 @@ class KinveyOperations {
             query,
             withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
                 
-                if errorOrNil == nil{
+                if errorOrNil == nil {
                     print("fetching")
-                    print(objectsOrNil[0])
-                    
+                    //print(objectsOrNil[0])
                     let objects = objectsOrNil as [AnyObject]
                     for object in objects{
                         let rideRequests = object as! RideRequests
-                        self.operationDelegate.fetchDriverData(rideRequests)
+                        
+                        self.operationDelegate.fetchRequests(rideRequests)
                     }
                     
                 }

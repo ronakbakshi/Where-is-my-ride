@@ -72,10 +72,12 @@ class RegisterDriverViewController: UIViewController, Operation {
     func onSuccess(sender:AnyObject) {
         self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
     }
-    func fetchDriverData(driver: AnyObject) {
+    func fetchDriverData(driver: [DriverData]) {
         
     }
-    
+    func fetchRequests(request:RideRequests){
+        
+    }
     
 
     override func didReceiveMemoryWarning() {
