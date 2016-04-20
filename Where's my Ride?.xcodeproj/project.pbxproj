@@ -21,6 +21,11 @@
 		3E3149F11CBC5480008634F3 /* RegisterDriverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3149F01CBC5480008634F3 /* RegisterDriverViewController.swift */; };
 		3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E3149F21CBC5828008634F3 /* DriverData.swift */; };
 		3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149F41CBC7F5D008634F3 /* Info-25.png */; };
+		3E52BF821CC70D2E0004FA6E /* RideRequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */; };
+		3E52BF841CC70D960004FA6E /* RequestLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */; };
+		3E52BF881CC71E070004FA6E /* UserRegsiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */; };
+		3E52BF8A1CC71E1A0004FA6E /* UserLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */; };
+		3E52BF8C1CC726610004FA6E /* UserDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E52BF8B1CC726610004FA6E /* UserDetails.swift */; };
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
@@ -33,6 +38,10 @@
 		71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */; };
 		71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 71592E181CC0647800640EE0 /* backgroundImage.jpg */; };
 		71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */; };
+		71648C211CC70C11003C14A9 /* RideTypeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71648C201CC70C11003C14A9 /* RideTypeTableViewController.swift */; };
+		71648C231CC71260003C14A9 /* NightRideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71648C221CC71260003C14A9 /* NightRideViewController.swift */; };
+		71648C251CC71F7D003C14A9 /* NightRideLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71648C241CC71F7D003C14A9 /* NightRideLog.swift */; };
+		71648C271CC7330C003C14A9 /* RideRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71648C261CC7330C003C14A9 /* RideRequests.swift */; };
 		716BF7EF1CC53763002DD02D /* logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 716BF7EE1CC53763002DD02D /* logo.jpg */; };
 		716BF7F61CC539F6002DD02D /* logo-29.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 716BF7F01CC539F6002DD02D /* logo-29.jpg */; };
 		716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 716BF7F11CC539F6002DD02D /* logo-58.jpg */; };
@@ -82,6 +91,11 @@
 		3E3149F01CBC5480008634F3 /* RegisterDriverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterDriverViewController.swift; path = ../RegisterDriverViewController.swift; sourceTree = "<group>"; };
 		3E3149F21CBC5828008634F3 /* DriverData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverData.swift; sourceTree = "<group>"; };
 		3E3149F41CBC7F5D008634F3 /* Info-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Info-25.png"; sourceTree = "<group>"; };
+		3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequestViewController.swift; sourceTree = "<group>"; };
+		3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestLogViewController.swift; sourceTree = "<group>"; };
+		3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRegsiterViewController.swift; sourceTree = "<group>"; };
+		3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginViewController.swift; sourceTree = "<group>"; };
+		3E52BF8B1CC726610004FA6E /* UserDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDetails.swift; sourceTree = "<group>"; };
 		3E77B96D1CBFF2AB0074C566 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
@@ -95,6 +109,10 @@
 		71592E161CC05E6200640EE0 /* HowItWorksInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HowItWorksInfoViewController.swift; sourceTree = "<group>"; };
 		71592E181CC0647800640EE0 /* backgroundImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = backgroundImage.jpg; path = "Where's my Ride?/backgroundImage.jpg"; sourceTree = "<group>"; };
 		71592E1A1CC0683700640EE0 /* BackgroundImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BackgroundImageView.swift; path = "Where's my Ride?/BackgroundImageView.swift"; sourceTree = "<group>"; };
+		71648C201CC70C11003C14A9 /* RideTypeTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideTypeTableViewController.swift; sourceTree = "<group>"; };
+		71648C221CC71260003C14A9 /* NightRideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightRideViewController.swift; sourceTree = "<group>"; };
+		71648C241CC71F7D003C14A9 /* NightRideLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NightRideLog.swift; sourceTree = "<group>"; };
+		71648C261CC7330C003C14A9 /* RideRequests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RideRequests.swift; sourceTree = "<group>"; };
 		716BF7EE1CC53763002DD02D /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
 		716BF7F01CC539F6002DD02D /* logo-29.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-29.jpg"; sourceTree = "<group>"; };
 		716BF7F11CC539F6002DD02D /* logo-58.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "logo-58.jpg"; sourceTree = "<group>"; };
@@ -188,6 +206,11 @@
 			isa = PBXGroup;
 			children = (
 				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
+				3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */,
+				3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */,
+				3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */,
+				3E52BF8B1CC726610004FA6E /* UserDetails.swift */,
+				71648C261CC7330C003C14A9 /* RideRequests.swift */,
 			);
 			name = User;
 			sourceTree = "<group>";
@@ -197,6 +220,9 @@
 			children = (
 				71154B9E1C97729600EFCF5B /* DriverRoutes */,
 				71154B9B1C97715400EFCF5B /* DriverLogin */,
+				71648C201CC70C11003C14A9 /* RideTypeTableViewController.swift */,
+				71648C221CC71260003C14A9 /* NightRideViewController.swift */,
+				71648C241CC71F7D003C14A9 /* NightRideLog.swift */,
 			);
 			name = Driver;
 			sourceTree = "<group>";
@@ -211,6 +237,7 @@
 				7EFA014C1CADE82500742E50 /* DriverEntity.swift */,
 				3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */,
 				3E77B96D1CBFF2AB0074C566 /* Constants.swift */,
+				3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -424,31 +451,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E52BF841CC70D960004FA6E /* RequestLogViewController.swift in Sources */,
 				3E1395B81CBC04DC00F09E44 /* AdminViewController.swift in Sources */,
 				3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */,
 				71592E151CC05E2A00640EE0 /* RoutesInfoViewController.swift in Sources */,
 				71592E111CC05DF900640EE0 /* TimingsInfoViewController.swift in Sources */,
 				3E3149F31CBC5828008634F3 /* DriverData.swift in Sources */,
 				7EFA014D1CADE82500742E50 /* DriverEntity.swift in Sources */,
+				71648C231CC71260003C14A9 /* NightRideViewController.swift in Sources */,
 				3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */,
 				71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */,
 				3E3149F11CBC5480008634F3 /* RegisterDriverViewController.swift in Sources */,
 				8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */,
 				71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */,
+				71648C211CC70C11003C14A9 /* RideTypeTableViewController.swift in Sources */,
 				3E1395BA1CBC062600F09E44 /* Admin.swift in Sources */,
 				39BF124F1CA5B24800EB2D07 /* DriverMapViewController.swift in Sources */,
+				3E52BF8A1CC71E1A0004FA6E /* UserLoginViewController.swift in Sources */,
 				71592E131CC05E0800640EE0 /* LocationInfoViewController.swift in Sources */,
+				3E52BF8C1CC726610004FA6E /* UserDetails.swift in Sources */,
 				8A8969ED1C9744E6006AD45F /* DriverLoginViewController.swift in Sources */,
 				71592E1B1CC0683700640EE0 /* BackgroundImageView.swift in Sources */,
+				3E52BF881CC71E070004FA6E /* UserRegsiterViewController.swift in Sources */,
 				71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */,
 				71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */,
 				715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */,
 				3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */,
 				8A8969EC1C9744E6006AD45F /* AppLaunchViewController.swift in Sources */,
+				71648C251CC71F7D003C14A9 /* NightRideLog.swift in Sources */,
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
+				3E52BF821CC70D2E0004FA6E /* RideRequestViewController.swift in Sources */,
 				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
 				9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */,
 				71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */,
+				71648C271CC7330C003C14A9 /* RideRequests.swift in Sources */,
 				8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */,
 				3E3149EF1CBC53AA008634F3 /* KinveyOperations.swift in Sources */,
 			);

@@ -12,7 +12,7 @@ import MapKit
 class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationManagerDelegate ,Operation{
     
     @IBOutlet weak var locationView: MKMapView!
- 
+    
     let locationManager = CLLocationManager()
     
     var locationService:KCSAppdataStore!
@@ -64,7 +64,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     override func didReceiveMemoryWarning() {
         
         super.didReceiveMemoryWarning()
-      
+        
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -274,20 +274,20 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
 
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-
+        
         print("Errors"+error.localizedDescription)
         
     }
     
-    func onSuccess() {
+    func onSuccess(sender:AnyObject) {
         
     }
     func onError(message: String) {
         
         
     }
-    func fetchDriverData(driver: [DriverData]) {
-      
+    func fetchDriverData(driver: AnyObject) {
+        
     }
     
 }

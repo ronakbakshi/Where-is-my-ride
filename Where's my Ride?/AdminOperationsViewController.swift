@@ -9,13 +9,18 @@
 import UIKit
 
 class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,Operation {
-
     
-  @IBOutlet weak var tableView: UITableView!
+    
+    
+    
+    
+    
+    
+    @IBOutlet weak var tableView: UITableView!
     
     var driverDetails:[DriverData] = []
     
-   var kinveyObject :KinveyOperations!
+    var kinveyObject :KinveyOperations!
     
     override func viewDidLoad() {
         
@@ -26,13 +31,13 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         navigationItem.leftBarButtonItem  = leftButton
         navigationItem.backBarButtonItem  = nil
         kinveyObject = KinveyOperations(operations: self)
-          tableView.reloadData()
+        tableView.reloadData()
         
         kinveyObject.fetchingDriverDetails()
     }
     
     override func viewWillAppear(animated: Bool) {
-         tableView.reloadData()
+        tableView.reloadData()
         
     }
     
@@ -40,13 +45,13 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         super.didReceiveMemoryWarning()
     }
     
- func logout(Any:AnyObject){
-       if KCSUser.activeUser() != nil {
-           KCSUser.activeUser().logout()
-          //displayAlertControllerWithTitle("Success", message:"logged out!")
+    func logout(Any:AnyObject){
+        if KCSUser.activeUser() != nil {
+            KCSUser.activeUser().logout()
+            //displayAlertControllerWithTitle("Success", message:"logged out!")
             let destinationVC:AdminViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("AdminViewController") as! AdminViewController
-        self.navigationController?.pushViewController(destinationVC, animated: true)
-       }   }
+            self.navigationController?.pushViewController(destinationVC, animated: true)
+        }   }
     
     
     
@@ -55,45 +60,45 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        
-//        if driverDetails != nil {
-//        return driverDetails.count
-//        }else{
-//            return 0
-//        }
+        //
+        //        if driverDetails != nil {
+        //        return driverDetails.count
+        //        }else{
+        //            return 0
+        //        }
         print(driverDetails.count)
         return driverDetails.count
-
+        
     }
-
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     
-           let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-            let driverLBL:UILabel = cell.viewWithTag(100) as! UILabel
-            driverLBL.text = driverDetails[indexPath.row].user
-            return cell
-        }
-
-
-    func onSuccess() {
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+        let driverLBL:UILabel = cell.viewWithTag(100) as! UILabel
+        driverLBL.text = driverDetails[indexPath.row].user
+        return cell
+    }
+    
+    
+    func onSuccess(sender:AnyObject) {
         
     }
     func onError(message: String) {
         
         
     }
-    func fetchDriverData(driver: [DriverData]) {
-        driverDetails = driver
+    func fetchDriverData(driver: AnyObject) {
+        driverDetails = driver as! [DriverData]
         print(driverDetails)
         tableView.reloadData()
     }
     
     
-
-    }
-
     
-    
+}
+
+
+
 
 
 

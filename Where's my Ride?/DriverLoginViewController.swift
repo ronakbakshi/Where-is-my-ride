@@ -70,9 +70,13 @@ class DriverLoginViewController: UIViewController,Operation {
                     
                     //the log-in was successful and the user is now the active user and credentials saved
                     //self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
-                    let routesViewController:DriverRoutesViewController = self.storyboard?.instantiateViewControllerWithIdentifier("DriverRoutesViewController") as! DriverRoutesViewController
+//                    let routesViewController:DriverRoutesViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RideTypeTableViewController") as! DriverRoutesViewController
+//                    
+//                    self.navigationController?.pushViewController(routesViewController, animated: true)
                     
-                    self.navigationController?.pushViewController(routesViewController, animated: true)
+                    let rideTypeTableViewController:RideTypeTableViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RideTypeTableViewController") as! RideTypeTableViewController
+                    
+                    self.navigationController?.pushViewController(rideTypeTableViewController, animated: true)
                     
                     
                 } else {
@@ -122,14 +126,14 @@ class DriverLoginViewController: UIViewController,Operation {
         
     }
     
-    func onSuccess() {
+    func onSuccess(sender:AnyObject) {
         print("status updated successfully")
     }
     func onError(message: String) {
         
         
     }
-    func fetchDriverData(driver: [DriverData]) {
+    func fetchDriverData(driver: AnyObject) {
         
     }
     
