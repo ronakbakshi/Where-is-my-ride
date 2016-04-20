@@ -26,6 +26,7 @@ class KinveyOperations {
     var storeLocation:KCSAppdataStore!
     var storeRequests:KCSAppdataStore!
     var operationDelegate:Operation!
+    
     let defaults = NSUserDefaults.standardUserDefaults()
     
     init(operations:Operation)
