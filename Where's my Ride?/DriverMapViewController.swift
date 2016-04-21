@@ -256,8 +256,8 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         
     }
     
-    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
-        -> MKAnnotationView! {
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation)
+        -> MKAnnotationView? {
             
             var pinView:MKPinAnnotationView! =
             mapView.dequeueReusableAnnotationViewWithIdentifier("pin") as! MKPinAnnotationView!
@@ -289,7 +289,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     func fetchDriverData(driver: [DriverData]) {
         
     }
-    func fetchRequests(request:RideRequests){
+    func fetchRequests(request:[RideRequests]){
         
     }
 }
