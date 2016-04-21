@@ -26,6 +26,8 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     var driverAnnotation = [MapPin]()
     
     
+    
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -59,8 +61,20 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             ])
         self.driversLocations()
         
+        self.navigationItem.title = "User Map View"
+        
+        let rightButton = UIBarButtonItem(title: "Request A Ride", style: UIBarButtonItemStyle.Plain, target: self, action: "nextViewController:")
+        self.navigationItem.rightBarButtonItem = rightButton
+        
        }
     
+    func nextViewController(sender: AnyObject){
+        
+        
+        let nvc:RideRequestViewController = self.storyboard?.instantiateViewControllerWithIdentifier("RideRequestViewController") as! RideRequestViewController
+        
+        self.navigationController?.pushViewController(nvc, animated: true)
+    }
     
     override func didReceiveMemoryWarning() {
         
@@ -155,7 +169,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             for(var i=0;i<self.driversLocation.count;i++) {
                 
                 if (self.driversLocation[i].username != "driver1"){
-                    let driver1Center = CLLocationCoordinate2D(latitude: self.driversLocation[i].location.coordinate.latitude, longitude: self.driversLocation[i].location.coordinate.longitude)
+                    let driver1Center = CLLocationCoordinate2D(latitude: self   .driversLocation[i].location.coordinate.latitude, longitude: self.driversLocation[i].location.coordinate.longitude)
                     let driver1Annotation:MapPin = MapPin(coordinate: driver1Center, title: "\(self.driversLocation[i].username)Location", subtitle: "Iam here", color: "")
                     self.driverAnnotation.append(driver1Annotation)
                 }

@@ -44,6 +44,10 @@ class RideRequestViewController: UIViewController,Operation{
             KCSStoreKeyCollectionTemplateClass : RideRequests.self
             ])
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Request A Ride"
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

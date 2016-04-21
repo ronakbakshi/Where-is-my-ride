@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -802,69 +802,27 @@
                                     <outlet property="delegate" destination="0Dv-5A-cR7" id="m1o-3H-qmv"/>
                                 </connections>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aor-zp-5hi">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="551" id="JXK-CP-fSD"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
-                                <state key="normal" title="Request  A Ride"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="JXK-CP-fSD"/>
-                                    </mask>
-                                </variation>
-                                <variation key="widthClass=regular">
-                                    <mask key="constraints">
-                                        <include reference="JXK-CP-fSD"/>
-                                    </mask>
-                                </variation>
-                                <connections>
-                                    <segue destination="RTE-zS-Ejs" kind="show" id="eG4-c0-gG8"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Aor-zp-5hi" firstAttribute="top" secondItem="tVl-8C-B4i" secondAttribute="bottom" constant="319" id="9cb-mb-6NB">
-                                <variation key="widthClass=regular" constant="-36"/>
-                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="9v2-24-YRe" secondAttribute="trailing" id="A2s-zX-mA7"/>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="leading" secondItem="hze-Nv-EbD" secondAttribute="leading" id="MfT-5d-M6O"/>
-                            <constraint firstItem="gg1-N5-Nbx" firstAttribute="top" secondItem="Aor-zp-5hi" secondAttribute="bottom" constant="138" id="R0o-Mv-mDn">
-                                <variation key="widthClass=regular" constant="493"/>
-                            </constraint>
-                            <constraint firstItem="9v2-24-YRe" firstAttribute="centerX" secondItem="Aor-zp-5hi" secondAttribute="centerX" id="V1b-7i-DL0">
-                                <variation key="widthClass=regular" constant="-112.5"/>
-                            </constraint>
                             <constraint firstItem="gg1-N5-Nbx" firstAttribute="top" secondItem="9v2-24-YRe" secondAttribute="bottom" constant="44" id="i76-Kd-TFL"/>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="top" secondItem="hze-Nv-EbD" secondAttribute="topMargin" constant="28" id="jg8-xO-PNw"/>
                         </constraints>
                         <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="Aor-zp-5hi"/>
-                            </mask>
                             <mask key="constraints">
-                                <exclude reference="9cb-mb-6NB"/>
                                 <exclude reference="A2s-zX-mA7"/>
                                 <exclude reference="MfT-5d-M6O"/>
-                                <exclude reference="V1b-7i-DL0"/>
                                 <exclude reference="jg8-xO-PNw"/>
-                                <exclude reference="R0o-Mv-mDn"/>
                                 <exclude reference="i76-Kd-TFL"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
-                            <mask key="subviews">
-                                <include reference="Aor-zp-5hi"/>
-                            </mask>
                             <mask key="constraints">
-                                <include reference="9cb-mb-6NB"/>
                                 <include reference="A2s-zX-mA7"/>
                                 <include reference="MfT-5d-M6O"/>
-                                <include reference="V1b-7i-DL0"/>
                                 <include reference="jg8-xO-PNw"/>
-                                <include reference="R0o-Mv-mDn"/>
                                 <include reference="i76-Kd-TFL"/>
                             </mask>
                         </variation>
@@ -876,12 +834,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmg-EW-8nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2223" y="1254"/>
+            <point key="canvasLocation" x="2271.75" y="1427"/>
         </scene>
         <!--Ride Request View Controller-->
         <scene sceneID="VJM-A7-VAG">
             <objects>
-                <viewController id="RTE-zS-Ejs" customClass="RideRequestViewController" customModule="Where_s_my_Ride_" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RideRequestViewController" id="RTE-zS-Ejs" customClass="RideRequestViewController" customModule="Where_s_my_Ride_" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Uh0-l3-lR7"/>
                         <viewControllerLayoutGuide type="bottom" id="C7M-AU-UNa"/>
@@ -1006,7 +964,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IxH-kV-bqL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1648" y="1591"/>
+            <point key="canvasLocation" x="1527" y="1841"/>
         </scene>
         <!--How It Works Info View Controller-->
         <scene sceneID="4CR-Fp-2YU">
