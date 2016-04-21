@@ -27,6 +27,9 @@ class UserLoginViewController: UIViewController {
 
     }
 
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.title = "Sign In"
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -58,8 +61,6 @@ class UserLoginViewController: UIViewController {
                 }
             }
         )
-        
-        
     }
     
     func displayAlertControllerWithTitle(title:String, message:String) {
