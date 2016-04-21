@@ -30,7 +30,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         
         
-        let initialLocation = CLLocation(latitude: 48.85, longitude: 2.35)
+        let initialLocation = CLLocation(latitude: 40.3497, longitude: 94.8806)
         
         let regionRadius: CLLocationDistance = 5000
         

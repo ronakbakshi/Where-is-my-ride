@@ -93,7 +93,7 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         tableView.reloadData()
     }
     
-    func fetchRequests(request:RideRequests){
+    func fetchRequests(request:[RideRequests]){
         
     }
     
