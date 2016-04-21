@@ -23,7 +23,7 @@ class DriverLoginViewController: UIViewController,Operation {
     override func viewDidLoad() {
         super.viewDidLoad()
         kinveyObject = KinveyOperations(operations: self)
-        self.view.addBackground()
+        //self.view.addBackground()
     }
     
     override func viewWillAppear(animated: Bool) {

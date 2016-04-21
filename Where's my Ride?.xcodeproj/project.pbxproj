@@ -78,6 +78,10 @@
 		8A8969EE1C9744E6006AD45F /* DriverRoutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E41C9744E6006AD45F /* DriverRoutes.swift */; };
 		8A8969EF1C9744E6006AD45F /* DriverRoutesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */; };
 		9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */; };
+		96A905C21CC95E5E0083B90B /* contact.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905BE1CC95E5E0083B90B /* contact.png */; };
+		96A905C31CC95E5E0083B90B /* How it Works.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905BF1CC95E5E0083B90B /* How it Works.png */; };
+		96A905C41CC95E5E0083B90B /* Routes.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C01CC95E5E0083B90B /* Routes.png */; };
+		96A905C51CC95E5E0083B90B /* Timings.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C11CC95E5E0083B90B /* Timings.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -156,6 +160,10 @@
 		8A8969E51C9744E6006AD45F /* DriverRoutesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverRoutesViewController.swift; sourceTree = "<group>"; };
 		8A8969E61C9744E6006AD45F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoViewController.swift; sourceTree = "<group>"; };
+		96A905BE1CC95E5E0083B90B /* contact.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact.png; sourceTree = "<group>"; };
+		96A905BF1CC95E5E0083B90B /* How it Works.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How it Works.png"; sourceTree = "<group>"; };
+		96A905C01CC95E5E0083B90B /* Routes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes.png; sourceTree = "<group>"; };
+		96A905C11CC95E5E0083B90B /* Timings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Timings.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +277,10 @@
 		71154BA01C97734F00EFCF5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				96A905BE1CC95E5E0083B90B /* contact.png */,
+				96A905BF1CC95E5E0083B90B /* How it Works.png */,
+				96A905C01CC95E5E0083B90B /* Routes.png */,
+				96A905C11CC95E5E0083B90B /* Timings.png */,
 				7177D0551CC6D9C10050731B /* launchScreenImage300-300.png */,
 				716BF7F01CC539F6002DD02D /* logo-29.jpg */,
 				716BF7F11CC539F6002DD02D /* logo-58.jpg */,
@@ -438,6 +450,7 @@
 				7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */,
 				7177D0581CC6DD6E0050731B /* bgHome.png in Resources */,
 				3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */,
+				96A905C31CC95E5E0083B90B /* How it Works.png in Resources */,
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
 				716BF7FB1CC539F6002DD02D /* logo-152.jpg in Resources */,
 				716BF7EF1CC53763002DD02D /* logo.jpg in Resources */,
@@ -450,9 +463,12 @@
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				716BF7FA1CC539F6002DD02D /* logo-76.jpg in Resources */,
 				7E9BA55C1CC91F0600856597 /* Taxi Filled-25.png in Resources */,
+				96A905C21CC95E5E0083B90B /* contact.png in Resources */,
 				7177D0561CC6D9C10050731B /* launchScreenImage300-300.png in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
 				715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */,
+				96A905C51CC95E5E0083B90B /* Timings.png in Resources */,
+				96A905C41CC95E5E0083B90B /* Routes.png in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
 				7E9BA55E1CC92ECC00856597 /* Marker Filled-25.png in Resources */,
 			);

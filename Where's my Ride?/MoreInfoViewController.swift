@@ -12,7 +12,7 @@ class MoreInfoViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addBackground2()
+       // self.view.addBackground2()
         // Do any additional setup after loading the view.
     }
 
