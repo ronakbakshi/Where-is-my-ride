@@ -15,7 +15,7 @@ import UIKit
     func onSuccess(sender:AnyObject)
     func onError(message:String)
     func fetchDriverData(driver:[DriverData])
-    func fetchRequests(request:RideRequests)
+    func fetchRequests(request:[RideRequests])
     
 }
 
@@ -50,7 +50,7 @@ class KinveyOperations {
             ])
         storeRequests = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "RideRequests",
-            KCSStoreKeyCollectionTemplateClass : Driver.self
+            KCSStoreKeyCollectionTemplateClass : RideRequests.self
             ])
         
     }
@@ -69,12 +69,12 @@ class KinveyOperations {
                 if errorOrNil == nil {
                     print("fetching")
                     //print(objectsOrNil[0])
-                    let objects = objectsOrNil as [AnyObject]
-                    for object in objects{
-                        let rideRequests = object as! RideRequests
-                        
-                        self.operationDelegate.fetchRequests(rideRequests)
-                    }
+                     let ride = objectsOrNil as! [RideRequests]
+                    
+                    print("requests in table list \(ride)")
+        
+                        self.operationDelegate.fetchRequests(ride)
+                    
                     
                 }
                 else{

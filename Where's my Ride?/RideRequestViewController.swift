@@ -105,7 +105,7 @@ class RideRequestViewController: UIViewController,Operation{
         
     }
     
-    func fetchRequests(request:RideRequests){
+    func fetchRequests(request:[RideRequests]){
         
     }
         

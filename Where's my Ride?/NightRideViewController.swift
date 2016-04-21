@@ -13,12 +13,19 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
     var kinveyOp:KinveyOperations!
     
     var requestList:[RideRequests] = []
+    
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Night Ride View Controller"
-        // Do any additional setup after loading the view.
+       
         kinveyOp = KinveyOperations(operations: self)
         kinveyOp.retrieveData()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        tableView.reloadData()
     }
     
     override func didReceiveMemoryWarning() {
@@ -29,18 +36,13 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        print(requestList.count)
         return requestList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-//        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("nightRideCell")!
-//        var keysArray:[String] =  []
-//        //        for key in routes.routeDictionary.keys.sort(){
-//        //            keysArray.append(key)
-//        //        }
-//        cell.textLabel?.text = keysArray[indexPath.row]
-//        cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("nightRideCell", forIndexPath: indexPath)
         let label1:UILabel = cell.viewWithTag(101) as! UILabel
@@ -67,9 +69,9 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
         
         
     }
-    func fetchRequests(request:RideRequests) {
-        requestList.append(request)
-        print(request)
+    func fetchRequests(request:[RideRequests]) {
+        requestList = request
+        print("fetchrequest \(request)")
         self.tableView.reloadData()
     }
     

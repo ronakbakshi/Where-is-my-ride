@@ -192,7 +192,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
     func fetchDriverData(driver: [DriverData]) {
         
     }
-    func fetchRequests(request:RideRequests){
+    func fetchRequests(request:[RideRequests]){
         
     }
 }
