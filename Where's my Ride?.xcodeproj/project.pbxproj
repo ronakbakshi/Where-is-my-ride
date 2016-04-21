@@ -30,6 +30,7 @@
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
+		71178A651CC96CE500F45CE8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71178A641CC96CE500F45CE8 /* Validation.swift */; };
 		715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 715512941CC1CED0007DCFD5 /* MoreInfo.jpg */; };
 		715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */; };
 		7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */; };
@@ -109,6 +110,7 @@
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
+		71178A641CC96CE500F45CE8 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		715512941CC1CED0007DCFD5 /* MoreInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MoreInfo.jpg; sourceTree = "<group>"; };
 		715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoImage.swift; sourceTree = "<group>"; };
 		7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightgreybackground.jpg; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 				71154B9F1C9772F300EFCF5B /* Application files */,
 				71154B9D1C97722A00EFCF5B /* Driver */,
 				71154B9C1C9771A500EFCF5B /* User */,
+				71178A641CC96CE500F45CE8 /* Validation.swift */,
 			);
 			path = "Where's my Ride?";
 			sourceTree = "<group>";
@@ -513,6 +516,7 @@
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				3E52BF821CC70D2E0004FA6E /* RideRequestViewController.swift in Sources */,
 				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
+				71178A651CC96CE500F45CE8 /* Validation.swift in Sources */,
 				9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */,
 				71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */,
 				71648C271CC7330C003C14A9 /* RideRequests.swift in Sources */,
