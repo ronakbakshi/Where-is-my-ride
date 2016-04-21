@@ -331,6 +331,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kjS-u6-qrS" id="e9r-22-lgb">
+                                            <rect key="frame" x="0.0" y="0.0" width="240" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="103" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TTh-EZ-IJE">
@@ -469,7 +470,7 @@
                                     <rect key="frame" x="0.0" y="37" width="800" height="528"/>
                                 </variation>
                                 <connections>
-                                    <outlet property="delegate" destination="Uhg-1Y-mTe" id="exM-HB-dd1"/>
+                                    <outlet property="delegate" destination="Uhg-1Y-mTe" id="ORW-Ny-J6X"/>
                                 </connections>
                             </mapView>
                         </subviews>
@@ -503,7 +504,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Zp-4B-duc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4768.5" y="151"/>
+            <point key="canvasLocation" x="4695" y="-105"/>
         </scene>
         <!--User Regsiter View Controller-->
         <scene sceneID="Hy2-V9-XgX">
@@ -821,11 +822,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Aor-zp-5hi" firstAttribute="top" secondItem="tVl-8C-B4i" secondAttribute="bottom" constant="319" id="9cb-mb-6NB"/>
+                            <constraint firstItem="Aor-zp-5hi" firstAttribute="top" secondItem="tVl-8C-B4i" secondAttribute="bottom" constant="319" id="9cb-mb-6NB">
+                                <variation key="widthClass=regular" constant="-36"/>
+                            </constraint>
                             <constraint firstAttribute="trailing" secondItem="9v2-24-YRe" secondAttribute="trailing" id="A2s-zX-mA7"/>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="leading" secondItem="hze-Nv-EbD" secondAttribute="leading" id="MfT-5d-M6O"/>
-                            <constraint firstItem="gg1-N5-Nbx" firstAttribute="top" secondItem="Aor-zp-5hi" secondAttribute="bottom" constant="138" id="R0o-Mv-mDn"/>
-                            <constraint firstItem="9v2-24-YRe" firstAttribute="centerX" secondItem="Aor-zp-5hi" secondAttribute="centerX" id="V1b-7i-DL0"/>
+                            <constraint firstItem="gg1-N5-Nbx" firstAttribute="top" secondItem="Aor-zp-5hi" secondAttribute="bottom" constant="138" id="R0o-Mv-mDn">
+                                <variation key="widthClass=regular" constant="493"/>
+                            </constraint>
+                            <constraint firstItem="9v2-24-YRe" firstAttribute="centerX" secondItem="Aor-zp-5hi" secondAttribute="centerX" id="V1b-7i-DL0">
+                                <variation key="widthClass=regular" constant="-112.5"/>
+                            </constraint>
                             <constraint firstItem="gg1-N5-Nbx" firstAttribute="top" secondItem="9v2-24-YRe" secondAttribute="bottom" constant="44" id="i76-Kd-TFL"/>
                             <constraint firstItem="9v2-24-YRe" firstAttribute="top" secondItem="hze-Nv-EbD" secondAttribute="topMargin" constant="28" id="jg8-xO-PNw"/>
                         </constraints>
@@ -834,11 +841,11 @@
                                 <exclude reference="Aor-zp-5hi"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="9cb-mb-6NB"/>
                                 <exclude reference="A2s-zX-mA7"/>
                                 <exclude reference="MfT-5d-M6O"/>
                                 <exclude reference="V1b-7i-DL0"/>
                                 <exclude reference="jg8-xO-PNw"/>
-                                <exclude reference="9cb-mb-6NB"/>
                                 <exclude reference="R0o-Mv-mDn"/>
                                 <exclude reference="i76-Kd-TFL"/>
                             </mask>
@@ -848,11 +855,11 @@
                                 <include reference="Aor-zp-5hi"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="9cb-mb-6NB"/>
                                 <include reference="A2s-zX-mA7"/>
                                 <include reference="MfT-5d-M6O"/>
                                 <include reference="V1b-7i-DL0"/>
                                 <include reference="jg8-xO-PNw"/>
-                                <include reference="9cb-mb-6NB"/>
                                 <include reference="R0o-Mv-mDn"/>
                                 <include reference="i76-Kd-TFL"/>
                             </mask>
@@ -865,7 +872,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nmg-EW-8nh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2490.75" y="1479"/>
+            <point key="canvasLocation" x="2223" y="1254"/>
         </scene>
         <!--Request Log View Controller-->
         <scene sceneID="AOv-I2-sAo">

@@ -65,6 +65,9 @@
 		71BA22731C9762FC00B70A34 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA226A1C9762FC00B70A34 /* WebKit.framework */; };
 		71BA22751C97644D00B70A34 /* UserMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22741C97644D00B70A34 /* UserMapViewController.swift */; };
 		71BA22771C97655A00B70A34 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71BA22761C97655A00B70A34 /* AppDelegate.swift */; };
+		7E2E39521CC873D700FDF43B /* MapPin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E2E39511CC873D700FDF43B /* MapPin.swift */; };
+		7E9BA55C1CC91F0600856597 /* Taxi Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9BA55B1CC91F0600856597 /* Taxi Filled-25.png */; };
+		7E9BA55E1CC92ECC00856597 /* Marker Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7E9BA55D1CC92ECC00856597 /* Marker Filled-25.png */; };
 		7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F061C94726D00F0649D /* Assets.xcassets */; };
 		7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EA15F081C94726D00F0649D /* LaunchScreen.storyboard */; };
 		7EA15F171C94907200F0649D /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EA15F161C94907200F0649D /* MapKit.framework */; };
@@ -136,6 +139,9 @@
 		71BA226A1C9762FC00B70A34 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		71BA22741C97644D00B70A34 /* UserMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserMapViewController.swift; sourceTree = "<group>"; };
 		71BA22761C97655A00B70A34 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7E2E39511CC873D700FDF43B /* MapPin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapPin.swift; sourceTree = "<group>"; };
+		7E9BA55B1CC91F0600856597 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Taxi Filled-25.png"; sourceTree = "<group>"; };
+		7E9BA55D1CC92ECC00856597 /* Marker Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Marker Filled-25.png"; sourceTree = "<group>"; };
 		7EA15EFC1C94726D00F0649D /* Where's my Ride?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Where's my Ride?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EA15F061C94726D00F0649D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7EA15F091C94726D00F0649D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -205,7 +211,9 @@
 		71154B9C1C9771A500EFCF5B /* User */ = {
 			isa = PBXGroup;
 			children = (
+				7E9BA55D1CC92ECC00856597 /* Marker Filled-25.png */,
 				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
+				7E9BA55B1CC91F0600856597 /* Taxi Filled-25.png */,
 				3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */,
 				3E52BF871CC71E070004FA6E /* UserRegsiterViewController.swift */,
 				3E52BF891CC71E1A0004FA6E /* UserLoginViewController.swift */,
@@ -238,6 +246,7 @@
 				3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */,
 				3E77B96D1CBFF2AB0074C566 /* Constants.swift */,
 				3E52BF831CC70D960004FA6E /* RequestLogViewController.swift */,
+				7E2E39511CC873D700FDF43B /* MapPin.swift */,
 			);
 			name = DriverRoutes;
 			sourceTree = "<group>";
@@ -294,12 +303,12 @@
 				715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */,
 			);
 			name = BackgroundImage;
-			path = ..;
 			sourceTree = "<group>";
 		};
 		7EA15EF31C94726D00F0649D = {
 			isa = PBXGroup;
 			children = (
+				71592E1C1CC0696200640EE0 /* BackgroundImage */,
 				7EA15F151C94904300F0649D /* Frameworks */,
 				7EA15EFE1C94726D00F0649D /* Where's my Ride? */,
 				7EA15EFD1C94726D00F0649D /* Products */,
@@ -317,9 +326,7 @@
 		7EA15EFE1C94726D00F0649D /* Where's my Ride? */ = {
 			isa = PBXGroup;
 			children = (
-				71592E1C1CC0696200640EE0 /* BackgroundImage */,
 				9656D4481CC022AE0098C1F5 /* MoreInfo */,
-				3E3149ED1CBC5379008634F3 /* kinvey */,
 				3E1395B41CBC045A00F09E44 /* Admin */,
 				8A8969E61C9744E6006AD45F /* Info.plist */,
 				71154BA11C97736900EFCF5B /* Home page */,
@@ -353,6 +360,7 @@
 		9656D4481CC022AE0098C1F5 /* MoreInfo */ = {
 			isa = PBXGroup;
 			children = (
+				3E3149ED1CBC5379008634F3 /* kinvey */,
 				9656D4491CC022D80098C1F5 /* MoreInfoViewController.swift */,
 				71592E101CC05DF900640EE0 /* TimingsInfoViewController.swift */,
 				71592E121CC05E0800640EE0 /* LocationInfoViewController.swift */,
@@ -437,10 +445,12 @@
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				716BF7FA1CC539F6002DD02D /* logo-76.jpg in Resources */,
+				7E9BA55C1CC91F0600856597 /* Taxi Filled-25.png in Resources */,
 				7177D0561CC6D9C10050731B /* launchScreenImage300-300.png in Resources */,
 				7EA15F0A1C94726D00F0649D /* LaunchScreen.storyboard in Resources */,
 				715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */,
 				7EA15F071C94726D00F0649D /* Assets.xcassets in Resources */,
+				7E9BA55E1CC92ECC00856597 /* Marker Filled-25.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +462,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3E52BF841CC70D960004FA6E /* RequestLogViewController.swift in Sources */,
+				7E2E39521CC873D700FDF43B /* MapPin.swift in Sources */,
 				3E1395B81CBC04DC00F09E44 /* AdminViewController.swift in Sources */,
 				3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */,
 				71592E151CC05E2A00640EE0 /* RoutesInfoViewController.swift in Sources */,
@@ -540,7 +551,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -579,7 +590,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
