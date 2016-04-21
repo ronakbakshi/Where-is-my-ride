@@ -19,7 +19,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21s-NV-KCG">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="21s-NV-KCG">
                                 <rect key="frame" x="360" y="238" width="39" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Reset"/>
@@ -30,7 +30,7 @@
                                     <action selector="ResetBTN:" destination="qHN-ah-l4s" eventType="touchUpInside" id="YDE-op-Z9k"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-w2-o08">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="00u-w2-o08">
                                 <rect key="frame" x="190" y="238" width="38" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <state key="normal" title="Login"/>
@@ -41,7 +41,7 @@
                                     <action selector="loginBTN:" destination="qHN-ah-l4s" eventType="touchUpInside" id="tDj-70-VvJ"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-JH-FLP">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="m2u-JH-FLP">
                                 <rect key="frame" x="331" y="79" width="97" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="97" id="H5g-jE-By2"/>
@@ -55,7 +55,7 @@
                                     </mask>
                                 </variation>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-Bp-ZHf">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0D1-Bp-ZHf">
                                 <rect key="frame" x="331" y="164" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
@@ -84,18 +84,21 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="AbM-hM-Bkh"/>
+                                <exclude reference="Myf-Ix-FyZ"/>
                                 <exclude reference="SkR-Th-Xrc"/>
                                 <exclude reference="c3U-hT-HAA"/>
                                 <exclude reference="C06-8v-5Bc"/>
                                 <exclude reference="TCf-qj-2Pr"/>
-                                <exclude reference="AbM-hM-Bkh"/>
-                                <exclude reference="Myf-Ix-FyZ"/>
                                 <exclude reference="M3K-6C-Dwd"/>
                                 <exclude reference="RQK-Js-bzs"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
+                                <exclude reference="1XU-qy-eeQ"/>
+                                <include reference="AbM-hM-Bkh"/>
+                                <include reference="Myf-Ix-FyZ"/>
                                 <exclude reference="17t-vQ-eRJ"/>
                                 <include reference="SkR-Th-Xrc"/>
                                 <include reference="c3U-hT-HAA"/>
@@ -105,9 +108,6 @@
                                 <exclude reference="ZeX-Sl-RLQ"/>
                                 <exclude reference="bBe-yL-heE"/>
                                 <exclude reference="tJL-Fo-nTZ"/>
-                                <exclude reference="1XU-qy-eeQ"/>
-                                <include reference="AbM-hM-Bkh"/>
-                                <include reference="Myf-Ix-FyZ"/>
                                 <exclude reference="0I5-cm-CIj"/>
                                 <include reference="M3K-6C-Dwd"/>
                                 <include reference="RQK-Js-bzs"/>
@@ -1180,28 +1180,28 @@
                                     <rect key="frame" x="0.0" y="28" width="800" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How it Works.png" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-Mf-mRS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How it Works_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-Mf-mRS">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="13" y="77" width="379" height="248"/>
+                                    <rect key="frame" x="13" y="77" width="342" height="298"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Timings.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-e1-iJW">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Timings_Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-e1-iJW">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="13" y="333" width="384" height="247"/>
+                                    <rect key="frame" x="13" y="280" width="343" height="300"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Routes.png" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-l2-WFK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Routes_Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-l2-WFK">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="413" y="333" width="374" height="247"/>
+                                    <rect key="frame" x="444" y="280" width="343" height="300"/>
                                 </variation>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-C0-Gbs">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-C0-Gbs">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
                                 <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="413" y="77" width="374" height="248"/>
+                                    <rect key="frame" x="441" y="77" width="346" height="304"/>
                                 </variation>
                             </imageView>
                         </subviews>
@@ -1225,14 +1225,14 @@
                                 <exclude reference="HJd-C0-Gbs"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="dJq-5L-luq"/>
-                                <exclude reference="lR5-bD-uxf"/>
-                                <exclude reference="Fad-Vu-zl8"/>
-                                <exclude reference="jot-gv-bKY"/>
-                                <exclude reference="rQJ-yT-anJ"/>
-                                <exclude reference="gmy-xq-IVp"/>
                                 <exclude reference="2nz-KO-5IG"/>
                                 <exclude reference="vzJ-XS-owZ"/>
+                                <exclude reference="jot-gv-bKY"/>
+                                <exclude reference="rQJ-yT-anJ"/>
+                                <exclude reference="Fad-Vu-zl8"/>
+                                <exclude reference="dJq-5L-luq"/>
+                                <exclude reference="lR5-bD-uxf"/>
+                                <exclude reference="gmy-xq-IVp"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -1244,14 +1244,14 @@
                                 <include reference="HJd-C0-Gbs"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="dJq-5L-luq"/>
-                                <include reference="lR5-bD-uxf"/>
-                                <include reference="Fad-Vu-zl8"/>
-                                <include reference="jot-gv-bKY"/>
-                                <include reference="rQJ-yT-anJ"/>
-                                <include reference="gmy-xq-IVp"/>
                                 <include reference="2nz-KO-5IG"/>
                                 <include reference="vzJ-XS-owZ"/>
+                                <include reference="jot-gv-bKY"/>
+                                <include reference="rQJ-yT-anJ"/>
+                                <include reference="Fad-Vu-zl8"/>
+                                <include reference="dJq-5L-luq"/>
+                                <include reference="lR5-bD-uxf"/>
+                                <include reference="gmy-xq-IVp"/>
                             </mask>
                         </variation>
                     </view>
@@ -1822,13 +1822,13 @@
     </scenes>
     <resources>
         <image name="Administrator.png" width="25" height="25"/>
-        <image name="How it Works.png" width="342" height="298"/>
+        <image name="How it Works_up.png" width="342" height="299"/>
         <image name="Info-25.png" width="25" height="25"/>
-        <image name="Routes.png" width="343" height="300"/>
+        <image name="Routes_Up.png" width="342" height="299"/>
         <image name="Taxi Filled-25.png" width="25" height="25"/>
-        <image name="Timings.png" width="343" height="300"/>
+        <image name="Timings_Up.png" width="342" height="299"/>
         <image name="User Group Filled-25.png" width="25" height="25"/>
-        <image name="contact.png" width="346" height="304"/>
+        <image name="contact_up.png" width="342" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C6B-2c-KyU"/>
