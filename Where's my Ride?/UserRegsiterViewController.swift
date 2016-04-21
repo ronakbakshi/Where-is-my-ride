@@ -9,7 +9,8 @@
 import UIKit
 
 class UserRegsiterViewController: UIViewController {
-    
+
+
     
     @IBOutlet weak var userNameTF: UITextField!
     
@@ -22,6 +23,10 @@ class UserRegsiterViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     
     var store : KCSAppdataStore!
+    
+//    let contactRegex = "[0-9]"
+//    let emailTest = NSPredicate(format:"SELF MATCHES %@", contactRegex)
+//    let result = emailTest.evaluateWithObject(emailTF.text)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +57,8 @@ class UserRegsiterViewController: UIViewController {
                 if errorOrNil == nil {
                     //was successful!
                     if self.userNameTF.text != "" && self.firstNameTF.text != "" && self.lastNameTF.text != "" && self.contactTF.text != "" && self.placeTF.text != "self." && self.passwordTF.text != ""{
+                        
+                        
                         self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
                         let destinationVC:UserLoginViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("UserLoginViewController") as! UserLoginViewController
                         self.navigationController?.pushViewController(destinationVC, animated: true)
