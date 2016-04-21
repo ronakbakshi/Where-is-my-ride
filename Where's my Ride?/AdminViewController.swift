@@ -31,6 +31,7 @@ class AdminViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        
         self.view.addBackground1()
         super.viewDidLoad()
         
@@ -41,6 +42,8 @@ class AdminViewController: UIViewController {
         
         self.navigationItem.title = "Admin Login"
         self.navigationItem.backBarButtonItem = nil
+        
+        //self.navigationController?.navigationItem.hidesBackButton = true
     }
 
     @IBAction func adminRegisterBTN(sender: AnyObject) {
@@ -87,13 +90,14 @@ class AdminViewController: UIViewController {
         KCSUser.loginWithUsername(adminUserNameTF.text!,password: adminPwdTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
-                    //the log-in was successful and the user is now the active user and credentials saved
-                    //self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
-                 let destinationVC:AdminOperationsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("admin_Driver") as! AdminOperationsViewController
+                    
+                    let destinationVC:AdminOperationsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("admin_Driver") as! AdminOperationsViewController
                     self.navigationController?.pushViewController(destinationVC, animated: true)
+                    
                     print("success")
+                    
                 } else {
-                    //there was an error with the update save
+                   
                     let message = errorOrNil.localizedDescription
                     self.displayAlertControllerWithTitle("Login failed", message: message)
                 }

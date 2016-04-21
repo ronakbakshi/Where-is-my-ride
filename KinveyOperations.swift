@@ -95,7 +95,7 @@ class KinveyOperations {
             password:driver.password,
             fieldsAndValues:[
                 KCSUserAttributeEmail : driver.emailId ,
-                //status : driver.status ,
+                //contact : driver.contact
             ],
             withCompletionBlock: { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {

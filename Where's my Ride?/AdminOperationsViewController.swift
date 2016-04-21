@@ -9,12 +9,7 @@
 import UIKit
 
 class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITableViewDelegate,Operation {
-    
-    
-    
-    
-    
-    
+
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,14 +24,21 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         let leftButton = UIBarButtonItem(title: "Logout", style: UIBarButtonItemStyle.Plain, target: self, action: "logout:")
         leftButton.tintColor = UIColor.redColor()
         navigationItem.leftBarButtonItem  = leftButton
-        navigationItem.backBarButtonItem  = nil
+        
+        
+        let rightButton = UIBarButtonItem(title: "AddDriver", style: UIBarButtonItemStyle.Plain, target: self, action: "add:")
+        rightButton.tintColor = UIColor.redColor()
+        navigationItem.rightBarButtonItem  = rightButton
+      
         kinveyObject = KinveyOperations(operations: self)
+        
         tableView.reloadData()
         
         kinveyObject.fetchingDriverDetails()
     }
     
     override func viewWillAppear(animated: Bool) {
+        
         tableView.reloadData()
         
     }
@@ -48,24 +50,23 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     func logout(Any:AnyObject){
         if KCSUser.activeUser() != nil {
             KCSUser.activeUser().logout()
-            //displayAlertControllerWithTitle("Success", message:"logged out!")
+           
             let destinationVC:AdminViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("AdminViewController") as! AdminViewController
             self.navigationController?.pushViewController(destinationVC, animated: true)
         }   }
     
-    
+    func add(Any:AnyObject){
+  
+            let destination:RegisterDriverViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("register") as! RegisterDriverViewController
+            self.navigationController?.pushViewController(destination, animated: true)
+          }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        //
-        //        if driverDetails != nil {
-        //        return driverDetails.count
-        //        }else{
-        //            return 0
-        //        }
+       
         print(driverDetails.count)
         return driverDetails.count
         
@@ -74,8 +75,15 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        let driverLBL:UILabel = cell.viewWithTag(100) as! UILabel
-        driverLBL.text = driverDetails[indexPath.row].user
+        let driverNameLBL:UILabel = cell.viewWithTag(100) as! UILabel
+        let driverEmailLBL:UILabel = cell.viewWithTag(200) as! UILabel
+        let driverContactLBL:UILabel = cell.viewWithTag(300) as! UILabel
+        let driverImage:UIImageView = cell.viewWithTag(400) as! UIImageView
+        driverNameLBL.text = driverDetails[indexPath.row].user
+         driverEmailLBL.text = driverDetails[indexPath.row].emailId
+        driverContactLBL.text = driverDetails[indexPath.row].contact
+        driverImage.image = UIImage(named: "driver.png")
+        
         return cell
     }
     

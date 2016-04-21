@@ -139,7 +139,6 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
 
             self.locationView.addAnnotations(self.driverAnnotation)
 
-            
             }, withProgressBlock: nil)
 
         
