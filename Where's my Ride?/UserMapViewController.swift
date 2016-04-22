@@ -32,16 +32,16 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         super.viewDidLoad()
         
-//        
-//        
-//        let initialLocation = CLLocation(latitude: 48.85, longitude: 2.35)
-//        
-//        let regionRadius: CLLocationDistance = 5000
-//        
-//        let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,regionRadius * 2.0, regionRadius * 2.0)
-//       
-//        locationView.setRegion(coordinateRegion, animated: true)
-
+        //
+        //
+        //        let initialLocation = CLLocation(latitude: 48.85, longitude: 2.35)
+        //
+        //        let regionRadius: CLLocationDistance = 5000
+        //
+        //        let coordinateRegion = MKCoordinateRegionMakeWithDistance(initialLocation.coordinate,regionRadius * 2.0, regionRadius * 2.0)
+        //
+        //        locationView.setRegion(coordinateRegion, animated: true)
+        
         
         self.locationView.delegate = self
         
@@ -66,7 +66,10 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         let rightButton = UIBarButtonItem(title: "Request A Ride", style: UIBarButtonItemStyle.Plain, target: self, action: "nextViewController:")
         self.navigationItem.rightBarButtonItem = rightButton
         
-       }
+        
+    }
+    
+    
     
     func nextViewController(sender: AnyObject){
         
@@ -82,6 +85,26 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         // Dispose of any resources that can be recreated.
         
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        let backButton = UIBarButtonItem(title: "Sign Out", style: UIBarButtonItemStyle.Plain, target: self, action: "previousViewController:")
+        self.navigationItem.backBarButtonItem = backButton
+        self.navigationItem.backBarButtonItem?.title = "Sign Out"
+        //
+        ////        let backButton = UIBarButtonItem(title: "Request A Ride", style: UIBarButtonItemStyle.Plain, target: self, action: "previousViewController:")
+        ////        self.navigationItem.rightBarButtonItem = backButton
+        //
+        //
+    }
+    
+    
+    func previousViewController(sender: AnyObject){
+        
+        
+        let pvc:UserLoginViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UserLoginViewController") as! UserLoginViewController
+        
+        self.navigationController?.pushViewController(pvc, animated: true)
     }
     
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -103,7 +126,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.locationView.addOverlay(circle)
         
         self.locationManager.stopUpdatingLocation()
-
+        
         
     }
     
@@ -119,44 +142,44 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         
         return nil
     }
-
+    
     
     
     
     func driversLocations() {
-//        
-//        let query:KCSQuery = KCSQuery()
-//        locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-//            self.driversLocation = objectsOrNil as! [Driver]
-//            
-//            
-//            if let _ = objectsOrNil {
-//                
-//                       // print(objectsOrNil)
-//                for(var i=0;i<self.driversLocation.count;i++) {
-//                    
-//                    if (self.driversLocation[i].username != "driver1"){
-//                        
-//                        let driver1Center = CLLocationCoordinate2D(latitude: self.driversLocation[i].location.coordinate.latitude, longitude: self.driversLocation[i].location.coordinate.longitude)
-//                        let driver1Annotation:MapPin = MapPin(coordinate: driver1Center, title: "\(self.driversLocation[i].username)Location", subtitle: "Iam here", color: "")
-//                        self.driverAnnotation.append(driver1Annotation)
-//                    }
-//                }
-//                
-//                self.locationView.addAnnotations(self.driverAnnotation)
-//
-//            }
-//            else{
-//                self.displayAlertControllerWithTitle("Oops!☹️", message: "Drivers are yet to start!")
-//                let driver1Coordinate = CLLocationCoordinate2DMake(40.3497,94.8806)
-//                let driver1Annotation = MKPointAnnotation()
-////                driver1Annotation.title =  (objectsOrNil[0].username)+" Location"
-//                driver1Annotation.coordinate = driver1Coordinate
-////                self.locationView.addAnnotation(driver1Annotation)
-//
-//            }
-//            
-//            }, withProgressBlock: nil)
+        //
+        //        let query:KCSQuery = KCSQuery()
+        //        locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
+        //            self.driversLocation = objectsOrNil as! [Driver]
+        //
+        //
+        //            if let _ = objectsOrNil {
+        //
+        //                       // print(objectsOrNil)
+        //                for(var i=0;i<self.driversLocation.count;i++) {
+        //
+        //                    if (self.driversLocation[i].username != "driver1"){
+        //
+        //                        let driver1Center = CLLocationCoordinate2D(latitude: self.driversLocation[i].location.coordinate.latitude, longitude: self.driversLocation[i].location.coordinate.longitude)
+        //                        let driver1Annotation:MapPin = MapPin(coordinate: driver1Center, title: "\(self.driversLocation[i].username)Location", subtitle: "Iam here", color: "")
+        //                        self.driverAnnotation.append(driver1Annotation)
+        //                    }
+        //                }
+        //
+        //                self.locationView.addAnnotations(self.driverAnnotation)
+        //
+        //            }
+        //            else{
+        //                self.displayAlertControllerWithTitle("Oops!☹️", message: "Drivers are yet to start!")
+        //                let driver1Coordinate = CLLocationCoordinate2DMake(40.3497,94.8806)
+        //                let driver1Annotation = MKPointAnnotation()
+        ////                driver1Annotation.title =  (objectsOrNil[0].username)+" Location"
+        //                driver1Annotation.coordinate = driver1Coordinate
+        ////                self.locationView.addAnnotation(driver1Annotation)
+        //
+        //            }
+        //
+        //            }, withProgressBlock: nil)
         
         
         let query:KCSQuery = KCSQuery()
@@ -180,7 +203,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
             
             }, withProgressBlock: nil)
         
-
+        
         
         
     }
@@ -193,33 +216,33 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     }
     
     
-        func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
-            -> MKAnnotationView! {
-    
-                let annotationReuseId = "Place"
-                var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId)
-                if annotation is MKUserLocation {
-                    anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
-                    anView!.image = UIImage(named: "Marker Filled-25.png")
-                    anView!.backgroundColor = UIColor.greenColor()
-                    anView!.canShowCallout = true
-                    
-                }
-                if anView == nil {
-                    anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
-                    anView!.image = UIImage(named: "Taxi Filled-25.png")
-                    anView!.backgroundColor = UIColor.greenColor()
-                    anView!.canShowCallout = true
-                    
-                } else {
-                    anView!.annotation = annotation
-                    anView!.image = UIImage(named: "Taxi Filled-25.png")
-                    anView!.backgroundColor = UIColor.greenColor()
-                    anView!.canShowCallout = true
-                    
-                }
-                return anView
-        }
+    func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
+        -> MKAnnotationView! {
+            
+            let annotationReuseId = "Place"
+            var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId)
+            if annotation is MKUserLocation {
+                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
+                anView!.image = UIImage(named: "Marker Filled-25.png")
+                anView!.backgroundColor = UIColor.greenColor()
+                anView!.canShowCallout = true
+                
+            }
+            if anView == nil {
+                anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
+                anView!.image = UIImage(named: "Taxi Filled-25.png")
+                anView!.backgroundColor = UIColor.greenColor()
+                anView!.canShowCallout = true
+                
+            } else {
+                anView!.annotation = annotation
+                anView!.image = UIImage(named: "Taxi Filled-25.png")
+                anView!.backgroundColor = UIColor.greenColor()
+                anView!.canShowCallout = true
+                
+            }
+            return anView
+    }
     
     
     func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {

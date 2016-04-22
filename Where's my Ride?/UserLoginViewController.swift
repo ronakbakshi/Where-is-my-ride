@@ -11,25 +11,25 @@ import UIKit
 class UserLoginViewController: UIViewController {
     
     
-    
-    
-    
     @IBOutlet weak var useLoginTF: UITextField!
- 
+    
     @IBOutlet weak var userPasswordTF: UITextField!
     
-   var store:KCSAppdataStore!
-    
-    
+    var store:KCSAppdataStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
-
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Sign In"
-    }
+    
+//    override func viewWillAppear(animated: Bool) {
+//        self.navigationItem.title = "Sign In"
+//    }
+    
+//    override func viewWillDisappear(animated: Bool) {
+//        self.navigationItem.title = "Sign Out"
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
@@ -42,17 +42,21 @@ class UserLoginViewController: UIViewController {
         self.navigationItem.backBarButtonItem = nil
     }
     
-
-
+    
+    
     @IBAction func signInBTN(sender: AnyObject) {
         
         KCSUser.loginWithUsername(useLoginTF.text!,password: userPasswordTF.text!,withCompletionBlock:
             { (user: KCSUser!, errorOrNil: NSError!, result: KCSUserActionResult) -> Void in
                 if errorOrNil == nil {
                     //the log-in was successful and the user is now the active user and credentials saved
-                    self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
+                    //                    self.displayAlertControllerWithTitle("Login successful", message: "Welcome!")
                     //                 let destinationVC:AdminOperationsViewController = self.storyboard?.instantiateViewControllerWithIdentifier("admin_Driver") as! AdminOperationsViewController
                     //                    self.navigationController?.pushViewController(destinationVC, animated: true)
+                    
+                    let userMapViewController:UserMapViewController = self.storyboard?.instantiateViewControllerWithIdentifier("userMapViewController") as! UserMapViewController
+                    
+                    self.navigationController?.pushViewController(userMapViewController, animated: true)
                     print("success")
                 } else {
                     //there was an error with the update save
@@ -70,5 +74,6 @@ class UserLoginViewController: UIViewController {
         
     }
     
-
+    
+    
 }

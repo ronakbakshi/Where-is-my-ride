@@ -14,7 +14,7 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
     
     var requestList:[RideRequests] = []
     
-   
+    var storeRequests:KCSAppdataStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +22,11 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
        
         kinveyOp = KinveyOperations(operations: self)
         kinveyOp.retrieveData()
+        storeRequests = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
+            KCSStoreKeyCollectionName : "RideRequests",
+            KCSStoreKeyCollectionTemplateClass : RideRequests.self
+            ])
+
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -49,14 +54,56 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
         let label2:UILabel = cell.viewWithTag(102) as! UILabel
         let label3:UILabel = cell.viewWithTag(103) as! UILabel
         let label4:UILabel = cell.viewWithTag(104) as! UILabel
+        let label5:UILabel = cell.viewWithTag(105) as! UILabel
         label1.text = indexPath.row.description
         label2.text = requestList[indexPath.row].pickUpLocation as String
         label4.text = requestList[indexPath.row].noOfPassengers as String
         label3.text = requestList[indexPath.row].dropOffLocation as String
+        label5.text = requestList[indexPath.row].phone as String
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
         
         return cell
     }
+    
+    
+    @IBAction func deleteRow(sender: AnyObject) {
+        
+        var rowNumber = (tableView.indexPathForSelectedRow?.row)!
+        storeRequests.removeObject(
+            
+            requestList[rowNumber],
+            withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
+                if errorOrNil != nil {
+                    print("Delete object Failed")
+                    
+                } else {
+                    print("driver location deleted successfully")
+                    
+                }
+            },
+            withProgressBlock: nil
+        )
+        tableView.reloadData()
+
+        
+    }
+//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+//        storeRequests.removeObject(
+//            
+//            requestList[indexPath.row],
+//            withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
+//                if errorOrNil != nil {
+//                    print("Delete object Failed")
+//                    
+//                } else {
+//                    print("driver location deleted successfully")
+//                    
+//                }
+//            },
+//            withProgressBlock: nil
+//        )
+//
+//    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1

@@ -21,7 +21,7 @@ class RouteDetailsTableViewController: UITableViewController {
         
         //For confirming the route
         let rightButton = UIBarButtonItem(title: "Confirm", style: UIBarButtonItemStyle.Plain, target: self, action: "saveRoute:")
-        rightButton.tintColor = UIColor.redColor()
+        //rightButton.tintColor = UIColor.redColor()
         navigationItem.rightBarButtonItem  = rightButton
 
         // Uncomment the following line to preserve selection between presentations

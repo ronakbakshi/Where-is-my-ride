@@ -30,6 +30,7 @@
 		3E77B96E1CBFF2AB0074C566 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E77B96D1CBFF2AB0074C566 /* Constants.swift */; };
 		71154B981C9766F600EFCF5B /* donottouch.m in Sources */ = {isa = PBXBuildFile; fileRef = 71154B971C9766F600EFCF5B /* donottouch.m */; };
 		71154BA31C977A8000EFCF5B /* RouteDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */; };
+		71178A651CC96CE500F45CE8 /* Validation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71178A641CC96CE500F45CE8 /* Validation.swift */; };
 		715512951CC1CED0007DCFD5 /* MoreInfo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 715512941CC1CED0007DCFD5 /* MoreInfo.jpg */; };
 		715512971CC1D11C007DCFD5 /* MoreInfoImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */; };
 		7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */; };
@@ -53,6 +54,7 @@
 		7177D0561CC6D9C10050731B /* launchScreenImage300-300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0551CC6D9C10050731B /* launchScreenImage300-300.png */; };
 		7177D0581CC6DD6E0050731B /* bgHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0571CC6DD6E0050731B /* bgHome.png */; };
 		7177D05A1CC6E15F0050731B /* Administrator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0591CC6E15F0050731B /* Administrator.png */; };
+		7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7195ADD91CC99A2A008D1E9F /* Delete-25.png */; };
 		71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
@@ -109,6 +111,7 @@
 		71154B961C9766F500EFCF5B /* Where's my Ride?-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Where's my Ride?-Bridging-Header.h"; sourceTree = "<group>"; };
 		71154B971C9766F600EFCF5B /* donottouch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = donottouch.m; sourceTree = "<group>"; };
 		71154BA21C977A8000EFCF5B /* RouteDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouteDetailsTableViewController.swift; sourceTree = "<group>"; };
+		71178A641CC96CE500F45CE8 /* Validation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validation.swift; sourceTree = "<group>"; };
 		715512941CC1CED0007DCFD5 /* MoreInfo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MoreInfo.jpg; sourceTree = "<group>"; };
 		715512961CC1D11C007DCFD5 /* MoreInfoImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreInfoImage.swift; sourceTree = "<group>"; };
 		7155129C1CC1D753007DCFD5 /* lightgreybackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lightgreybackground.jpg; sourceTree = "<group>"; };
@@ -132,6 +135,7 @@
 		7177D0551CC6D9C10050731B /* launchScreenImage300-300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchScreenImage300-300.png"; sourceTree = "<group>"; };
 		7177D0571CC6DD6E0050731B /* bgHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgHome.png; sourceTree = "<group>"; };
 		7177D0591CC6E15F0050731B /* Administrator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Administrator.png; sourceTree = "<group>"; };
+		7195ADD91CC99A2A008D1E9F /* Delete-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete-25.png"; sourceTree = "<group>"; };
 		71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageAdmin.swift; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -223,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7E9BA55D1CC92ECC00856597 /* Marker Filled-25.png */,
+				7195ADD91CC99A2A008D1E9F /* Delete-25.png */,
 				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
 				7E9BA55B1CC91F0600856597 /* Taxi Filled-25.png */,
 				3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */,
@@ -350,6 +355,7 @@
 				71154B9F1C9772F300EFCF5B /* Application files */,
 				71154B9D1C97722A00EFCF5B /* Driver */,
 				71154B9C1C9771A500EFCF5B /* User */,
+				71178A641CC96CE500F45CE8 /* Validation.swift */,
 			);
 			path = "Where's my Ride?";
 			sourceTree = "<group>";
@@ -459,6 +465,7 @@
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
 				7177D05A1CC6E15F0050731B /* Administrator.png in Resources */,
+				7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */,
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */,
@@ -513,6 +520,7 @@
 				71154B981C9766F600EFCF5B /* donottouch.m in Sources */,
 				3E52BF821CC70D2E0004FA6E /* RideRequestViewController.swift in Sources */,
 				3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */,
+				71178A651CC96CE500F45CE8 /* Validation.swift in Sources */,
 				9656D44A1CC022D80098C1F5 /* MoreInfoViewController.swift in Sources */,
 				71592E171CC05E6200640EE0 /* HowItWorksInfoViewController.swift in Sources */,
 				71648C271CC7330C003C14A9 /* RideRequests.swift in Sources */,
