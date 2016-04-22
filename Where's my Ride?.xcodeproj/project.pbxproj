@@ -83,7 +83,7 @@
 		96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C71CC9641D0083B90B /* How it Works_up.png */; };
 		96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C81CC9641D0083B90B /* Routes_Up.png */; };
 		96A905CD1CC9641D0083B90B /* Timings_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C91CC9641D0083B90B /* Timings_Up.png */; };
-		96C609B01CC9C764000DDF6C /* driver.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C609AF1CC9C764000DDF6C /* driver.png */; };
+		96C609B01CC9C764000DDF6C /* driver1.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C609AF1CC9C764000DDF6C /* driver1.png */; };
 		BEE908BC1CC9ED660096F6F9 /* timings_info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908B81CC9ED660096F6F9 /* timings_info_Final.png */; };
 		BEE908BE1CC9ED660096F6F9 /* How it Works_Info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908BA1CC9ED660096F6F9 /* How it Works_Info_Final.png */; };
 		BEE908BF1CC9ED660096F6F9 /* contact_info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908BB1CC9ED660096F6F9 /* contact_info_Final.png */; };
@@ -172,7 +172,7 @@
 		96A905C71CC9641D0083B90B /* How it Works_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How it Works_up.png"; sourceTree = "<group>"; };
 		96A905C81CC9641D0083B90B /* Routes_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes_Up.png; sourceTree = "<group>"; };
 		96A905C91CC9641D0083B90B /* Timings_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Timings_Up.png; sourceTree = "<group>"; };
-		96C609AF1CC9C764000DDF6C /* driver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driver.png; sourceTree = "<group>"; };
+		96C609AF1CC9C764000DDF6C /* driver1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driver1.png; sourceTree = "<group>"; };
 		BEE908B81CC9ED660096F6F9 /* timings_info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timings_info_Final.png; sourceTree = "<group>"; };
 		BEE908BA1CC9ED660096F6F9 /* How it Works_Info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How it Works_Info_Final.png"; sourceTree = "<group>"; };
 		BEE908BB1CC9ED660096F6F9 /* contact_info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_info_Final.png; sourceTree = "<group>"; };
@@ -205,7 +205,7 @@
 		3E1395B41CBC045A00F09E44 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
-				96C609AF1CC9C764000DDF6C /* driver.png */,
+				96C609AF1CC9C764000DDF6C /* driver1.png */,
 				3E1395B71CBC04DC00F09E44 /* AdminViewController.swift */,
 				3E1395B91CBC062600F09E44 /* Admin.swift */,
 				3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */,
@@ -486,7 +486,7 @@
 				7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */,
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
-				96C609B01CC9C764000DDF6C /* driver.png in Resources */,
+				96C609B01CC9C764000DDF6C /* driver1.png in Resources */,
 				BEE908C31CC9F9300096F6F9 /* how_up1.png in Resources */,
 				96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */,
 				96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */,

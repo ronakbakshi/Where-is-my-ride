@@ -82,7 +82,7 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
         driverNameLBL.text = driverDetails[indexPath.row].user
          driverEmailLBL.text = driverDetails[indexPath.row].emailId
         driverContactLBL.text = driverDetails[indexPath.row].contact
-        driverImage.image = UIImage(named: "driver.png")
+        driverImage.image = UIImage(named: "driver1.png")
         
         return cell
     }
