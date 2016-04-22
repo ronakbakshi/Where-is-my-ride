@@ -22,13 +22,14 @@ class UserLoginViewController: UIViewController {
         
     }
     
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.title = "Sign In"
-    }
+//    override func viewWillAppear(animated: Bool) {
+//        self.navigationItem.title = "Sign In"
+//    }
     
-    override func viewWillDisappear(animated: Bool) {
-        self.navigationItem.title = "Sign Out"
-    }
+//    override func viewWillDisappear(animated: Bool) {
+//        self.navigationItem.title = "Sign Out"
+//    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         

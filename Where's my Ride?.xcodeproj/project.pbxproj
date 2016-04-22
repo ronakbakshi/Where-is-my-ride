@@ -54,6 +54,7 @@
 		7177D0561CC6D9C10050731B /* launchScreenImage300-300.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0551CC6D9C10050731B /* launchScreenImage300-300.png */; };
 		7177D0581CC6DD6E0050731B /* bgHome.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0571CC6DD6E0050731B /* bgHome.png */; };
 		7177D05A1CC6E15F0050731B /* Administrator.png in Resources */ = {isa = PBXBuildFile; fileRef = 7177D0591CC6E15F0050731B /* Administrator.png */; };
+		7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 7195ADD91CC99A2A008D1E9F /* Delete-25.png */; };
 		71AAD32B1CC191CB00CE6B73 /* BackgroundImageAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */; };
 		71BA22611C9762AA00B70A34 /* KinveyKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22601C9762AA00B70A34 /* KinveyKit.framework */; };
 		71BA226B1C9762FC00B70A34 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA22621C9762FC00B70A34 /* Accounts.framework */; };
@@ -134,6 +135,7 @@
 		7177D0551CC6D9C10050731B /* launchScreenImage300-300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "launchScreenImage300-300.png"; sourceTree = "<group>"; };
 		7177D0571CC6DD6E0050731B /* bgHome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgHome.png; sourceTree = "<group>"; };
 		7177D0591CC6E15F0050731B /* Administrator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Administrator.png; sourceTree = "<group>"; };
+		7195ADD91CC99A2A008D1E9F /* Delete-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Delete-25.png"; sourceTree = "<group>"; };
 		71AAD32A1CC191CB00CE6B73 /* BackgroundImageAdmin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundImageAdmin.swift; sourceTree = "<group>"; };
 		71BA22601C9762AA00B70A34 /* KinveyKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KinveyKit.framework; sourceTree = "<group>"; };
 		71BA22621C9762FC00B70A34 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -225,6 +227,7 @@
 			isa = PBXGroup;
 			children = (
 				7E9BA55D1CC92ECC00856597 /* Marker Filled-25.png */,
+				7195ADD91CC99A2A008D1E9F /* Delete-25.png */,
 				71BA22741C97644D00B70A34 /* UserMapViewController.swift */,
 				7E9BA55B1CC91F0600856597 /* Taxi Filled-25.png */,
 				3E52BF811CC70D2E0004FA6E /* RideRequestViewController.swift */,
@@ -462,6 +465,7 @@
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
 				7177D05A1CC6E15F0050731B /* Administrator.png in Resources */,
+				7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */,
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */,
