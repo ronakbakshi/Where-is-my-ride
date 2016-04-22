@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -734,48 +734,18 @@
                                     <rect key="frame" x="272" y="254" width="257" height="30"/>
                                 </variation>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSe-7Y-8Hz">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Sign Up"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="272" y="322" width="120" height="63"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="gBJ-CW-BL2" kind="show" id="3Xo-cY-yE5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSe-7Y-8Hz">
-                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
-                                <state key="normal" title="Sign In"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="413" y="322" width="116" height="63"/>
-                                </variation>
-                                <connections>
-                                    <action selector="signInBTN:" destination="T2v-ng-zKZ" eventType="touchUpInside" id="a8t-Aw-VLX"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="6Nn-jl-Ehf"/>
                                 <exclude reference="an2-0C-WaK"/>
-                                <exclude reference="mWh-T5-xmf"/>
-                                <exclude reference="VSe-7Y-8Hz"/>
-                                <exclude reference="RQ4-Xl-hyn"/>
-                                <exclude reference="mWh-T5-xmf"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="6Nn-jl-Ehf"/>
                                 <include reference="an2-0C-WaK"/>
-                                <include reference="mWh-T5-xmf"/>
-                                <include reference="VSe-7Y-8Hz"/>
-                                <include reference="RQ4-Xl-hyn"/>
-                                <include reference="mWh-T5-xmf"/>
                             </mask>
                         </variation>
                     </view>
@@ -984,32 +954,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How it Works_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-c1-dNV">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="how_up1.png" translatesAutoresizingMaskIntoConstraints="NO" id="xkF-WV-kQO">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="53" y="81" width="162" height="155"/>
-                                </variation>
                             </imageView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-op-qXE">
-                                <rect key="frame" x="88" y="48" width="458" height="452"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Where's My Ride provides a solution for Passengers who wants to go for a ride, they can trace the rides available and if he turns on the GPS, it will display the available rides around his location.Driver needs to Turn On GPS in his device. Whoever willing to use should have to download this App.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="53" y="244" width="660" height="305"/>
-                                </variation>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xkF-WV-kQO" firstAttribute="top" secondItem="Xpe-Rn-8d5" secondAttribute="bottom" id="FIK-7c-Q25"/>
+                            <constraint firstItem="xkF-WV-kQO" firstAttribute="leading" secondItem="bvn-nC-E0h" secondAttribute="leading" id="S4d-wP-9eL"/>
+                            <constraint firstAttribute="trailing" secondItem="xkF-WV-kQO" secondAttribute="trailing" id="cmb-Eo-hd6"/>
+                            <constraint firstItem="xkF-WV-kQO" firstAttribute="bottom" secondItem="afS-TN-3ad" secondAttribute="top" id="kjj-nO-GUl"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="XaY-c1-dNV"/>
+                                <exclude reference="xkF-WV-kQO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="FIK-7c-Q25"/>
+                                <exclude reference="S4d-wP-9eL"/>
+                                <exclude reference="cmb-Eo-hd6"/>
+                                <exclude reference="kjj-nO-GUl"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="XaY-c1-dNV"/>
+                                <include reference="xkF-WV-kQO"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="FIK-7c-Q25"/>
+                                <include reference="S4d-wP-9eL"/>
+                                <include reference="cmb-Eo-hd6"/>
+                                <include reference="kjj-nO-GUl"/>
                             </mask>
                         </variation>
                     </view>
@@ -1030,53 +1005,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NAY-2q-NSg">
-                                <rect key="frame" x="141" y="96" width="282" height="162"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Shuttle Hours: (for retail stops)     Monday	          4 p.m. - 8 p.m Tuesday	          3 p.m. - 5 p.m    Wednesday	    4 p.m. - 8 p.m     Thursday	          4 p.m. - 8 p.m     Friday	               4 p.m. - 8 p.m      </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ScI-lO-fqm">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="20" width="800" height="33"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MKy-Vr-lzs">
-                                <rect key="frame" x="26" y="505" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back to More Info"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="24" width="179" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="lrW-73-bLl" kind="show" id="yKg-hH-cK0"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="unb-Ac-MGU">
-                                <rect key="frame" x="141" y="306" width="400" height="128"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Late Night Taxi Hours: (no retail stops)        Thursday	10 p.m. - 2 a.m                            Friday	10 p.m. - 4 a.m                                 Saturday	10 p.m. - 4 a.m       </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="141" y="306" width="400" height="253"/>
-                                </variation>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timings_info_Final.png" translatesAutoresizingMaskIntoConstraints="NO" id="ry2-6h-SR6">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ry2-6h-SR6" firstAttribute="leading" secondItem="oUG-sp-6Tg" secondAttribute="leading" id="dgz-w2-OHT"/>
+                            <constraint firstAttribute="trailing" secondItem="ry2-6h-SR6" secondAttribute="trailing" id="tzQ-K9-Wvd"/>
+                            <constraint firstItem="ry2-6h-SR6" firstAttribute="top" secondItem="J8r-AD-zLa" secondAttribute="bottom" id="uSb-mE-0cN"/>
+                            <constraint firstItem="ry2-6h-SR6" firstAttribute="bottom" secondItem="Dcv-05-oMj" secondAttribute="top" id="w4p-To-r21"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="ScI-lO-fqm"/>
+                                <exclude reference="ry2-6h-SR6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="dgz-w2-OHT"/>
+                                <exclude reference="tzQ-K9-Wvd"/>
+                                <exclude reference="uSb-mE-0cN"/>
+                                <exclude reference="w4p-To-r21"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="ScI-lO-fqm"/>
+                                <include reference="ry2-6h-SR6"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="dgz-w2-OHT"/>
+                                <include reference="tzQ-K9-Wvd"/>
+                                <include reference="uSb-mE-0cN"/>
+                                <include reference="w4p-To-r21"/>
                             </mask>
                         </variation>
                     </view>
@@ -1097,77 +1056,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hox-Y7-MU7">
-                                <rect key="frame" x="159" y="50" width="368" height="175"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Route 1: East Maryville                                                             Stop	           Location                                                               1                   	Lot 29                                                         2	                 Lot 12                                                                               3	                 Dollar General (North)                                      4	                 Parkway Terrace Apartments                  5	                 4th St. and Market St.</string>
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="204" y="65" width="368" height="175"/>
-                                </variation>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Route Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qah-1P-KFU">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="21" width="800" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GjF-qH-GTe">
-                                <rect key="frame" x="26" y="502" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back to More Info"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="17" width="179" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="lrW-73-bLl" kind="show" id="SyU-c0-aDv"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dJF-ar-d0v">
-                                <rect key="frame" x="159" y="271" width="359" height="238"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <attributedString key="attributedText">
-                                    <fragment>
-                                        <string key="content">Route 2: West Maryville                                                             Stop	           Location                                                               1                   	Lot 29                                                         2	                 The Station, Lot 39                                                                               3	                 College Ave. and Munn Ave                                      4	                 Mary Mart Shopping Center                5	                 JC Penny                                       6	                 Wal-Mart                               7	                 Hy-Vee</string>
-                                        <attributes>
-                                            <font key="NSFont" size="18" name="HelveticaNeue"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="204" y="279" width="350" height="238"/>
-                                </variation>
-                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Routes_Info_Final1.png" translatesAutoresizingMaskIntoConstraints="NO" id="pAa-Cu-rcQ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pAa-Cu-rcQ" firstAttribute="leading" secondItem="I3q-yU-oL1" secondAttribute="leading" id="2d7-sl-1f5"/>
+                            <constraint firstItem="pAa-Cu-rcQ" firstAttribute="centerY" secondItem="I3q-yU-oL1" secondAttribute="centerY" id="Jc1-ma-bwj"/>
+                            <constraint firstAttribute="trailing" secondItem="pAa-Cu-rcQ" secondAttribute="trailing" id="dVs-Ck-zZr"/>
+                            <constraint firstItem="pAa-Cu-rcQ" firstAttribute="top" secondItem="mS0-aS-seo" secondAttribute="bottom" id="ekY-CE-XZc"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Qah-1P-KFU"/>
+                                <exclude reference="pAa-Cu-rcQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2d7-sl-1f5"/>
+                                <exclude reference="Jc1-ma-bwj"/>
+                                <exclude reference="dVs-Ck-zZr"/>
+                                <exclude reference="ekY-CE-XZc"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="Qah-1P-KFU"/>
+                                <include reference="pAa-Cu-rcQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2d7-sl-1f5"/>
+                                <include reference="Jc1-ma-bwj"/>
+                                <include reference="dVs-Ck-zZr"/>
+                                <include reference="ekY-CE-XZc"/>
                             </mask>
                         </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FSK-rQ-82n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2284.5" y="1354"/>
+            <point key="canvasLocation" x="-2367" y="1337"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="z5P-by-me1">
@@ -1181,44 +1107,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKO-pA-qGp">
-                                <rect key="frame" x="148" y="164" width="373" height="191"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Team We!                                     NorthWest Missouri State University       Maryville, Missouri 64468                        Phone Numbers : 000-000-0000                                   </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                <dataDetectorType key="dataDetectorTypes" address="YES"/>
-                            </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Details" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rc7-XX-olf">
-                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="0.0" y="28" width="800" height="21"/>
-                                </variation>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ymC-qc-WR5">
-                                <rect key="frame" x="26" y="486" width="34" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="Back to More Info"/>
-                                <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="20" y="24" width="180" height="30"/>
-                                </variation>
-                                <connections>
-                                    <segue destination="lrW-73-bLl" kind="show" id="C6B-2c-KyU"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_info_Final.png" translatesAutoresizingMaskIntoConstraints="NO" id="tVn-Kr-OJJ">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="tVn-Kr-OJJ" firstAttribute="bottom" secondItem="1xi-iV-08t" secondAttribute="top" id="2Iq-EM-GLQ"/>
+                            <constraint firstItem="tVn-Kr-OJJ" firstAttribute="top" secondItem="Nmg-qz-JUj" secondAttribute="bottom" id="GHA-f7-2YS"/>
+                            <constraint firstAttribute="trailing" secondItem="tVn-Kr-OJJ" secondAttribute="trailing" id="Lm7-Fz-mFq"/>
+                            <constraint firstItem="tVn-Kr-OJJ" firstAttribute="leading" secondItem="DUp-IN-BEd" secondAttribute="leading" id="yzM-PU-k8O"/>
+                        </constraints>
                         <variation key="default">
                             <mask key="subviews">
-                                <exclude reference="Rc7-XX-olf"/>
+                                <exclude reference="tVn-Kr-OJJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="2Iq-EM-GLQ"/>
+                                <exclude reference="GHA-f7-2YS"/>
+                                <exclude reference="Lm7-Fz-mFq"/>
+                                <exclude reference="yzM-PU-k8O"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
-                                <include reference="Rc7-XX-olf"/>
+                                <include reference="tVn-Kr-OJJ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="2Iq-EM-GLQ"/>
+                                <include reference="GHA-f7-2YS"/>
+                                <include reference="Lm7-Fz-mFq"/>
+                                <include reference="yzM-PU-k8O"/>
                             </mask>
                         </variation>
                     </view>
@@ -1258,9 +1177,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xga-hM-wmT">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Routes_Up.png"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="12" y="281" width="342" height="311"/>
-                                </variation>
                                 <connections>
                                     <segue destination="TUE-qK-9Bi" kind="show" id="kcA-Yl-w1l"/>
                                 </connections>
@@ -1268,9 +1184,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XR-N6-RRJ">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" image="Timings_Up.png"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="444" y="281" width="342" height="311"/>
-                                </variation>
                                 <connections>
                                     <segue destination="0in-Rb-Hai" kind="show" id="ctv-26-S3f"/>
                                 </connections>
@@ -1303,14 +1216,14 @@
                                 <exclude reference="Zhy-Ta-WXj"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="JCb-ME-YWs"/>
-                                <exclude reference="wps-kI-ulG"/>
-                                <exclude reference="Kz5-i9-Ni8"/>
-                                <exclude reference="d2u-wx-vbv"/>
-                                <exclude reference="nur-9x-rqG"/>
-                                <exclude reference="NFV-lC-Dhg"/>
                                 <exclude reference="hxw-1V-iU1"/>
                                 <exclude reference="yZ2-uf-0U8"/>
+                                <exclude reference="NFV-lC-Dhg"/>
+                                <exclude reference="JCb-ME-YWs"/>
+                                <exclude reference="wps-kI-ulG"/>
+                                <exclude reference="d2u-wx-vbv"/>
+                                <exclude reference="nur-9x-rqG"/>
+                                <exclude reference="Kz5-i9-Ni8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
@@ -1322,14 +1235,14 @@
                                 <include reference="Zhy-Ta-WXj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="JCb-ME-YWs"/>
-                                <include reference="wps-kI-ulG"/>
-                                <include reference="Kz5-i9-Ni8"/>
-                                <include reference="d2u-wx-vbv"/>
-                                <include reference="nur-9x-rqG"/>
-                                <include reference="NFV-lC-Dhg"/>
                                 <include reference="hxw-1V-iU1"/>
                                 <include reference="yZ2-uf-0U8"/>
+                                <include reference="NFV-lC-Dhg"/>
+                                <include reference="JCb-ME-YWs"/>
+                                <include reference="wps-kI-ulG"/>
+                                <include reference="d2u-wx-vbv"/>
+                                <include reference="nur-9x-rqG"/>
+                                <include reference="Kz5-i9-Ni8"/>
                             </mask>
                         </variation>
                     </view>
@@ -1504,9 +1417,6 @@
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" tag="400" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HSN-3w-sWb">
                                                     <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                                    <variation key="widthClass=regular" misplaced="YES">
-                                                        <rect key="frame" x="8" y="5" width="119" height="121"/>
-                                                    </variation>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="200" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="driver emailid" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLO-4f-HhC">
                                                     <rect key="frame" x="-42" y="-21" width="42" height="21"/>
@@ -1674,9 +1584,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="266" y="316" width="243" height="30"/>
-                                </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yfs-H6-B0d">
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
@@ -1731,9 +1638,6 @@
                                 <rect key="frame" x="-25" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <textInputTraits key="textInputTraits"/>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="266" y="245" width="243" height="30"/>
-                                </variation>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1890,13 +1794,14 @@
         <image name="Delete-25.png" width="25" height="25"/>
         <image name="How it Works_up.png" width="342" height="299"/>
         <image name="Info-25.png" width="25" height="25"/>
+        <image name="Routes_Info_Final1.png" width="2935" height="4402"/>
         <image name="Routes_Up.png" width="342" height="299"/>
         <image name="Taxi Filled-25.png" width="25" height="25"/>
         <image name="Timings_Up.png" width="342" height="299"/>
         <image name="User Group Filled-25.png" width="25" height="25"/>
+        <image name="contact_info_Final.png" width="2935" height="4402"/>
         <image name="contact_up.png" width="342" height="299"/>
+        <image name="how_up1.png" width="2935" height="4402"/>
+        <image name="timings_info_Final.png" width="2935" height="4402"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="yKg-hH-cK0"/>
-    </inferredMetricsTieBreakers>
 </document>

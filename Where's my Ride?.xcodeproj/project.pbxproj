@@ -84,6 +84,11 @@
 		96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C81CC9641D0083B90B /* Routes_Up.png */; };
 		96A905CD1CC9641D0083B90B /* Timings_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C91CC9641D0083B90B /* Timings_Up.png */; };
 		96C609B01CC9C764000DDF6C /* driver.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C609AF1CC9C764000DDF6C /* driver.png */; };
+		BEE908BC1CC9ED660096F6F9 /* timings_info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908B81CC9ED660096F6F9 /* timings_info_Final.png */; };
+		BEE908BE1CC9ED660096F6F9 /* How it Works_Info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908BA1CC9ED660096F6F9 /* How it Works_Info_Final.png */; };
+		BEE908BF1CC9ED660096F6F9 /* contact_info_Final.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908BB1CC9ED660096F6F9 /* contact_info_Final.png */; };
+		BEE908C11CC9F7910096F6F9 /* Routes_Info_Final1.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908C01CC9F7910096F6F9 /* Routes_Info_Final1.png */; };
+		BEE908C31CC9F9300096F6F9 /* how_up1.png in Resources */ = {isa = PBXBuildFile; fileRef = BEE908C21CC9F9300096F6F9 /* how_up1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -168,6 +173,11 @@
 		96A905C81CC9641D0083B90B /* Routes_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes_Up.png; sourceTree = "<group>"; };
 		96A905C91CC9641D0083B90B /* Timings_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Timings_Up.png; sourceTree = "<group>"; };
 		96C609AF1CC9C764000DDF6C /* driver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driver.png; sourceTree = "<group>"; };
+		BEE908B81CC9ED660096F6F9 /* timings_info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = timings_info_Final.png; sourceTree = "<group>"; };
+		BEE908BA1CC9ED660096F6F9 /* How it Works_Info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How it Works_Info_Final.png"; sourceTree = "<group>"; };
+		BEE908BB1CC9ED660096F6F9 /* contact_info_Final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = contact_info_Final.png; sourceTree = "<group>"; };
+		BEE908C01CC9F7910096F6F9 /* Routes_Info_Final1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes_Info_Final1.png; sourceTree = "<group>"; };
+		BEE908C21CC9F9300096F6F9 /* how_up1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = how_up1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,6 +292,11 @@
 		71154BA01C97734F00EFCF5B /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				BEE908B81CC9ED660096F6F9 /* timings_info_Final.png */,
+				BEE908C21CC9F9300096F6F9 /* how_up1.png */,
+				BEE908C01CC9F7910096F6F9 /* Routes_Info_Final1.png */,
+				BEE908BA1CC9ED660096F6F9 /* How it Works_Info_Final.png */,
+				BEE908BB1CC9ED660096F6F9 /* contact_info_Final.png */,
 				96A905C61CC9641D0083B90B /* contact_up.png */,
 				96A905C71CC9641D0083B90B /* How it Works_up.png */,
 				96A905C81CC9641D0083B90B /* Routes_Up.png */,
@@ -453,21 +468,26 @@
 				716BF7F91CC539F6002DD02D /* logo-80.jpg in Resources */,
 				96A905CA1CC9641D0083B90B /* contact_up.png in Resources */,
 				3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */,
+				BEE908BE1CC9ED660096F6F9 /* How it Works_Info_Final.png in Resources */,
 				7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */,
 				7177D0581CC6DD6E0050731B /* bgHome.png in Resources */,
 				3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */,
 				3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */,
 				716BF7FB1CC539F6002DD02D /* logo-152.jpg in Resources */,
+				BEE908BF1CC9ED660096F6F9 /* contact_info_Final.png in Resources */,
 				716BF7EF1CC53763002DD02D /* logo.jpg in Resources */,
 				716BF7F81CC539F6002DD02D /* logo-40.jpg in Resources */,
 				716BF7F61CC539F6002DD02D /* logo-29.jpg in Resources */,
 				3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */,
+				BEE908C11CC9F7910096F6F9 /* Routes_Info_Final1.png in Resources */,
 				3E3149EC1CBC47D2008634F3 /* Main.storyboard in Resources */,
 				7177D05A1CC6E15F0050731B /* Administrator.png in Resources */,
+				BEE908BC1CC9ED660096F6F9 /* timings_info_Final.png in Resources */,
 				7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */,
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
 				96C609B01CC9C764000DDF6C /* driver.png in Resources */,
+				BEE908C31CC9F9300096F6F9 /* how_up1.png in Resources */,
 				96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */,
 				96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */,
 				716BF7FA1CC539F6002DD02D /* logo-76.jpg in Resources */,
