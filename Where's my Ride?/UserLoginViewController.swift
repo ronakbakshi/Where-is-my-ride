@@ -15,6 +15,11 @@ class UserLoginViewController: UIViewController {
     
     @IBOutlet weak var userPasswordTF: UITextField!
     
+    @IBAction func resetBTN(sender: AnyObject) {
+        useLoginTF.text = ""
+        userPasswordTF.text = ""
+    }
+    
     var store:KCSAppdataStore!
     
     override func viewDidLoad() {
