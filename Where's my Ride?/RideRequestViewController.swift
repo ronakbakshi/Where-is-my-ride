@@ -15,26 +15,27 @@ class RideRequestViewController: UIViewController,Operation{
     
     @IBOutlet weak var pickUpLocationTF: UITextField!
     
-
+    
     @IBOutlet weak var dropLocationTF: UITextField!
     
     @IBOutlet weak var passengersTF: UITextField!
     
+    var error:Bool = true
     
     var  kinveyObject :KinveyOperations!
     
-     var store:KCSAppdataStore!
+    var store:KCSAppdataStore!
     
     var request:RideRequests!
     
     var pickupArray:[RideRequests]!
     
     
-   
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
-
+        
         pickupArray = []
         
         self.kinveyObject = KinveyOperations(operations: self)
@@ -48,20 +49,36 @@ class RideRequestViewController: UIViewController,Operation{
     override func viewWillAppear(animated: Bool) {
         self.navigationItem.title = "Request A Ride"
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    
     @IBAction func submitBTN(sender: AnyObject) {
         
         
         
-         request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
-       
-      
+        request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
+        self.error = false
+        if self.pickUpLocationTF.text != "self." && self.dropLocationTF.text != "" && self.passengersTF.text != "" && self.contactNumberTF.text != ""{
+            
+            if !Validation.isValidPassengers(self.passengersTF.text!) && !Validation.isValidContact(self.contactNumberTF.text!){
+                self.error = false
+                
+                
+            }
+            else{
+                self.error = true
+            }
+            
+        }else{
+            self.displayAlertControllerWithTitle("Invalid data!", message: "Please check the details entered.")
+        }
+        
+        if self.error {
+            
             store.saveObject(
                 
                 request,
@@ -71,17 +88,39 @@ class RideRequestViewController: UIViewController,Operation{
                         //save failed
                         print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
                     } else {
-                        
+                        //                    self.error = false
+                        //                    if self.pickUpLocationTF.text != "self." && self.dropLocationTF.text != "" && self.passengersTF.text != "" && self.contactNumberTF.text != ""{
+                        //
+                        //                        if !Validation.isValidPassengers(self.passengersTF.text!){
+                        //                            self.error = false
+                        //                        }
+                        //                        else{
+                        //                            self.error = true
+                        //                        }
+                        //                        if !Validation.isValidContact(self.contactNumberTF.text!){
+                        //                            self.error = false
+                        //                        }
+                        //                        else{
+                        //                            self.error = true
+                        //                        }
+                        //
+                        //                    }
+                        //                }
+                        //                if self.error == true {
                         print("Successfully saved Pickup Details (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
                         self.displayAlertControllerWithTitle("Success!!!", message: "Pickup details are updated")
                     }
+                    
                 },
                 
                 withProgressBlock: nil
             )
             
-            
+        }else{
+            self.displayAlertControllerWithTitle("Invalid data!", message: "Please check the details entered.")
         }
+        
+    }
     
     
     func displayAlertControllerWithTitle(title:String, message:String) {
@@ -112,7 +151,7 @@ class RideRequestViewController: UIViewController,Operation{
     func fetchRequests(request:[RideRequests]){
         
     }
-        
-  
-
+    
+    
+    
 }
