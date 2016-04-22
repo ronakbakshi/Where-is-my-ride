@@ -42,7 +42,7 @@ class AdminViewController: UIViewController {
         
         self.navigationItem.title = "Admin Login"
         self.navigationItem.backBarButtonItem = nil
-        
+        self.navigationItem.setHidesBackButton(true, animated: true)
         //self.navigationController?.navigationItem.hidesBackButton = true
     }
 

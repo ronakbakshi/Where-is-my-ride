@@ -38,7 +38,7 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     }
     
     override func viewWillAppear(animated: Bool) {
-        
+        kinveyObject.fetchingDriverDetails()
         tableView.reloadData()
         
     }
@@ -104,6 +104,12 @@ class AdminOperationsViewController: UIViewController,UITableViewDataSource,UITa
     func fetchRequests(request:[RideRequests]){
         
     }
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+              if editingStyle == UITableViewCellEditingStyle.Delete {
+                  driverDetails.removeAtIndex(indexPath.row)
+                tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+              }
+           }
     
 }
 

@@ -126,6 +126,13 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
         
     }
     
+    func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
+              if editingStyle == UITableViewCellEditingStyle.Delete {
+                   requestList.removeAtIndex(indexPath.row)
+                   tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+                }
+            }
+    
     
     
 }

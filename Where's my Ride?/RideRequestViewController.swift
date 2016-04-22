@@ -57,10 +57,26 @@ class RideRequestViewController: UIViewController,Operation{
     
     
     @IBAction func submitBTN(sender: AnyObject) {
+//        var str = contactNumberTF.text!
+//        // var str = "6605415381"
+//        var phone:String = "("
+//        
+//        // result = result + str.substringToIndex(3)
+//        phone = phone + str[str.startIndex.advancedBy(0) ... str.endIndex.advancedBy(-8)]
+//        phone = phone + ")"
+//        phone =  phone + str[str.startIndex.advancedBy(3) ... str.endIndex.advancedBy(-5)]
+//        phone = phone + "-"
+//        phone = phone + str[str.startIndex.advancedBy(6) ... str.endIndex.advancedBy(-1)]
+//        print(phone)
         
         
+//        var str1 = str.substringFromIndex(str.startIndex)
+//        print (str1)
         
         request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
+        
+        
+        //request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
         self.error = false
         if self.pickUpLocationTF.text != "self." && self.dropLocationTF.text != "" && self.passengersTF.text != "" && self.contactNumberTF.text != ""{
             
