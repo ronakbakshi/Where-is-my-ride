@@ -13,7 +13,6 @@
 		3E1395BC1CBC176500F09E44 /* AdminOperationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */; };
 		3E1618971C9C66D900098147 /* Taxi Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618961C9C66D900098147 /* Taxi Filled-25.png */; };
 		3E1618991C9C679F00098147 /* User Group Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1618981C9C679F00098147 /* User Group Filled-25.png */; };
-		3E1625251CC92EEE00E0FD7B /* driver.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E1625241CC92EEE00E0FD7B /* driver.png */; };
 		3E2988D71CBDD2BE007BCBDC /* KCSUserExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2988D61CBDD2BE007BCBDC /* KCSUserExtension.swift */; };
 		3E2988D91CBDDA50007BCBDC /* DriverStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */; };
 		3E3149EA1CBC3BF3008634F3 /* Find User Male Filled-25.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E3149E91CBC3BF3008634F3 /* Find User Male Filled-25.png */; };
@@ -84,6 +83,7 @@
 		96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C71CC9641D0083B90B /* How it Works_up.png */; };
 		96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C81CC9641D0083B90B /* Routes_Up.png */; };
 		96A905CD1CC9641D0083B90B /* Timings_Up.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A905C91CC9641D0083B90B /* Timings_Up.png */; };
+		96C609B01CC9C764000DDF6C /* driver.png in Resources */ = {isa = PBXBuildFile; fileRef = 96C609AF1CC9C764000DDF6C /* driver.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -93,7 +93,6 @@
 		3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdminOperationsViewController.swift; sourceTree = "<group>"; };
 		3E1618961C9C66D900098147 /* Taxi Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Taxi Filled-25.png"; path = "../Taxi Filled-25.png"; sourceTree = "<group>"; };
 		3E1618981C9C679F00098147 /* User Group Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "User Group Filled-25.png"; path = "../User Group Filled-25.png"; sourceTree = "<group>"; };
-		3E1625241CC92EEE00E0FD7B /* driver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driver.png; sourceTree = "<group>"; };
 		3E2988D61CBDD2BE007BCBDC /* KCSUserExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KCSUserExtension.swift; sourceTree = "<group>"; };
 		3E2988D81CBDDA50007BCBDC /* DriverStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DriverStatus.swift; sourceTree = "<group>"; };
 		3E3149E91CBC3BF3008634F3 /* Find User Male Filled-25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Find User Male Filled-25.png"; sourceTree = "<group>"; };
@@ -168,6 +167,7 @@
 		96A905C71CC9641D0083B90B /* How it Works_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "How it Works_up.png"; sourceTree = "<group>"; };
 		96A905C81CC9641D0083B90B /* Routes_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Routes_Up.png; sourceTree = "<group>"; };
 		96A905C91CC9641D0083B90B /* Timings_Up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Timings_Up.png; sourceTree = "<group>"; };
+		96C609AF1CC9C764000DDF6C /* driver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = driver.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,13 +195,13 @@
 		3E1395B41CBC045A00F09E44 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				96C609AF1CC9C764000DDF6C /* driver.png */,
 				3E1395B71CBC04DC00F09E44 /* AdminViewController.swift */,
 				3E1395B91CBC062600F09E44 /* Admin.swift */,
 				3E1395BB1CBC176500F09E44 /* AdminOperationsViewController.swift */,
 				3E3149F01CBC5480008634F3 /* RegisterDriverViewController.swift */,
 				3E3149E91CBC3BF3008634F3 /* Find User Male Filled-25.png */,
 				3E3149F21CBC5828008634F3 /* DriverData.swift */,
-				3E1625241CC92EEE00E0FD7B /* driver.png */,
 			);
 			name = Admin;
 			sourceTree = "<group>";
@@ -452,7 +452,6 @@
 			files = (
 				716BF7F91CC539F6002DD02D /* logo-80.jpg in Resources */,
 				96A905CA1CC9641D0083B90B /* contact_up.png in Resources */,
-				3E1625251CC92EEE00E0FD7B /* driver.png in Resources */,
 				3E3149F51CBC7F5D008634F3 /* Info-25.png in Resources */,
 				7155129D1CC1D753007DCFD5 /* lightgreybackground.jpg in Resources */,
 				7177D0581CC6DD6E0050731B /* bgHome.png in Resources */,
@@ -468,6 +467,7 @@
 				7195ADDA1CC99A2A008D1E9F /* Delete-25.png in Resources */,
 				716BF7F71CC539F6002DD02D /* logo-58.jpg in Resources */,
 				71592E191CC0647800640EE0 /* backgroundImage.jpg in Resources */,
+				96C609B01CC9C764000DDF6C /* driver.png in Resources */,
 				96A905CB1CC9641D0083B90B /* How it Works_up.png in Resources */,
 				96A905CC1CC9641D0083B90B /* Routes_Up.png in Resources */,
 				716BF7FA1CC539F6002DD02D /* logo-76.jpg in Resources */,
