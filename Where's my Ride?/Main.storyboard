@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="iky-Y2-hRc">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
@@ -368,9 +368,9 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vgR-Ft-L8s">
                                                     <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                                                    <state key="normal" title="Button" image="Delete-25.png"/>
+                                                    <state key="normal" image="Delete-25.png"/>
                                                     <variation key="widthClass=regular" fixedFrame="YES">
-                                                        <rect key="frame" x="730" y="9" width="29" height="25"/>
+                                                        <rect key="frame" x="730" y="9" width="50" height="25"/>
                                                     </variation>
                                                     <connections>
                                                         <action selector="deleteRow:" destination="z8x-ir-wxC" eventType="touchUpInside" id="g8a-SY-NiJ"/>
@@ -1087,6 +1087,12 @@
                                     <segue destination="lrW-73-bLl" kind="show" id="9cy-JQ-asY"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How it Works_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="XaY-c1-dNV">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="267" y="95" width="270" height="233"/>
+                                </variation>
+                            </imageView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFT-op-qXE">
                                 <rect key="frame" x="88" y="48" width="458" height="452"/>
                                 <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1094,7 +1100,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes"/>
                                 <variation key="widthClass=regular" fixedFrame="YES">
-                                    <rect key="frame" x="89" y="174" width="622" height="328"/>
+                                    <rect key="frame" x="98" y="389" width="622" height="191"/>
                                 </variation>
                             </textView>
                         </subviews>
@@ -1102,11 +1108,13 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="bSV-ND-N4s"/>
+                                <exclude reference="XaY-c1-dNV"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="bSV-ND-N4s"/>
+                                <include reference="XaY-c1-dNV"/>
                             </mask>
                         </variation>
                     </view>
@@ -1127,13 +1135,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="unb-Ac-MGU">
-                                <rect key="frame" x="141" y="306" width="400" height="128"/>
-                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
-                                <string key="text">Late Night Taxi Hours: (no retail stops)        Thursday	10 p.m. - 2 a.m                            Friday	10 p.m. - 4 a.m                                 Saturday	10 p.m. - 4 a.m       </string>
-                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="NAY-2q-NSg">
                                 <rect key="frame" x="141" y="96" width="282" height="162"/>
                                 <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1161,6 +1162,16 @@
                                     <segue destination="lrW-73-bLl" kind="show" id="yKg-hH-cK0"/>
                                 </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="unb-Ac-MGU">
+                                <rect key="frame" x="141" y="306" width="400" height="128"/>
+                                <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Late Night Taxi Hours: (no retail stops)        Thursday	10 p.m. - 2 a.m                            Friday	10 p.m. - 4 a.m                                 Saturday	10 p.m. - 4 a.m       </string>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="widthClass=regular" fixedFrame="YES">
+                                    <rect key="frame" x="141" y="306" width="400" height="253"/>
+                                </variation>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
@@ -1342,66 +1353,88 @@
                                     <rect key="frame" x="0.0" y="28" width="800" height="21"/>
                                 </variation>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="How it Works_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="dYm-Mf-mRS">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Timings_Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-e1-iJW">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Routes_Up.png" translatesAutoresizingMaskIntoConstraints="NO" id="lCB-l2-WFK">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="contact_up.png" translatesAutoresizingMaskIntoConstraints="NO" id="HJd-C0-Gbs">
-                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXe-Go-qiS">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="How it Works_up.png"/>
+                                <connections>
+                                    <segue destination="qcw-g1-QSW" kind="show" id="Xhf-qn-ElG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xga-hM-wmT">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Routes_Up.png"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="12" y="281" width="342" height="311"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="TUE-qK-9Bi" kind="show" id="kcA-Yl-w1l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1XR-N6-RRJ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="Timings_Up.png"/>
+                                <variation key="widthClass=regular" misplaced="YES">
+                                    <rect key="frame" x="444" y="281" width="342" height="311"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="0in-Rb-Hai" kind="show" id="ctv-26-S3f"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhy-Ta-WXj">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" image="contact_up.png"/>
+                                <connections>
+                                    <segue destination="363-Ef-cMS" kind="show" id="RJW-Yq-6Xy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.82244746300000005" blue="0.51950223849999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="iia-Pk-87t" firstAttribute="top" secondItem="lCB-l2-WFK" secondAttribute="bottom" constant="20" id="2nz-KO-5IG"/>
-                            <constraint firstItem="Pzg-e1-iJW" firstAttribute="leading" secondItem="bVF-XT-A6V" secondAttribute="leadingMargin" constant="-7" id="Fad-Vu-zl8"/>
-                            <constraint firstItem="dYm-Mf-mRS" firstAttribute="top" secondItem="aJS-Y0-pdJ" secondAttribute="bottom" constant="13" id="dJq-5L-luq"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="lCB-l2-WFK" secondAttribute="trailing" constant="-7" id="gmy-xq-IVp"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="HJd-C0-Gbs" secondAttribute="trailing" constant="-7" id="jot-gv-bKY"/>
-                            <constraint firstItem="dYm-Mf-mRS" firstAttribute="leading" secondItem="bVF-XT-A6V" secondAttribute="leadingMargin" constant="-7" id="lR5-bD-uxf"/>
-                            <constraint firstItem="HJd-C0-Gbs" firstAttribute="top" secondItem="aJS-Y0-pdJ" secondAttribute="bottom" constant="13" id="rQJ-yT-anJ"/>
-                            <constraint firstItem="iia-Pk-87t" firstAttribute="top" secondItem="Pzg-e1-iJW" secondAttribute="bottom" constant="20" id="vzJ-XS-owZ"/>
+                            <constraint firstItem="FXe-Go-qiS" firstAttribute="leading" secondItem="bVF-XT-A6V" secondAttribute="leadingMargin" constant="-8" id="JCb-ME-YWs"/>
+                            <constraint firstItem="xga-hM-wmT" firstAttribute="leading" secondItem="bVF-XT-A6V" secondAttribute="leadingMargin" constant="-8" id="Kz5-i9-Ni8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1XR-N6-RRJ" secondAttribute="trailing" constant="-6" id="NFV-lC-Dhg"/>
+                            <constraint firstItem="Zhy-Ta-WXj" firstAttribute="top" secondItem="aJS-Y0-pdJ" secondAttribute="bottom" constant="11" id="d2u-wx-vbv"/>
+                            <constraint firstItem="iia-Pk-87t" firstAttribute="top" secondItem="1XR-N6-RRJ" secondAttribute="bottom" constant="8" id="hxw-1V-iU1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zhy-Ta-WXj" secondAttribute="trailing" constant="-6" id="nur-9x-rqG"/>
+                            <constraint firstItem="FXe-Go-qiS" firstAttribute="top" secondItem="aJS-Y0-pdJ" secondAttribute="bottom" constant="11" id="wps-kI-ulG"/>
+                            <constraint firstItem="iia-Pk-87t" firstAttribute="top" secondItem="xga-hM-wmT" secondAttribute="bottom" constant="8" id="yZ2-uf-0U8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="UE7-TJ-5XH"/>
-                                <exclude reference="dYm-Mf-mRS"/>
-                                <exclude reference="Pzg-e1-iJW"/>
-                                <exclude reference="lCB-l2-WFK"/>
-                                <exclude reference="HJd-C0-Gbs"/>
+                                <exclude reference="FXe-Go-qiS"/>
+                                <exclude reference="xga-hM-wmT"/>
+                                <exclude reference="1XR-N6-RRJ"/>
+                                <exclude reference="Zhy-Ta-WXj"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="2nz-KO-5IG"/>
-                                <exclude reference="vzJ-XS-owZ"/>
-                                <exclude reference="jot-gv-bKY"/>
-                                <exclude reference="rQJ-yT-anJ"/>
-                                <exclude reference="Fad-Vu-zl8"/>
-                                <exclude reference="dJq-5L-luq"/>
-                                <exclude reference="lR5-bD-uxf"/>
-                                <exclude reference="gmy-xq-IVp"/>
+                                <exclude reference="JCb-ME-YWs"/>
+                                <exclude reference="wps-kI-ulG"/>
+                                <exclude reference="Kz5-i9-Ni8"/>
+                                <exclude reference="d2u-wx-vbv"/>
+                                <exclude reference="nur-9x-rqG"/>
+                                <exclude reference="NFV-lC-Dhg"/>
+                                <exclude reference="hxw-1V-iU1"/>
+                                <exclude reference="yZ2-uf-0U8"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="subviews">
                                 <include reference="UE7-TJ-5XH"/>
-                                <include reference="dYm-Mf-mRS"/>
-                                <include reference="Pzg-e1-iJW"/>
-                                <include reference="lCB-l2-WFK"/>
-                                <include reference="HJd-C0-Gbs"/>
+                                <include reference="FXe-Go-qiS"/>
+                                <include reference="xga-hM-wmT"/>
+                                <include reference="1XR-N6-RRJ"/>
+                                <include reference="Zhy-Ta-WXj"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="2nz-KO-5IG"/>
-                                <include reference="vzJ-XS-owZ"/>
-                                <include reference="jot-gv-bKY"/>
-                                <include reference="rQJ-yT-anJ"/>
-                                <include reference="Fad-Vu-zl8"/>
-                                <include reference="dJq-5L-luq"/>
-                                <include reference="lR5-bD-uxf"/>
-                                <include reference="gmy-xq-IVp"/>
+                                <include reference="JCb-ME-YWs"/>
+                                <include reference="wps-kI-ulG"/>
+                                <include reference="Kz5-i9-Ni8"/>
+                                <include reference="d2u-wx-vbv"/>
+                                <include reference="nur-9x-rqG"/>
+                                <include reference="NFV-lC-Dhg"/>
+                                <include reference="hxw-1V-iU1"/>
+                                <include reference="yZ2-uf-0U8"/>
                             </mask>
                         </variation>
                     </view>
@@ -1792,8 +1825,7 @@
                                         <exclude reference="KZ2-Kn-hB8"/>
                                     </mask>
                                 </variation>
-                                <variation key="widthClass=regular" misplaced="YES">
-                                    <rect key="frame" x="266" y="58" width="243" height="30"/>
+                                <variation key="widthClass=regular">
                                     <mask key="constraints">
                                         <include reference="KZ2-Kn-hB8"/>
                                     </mask>
@@ -1961,6 +1993,6 @@
         <image name="contact_up.png" width="342" height="299"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="C6B-2c-KyU"/>
+        <segue reference="9cy-JQ-asY"/>
     </inferredMetricsTieBreakers>
 </document>
