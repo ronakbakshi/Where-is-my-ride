@@ -4,14 +4,11 @@
 //
 //  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/12/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+//  Checks if the present logged in driver is a driver or not
 
 import Foundation
 
 class DriverStatus: NSObject{
-    
-    
-    
     var user:String!
     var status : NSNumber!
     var entityId: String?
@@ -23,18 +20,13 @@ class DriverStatus: NSObject{
     init(status:NSNumber!, user:String) {
         self.status = status
         self.user = user
-       
     }
-    
     
     override func hostToKinveyPropertyMapping() -> [NSObject : AnyObject]! {
         return [
             "entityId" : KCSEntityKeyId, //the required _id field
             "user" : "user",
             "status" : "status",
-            
-            
         ]
     }
-    
 }

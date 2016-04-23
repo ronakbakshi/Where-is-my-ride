@@ -11,22 +11,20 @@ import UIKit
 class NightRideViewController: UIViewController, UITableViewDataSource,UITableViewDelegate, Operation {
     
     var kinveyOp:KinveyOperations!
-    
     var requestList:[RideRequests] = []
-    
     var storeRequests:KCSAppdataStore!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Night Ride View Controller"
-       
         kinveyOp = KinveyOperations(operations: self)
         kinveyOp.retrieveData()
-        storeRequests = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
+        storeRequests = KCSAppdataStore.storeWithOptions([
+            // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "RideRequests",
             KCSStoreKeyCollectionTemplateClass : RideRequests.self
             ])
-
+        
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -35,20 +33,15 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     @IBOutlet weak var tableView: UITableView!
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        print(requestList.count)
         return requestList.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("nightRideCell", forIndexPath: indexPath)
         let label1:UILabel = cell.viewWithTag(101) as! UILabel
         let label2:UILabel = cell.viewWithTag(102) as! UILabel
@@ -61,78 +54,44 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
         label3.text = requestList[indexPath.row].dropOffLocation as String
         label5.text = requestList[indexPath.row].phone as String
         cell.accessoryType = UITableViewCellAccessoryType.DisclosureIndicator
-        
         return cell
     }
     
     
     @IBAction func deleteRow(sender: AnyObject) {
-        
-        var rowNumber = (tableView.indexPathForSelectedRow?.row)!
+        let rowNumber = (tableView.indexPathForSelectedRow?.row)!
         storeRequests.removeObject(
-            
             requestList[rowNumber],
             withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
-                if errorOrNil != nil {
-                    print("Delete object Failed")
-                    
-                } else {
-                    print("driver location deleted successfully")
-                    
-                }
             },
             withProgressBlock: nil
         )
         tableView.reloadData()
-
-        
     }
-//    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-//        storeRequests.removeObject(
-//            
-//            requestList[indexPath.row],
-//            withDeletionBlock: { (deletionDictOrNil: [NSObject : AnyObject]!, errorOrNil: NSError!) -> Void in
-//                if errorOrNil != nil {
-//                    print("Delete object Failed")
-//                    
-//                } else {
-//                    print("driver location deleted successfully")
-//                    
-//                }
-//            },
-//            withProgressBlock: nil
-//        )
-//
-//    }
     
     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return 1
     }
     
     func onSuccess(sender:AnyObject) {
-        //self.pickupArray = sender as! [RideRequests]
     }
+    
     func onError(message: String) {
-        
-        
     }
+    //fetches the requests
     func fetchRequests(request:[RideRequests]) {
         requestList = request
-        print("fetchrequest \(request)")
         self.tableView.reloadData()
     }
     
     func fetchDriverData(driver:[DriverData]){
-        
     }
     
+    //to dismiss a request once it is done
     func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-              if editingStyle == UITableViewCellEditingStyle.Delete {
-                   requestList.removeAtIndex(indexPath.row)
-                   tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
-                }
-            }
-    
-    
-    
+        if editingStyle == UITableViewCellEditingStyle.Delete {
+            requestList.removeAtIndex(indexPath.row)
+            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: UITableViewRowAnimation.Automatic)
+        }
+    }
 }

@@ -4,17 +4,10 @@
 //
 //  Created by Alle,Sai Teja on 3/31/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+//  Contains the Driver which extends the NSObject class, so that Driver can contain Objective-C type objects
 
 import Foundation
-
-
-
-
-
 class Driver: NSObject{
-    
-    
     var location:CLLocation!
     var username:String!
     var entityId: String?
@@ -26,16 +19,14 @@ class Driver: NSObject{
     init(location:CLLocation, username:String) {
         self.location = location
         self.username = username
-        //self.time = time
     }
     
-    
+    //Maps the properties of the driver in kinvey
     override func hostToKinveyPropertyMapping() -> [NSObject : AnyObject]! {
         return [
             "entityId" : KCSEntityKeyId, //the required _id field
             "location" : "location",
             "username" : "username",
-           // "time" : "time"
         ]
     }
     

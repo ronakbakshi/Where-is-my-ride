@@ -4,13 +4,11 @@
 //
 //  Created by Bakshi,Ronak on 3/13/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+//  Contains the routes that a driver will choose from
 import UIKit
 
 class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     var routes:DriverRoutes!
-    
-    
     
     //This fucntion displays the alert box showing the message for user  to turn on the location
     func displayAlertControllerWithTitle(title:String, message:String) {
@@ -30,6 +28,7 @@ class DriverRoutesViewController: UIViewController,UITableViewDataSource,UITable
         // Dispose of any resources that can be recreated.
     }
     
+
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return routes.routeDictionary.count
     }

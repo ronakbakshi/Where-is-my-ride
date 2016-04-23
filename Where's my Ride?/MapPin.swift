@@ -14,16 +14,15 @@ class MapPin : NSObject, MKAnnotation {
     var subtitle: String?
     var color: String?
 
-    
     init(coordinate: CLLocationCoordinate2D, title: String, subtitle: String, color: String) {
         self.coordinate = coordinate
         self.title = title
         self.color = color
         self.subtitle = subtitle
     }
+    //returns the pin color
     func pinColor() -> MKPinAnnotationColor {
         switch color {
-            
         default :
             return .Green
         }
