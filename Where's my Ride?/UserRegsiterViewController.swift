@@ -9,27 +9,17 @@
 import UIKit
 
 class UserRegsiterViewController: UIViewController {
-
-
+    
+    
     
     @IBOutlet weak var userNameTF: UITextField!
-    
     @IBOutlet weak var firstNameTF: UITextField!
     @IBOutlet weak var lastNameTF: UITextField!
     @IBOutlet weak var contactTF: UITextField!
-    
     @IBOutlet weak var placeTF: UITextField!
-    
     @IBOutlet weak var passwordTF: UITextField!
-    
     @IBOutlet weak var confirmPasswordTF: UITextField!
-    
-    
     var store : KCSAppdataStore!
-    
-//    let contactRegex = "[0-9]"
-//    let emailTest = NSPredicate(format:"SELF MATCHES %@", contactRegex)
-//    let result = emailTest.evaluateWithObject(emailTF.text)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,10 +35,7 @@ class UserRegsiterViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-    
-    
     
     @IBAction func registerUserBTN(sender: AnyObject) {
         let user :UserDetails = UserDetails(username: userNameTF.text!, password: passwordTF.text!)
@@ -60,23 +47,18 @@ class UserRegsiterViewController: UIViewController {
                 if errorOrNil == nil {
                     //was successful!
                     if self.userNameTF.text != "" && self.firstNameTF.text != "" && self.lastNameTF.text != "" && self.contactTF.text != "" && self.placeTF.text != "self." && self.passwordTF.text != "" && self.confirmPasswordTF.text != ""{
-                        
                         if self.passwordTF.text == self.confirmPasswordTF.text{
-                        
-                        
-                        self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
-                        let destinationVC:UserLoginViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("UserLoginViewController") as! UserLoginViewController
-                        self.navigationController?.pushViewController(destinationVC, animated: true)
+                            self.displayAlertControllerWithTitle("Account Creation Successful", message: "User created. Welcome!")
+                            let destinationVC:UserLoginViewController = self.navigationController?.storyboard?.instantiateViewControllerWithIdentifier("UserLoginViewController") as! UserLoginViewController
+                            self.navigationController?.pushViewController(destinationVC, animated: true)
                         }else{
                             self.displayAlertControllerWithTitle("Create account failed", message: "Password and Confirm Password must be same.")
                         }
                     }else{
-                        //let message = errorOrNil.localizedDescription
                         self.displayAlertControllerWithTitle("Create account failed", message: "Please enter all the fields")
                     }
                     
                 } else {
-                    //there was an error with the update save
                     let message = errorOrNil.localizedDescription
                     self.displayAlertControllerWithTitle("Create account failed", message: message)
                 }
@@ -88,23 +70,18 @@ class UserRegsiterViewController: UIViewController {
             withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
                 if errorOrNil != nil {
                     //save failed
-                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
                 } else {
                     //save was successful
-                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
                 }
             },
             withProgressBlock: nil
         )
-        
     }
     
     func displayAlertControllerWithTitle(title:String, message:String) {
         let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))
         self.presentViewController(uiAlertController, animated: true, completion: nil)
-        
     }
-    
     
 }

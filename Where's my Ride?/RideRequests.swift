@@ -16,13 +16,12 @@ class RideRequests: NSObject {
     var phone:String!
     var entityId:String?
     var requestArray:[RideRequests]!
+    
     init(pickUp:String,dropOffLocation:String,noOfPassengers:String,phone:String){
-        
         self.pickUpLocation = pickUp
         self.dropOffLocation = dropOffLocation
         self.noOfPassengers = noOfPassengers
         self.phone = phone
-        
     }
     
     override init() {
@@ -43,5 +42,4 @@ class RideRequests: NSObject {
             "phone" : "phone"
         ]
     }
-    
 }

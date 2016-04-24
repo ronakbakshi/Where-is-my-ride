@@ -8,12 +8,10 @@
 
 import Foundation
 class Admin: NSObject{
-    
-    
+
     var userName:String!
     var password :String!
     var entityId: String?
-    
     override init() {
         super.init()
     }
@@ -24,14 +22,11 @@ class Admin: NSObject{
        
     }
     
-    
     override func hostToKinveyPropertyMapping() -> [NSObject : AnyObject]! {
         return [
             "entityId" : KCSEntityKeyId, //the required _id field
             "userName" : "userName",
             "password" : "password"
-            
-            
         ]
     }
     

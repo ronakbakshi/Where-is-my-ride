@@ -20,14 +20,11 @@ class UserDetails :NSObject {
         self.username = username
         self.password = password
     }
-   
-    
-    
+
     override init() {
         self.entityId = "1"
         self.username = "Abhinaya"
         self.password = "1234"
-        
     }
     
     override func hostToKinveyPropertyMapping() -> [NSObject : AnyObject]! {
@@ -35,8 +32,6 @@ class UserDetails :NSObject {
             "entityId" : KCSEntityKeyId, //the required _id field
             "username" : "username",
             "password" : "password"
-            
         ]
     }
-    
 }
