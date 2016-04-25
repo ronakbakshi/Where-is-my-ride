@@ -5,7 +5,7 @@
 //  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/11/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
-
+// Model calss for Driver Data used for Driver registration
 import Foundation
 
 class DriverData: NSObject{

@@ -5,7 +5,7 @@
 //  Created by Bakshi,Ronak on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
-
+// View Controller which displays the Ride Types available (Day Ride, Night Ride) which naviagtes to corresponding pages 
 import UIKit
 
 class RideTypeTableViewController: UITableViewController {

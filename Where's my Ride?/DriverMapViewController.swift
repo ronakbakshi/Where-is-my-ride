@@ -4,7 +4,7 @@
 //
 //  Created by NWMSU on 3/25/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+//View Controller for Driver Map view, which displays locations of all drivers on ride
 
 import UIKit
 import MapKit
@@ -45,6 +45,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         self.view.setNeedsDisplay()
     }
 
+    //Method for updating driver location
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
         let center = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
@@ -57,6 +58,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         self.locationManager.stopUpdatingLocation()
     }
     
+    //To draw overlay, to find the drivers in that location
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer! {
         if overlay is MKCircle {
             let circleRenderer = MKCircleRenderer(overlay: overlay)
@@ -69,7 +71,7 @@ class DriverMapViewController: UIViewController, MKMapViewDelegate ,CLLocationMa
         return nil
     }
     
-    //loads the location of the driver
+    //loads the current location of the drivers
     func driverLocation(){
         let query:KCSQuery = KCSQuery()
         locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in

@@ -6,7 +6,9 @@
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //  Contains the Driver which extends the NSObject class, so that Driver can contain Objective-C type objects
 
+//Model class to store the active users current location fetched
 import Foundation
+
 class Driver: NSObject{
     var location:CLLocation!
     var username:String!

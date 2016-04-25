@@ -4,7 +4,8 @@
 //
 //  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+
+//View Controller to register the User
 
 import UIKit
 
@@ -36,7 +37,9 @@ class UserRegsiterViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
-    
+   
+    //Validates the User data entered for registration
+    //Method to regiser the User in KCSUser and also in Registered User
     @IBAction func registerUserBTN(sender: AnyObject) {
         let user :UserDetails = UserDetails(username: userNameTF.text!, password: passwordTF.text!)
         KCSUser.userWithUsername(
@@ -78,6 +81,7 @@ class UserRegsiterViewController: UIViewController {
         )
     }
     
+    //Alert for successful registartion
     func displayAlertControllerWithTitle(title:String, message:String) {
         let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))

@@ -6,6 +6,7 @@
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
 
+// Model class for User Data
 
 import Foundation
 

@@ -5,7 +5,7 @@
 //  Created by Alle,Sai Teja on 4/20/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
-
+//Model class for Map Pin
 import Foundation
 import MapKit
 class MapPin : NSObject, MKAnnotation {

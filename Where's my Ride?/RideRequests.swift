@@ -5,7 +5,7 @@
 //  Created by Bakshi,Ronak on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
-
+// Model class  for Pick up requests send by user
 import Foundation
 
 class RideRequests: NSObject {

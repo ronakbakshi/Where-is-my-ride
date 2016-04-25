@@ -5,6 +5,7 @@
 //  Created by Bakshi,Ronak on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
+//View Controller For Night Ride drivers which displays the List of Pick up requests send by Users
 
 import UIKit
 
@@ -41,6 +42,7 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
         return requestList.count
     }
     
+    //Custom cell to display the pick up requests
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("nightRideCell", forIndexPath: indexPath)
         let label1:UILabel = cell.viewWithTag(101) as! UILabel
@@ -78,7 +80,8 @@ class NightRideViewController: UIViewController, UITableViewDataSource,UITableVi
     
     func onError(message: String) {
     }
-    //fetches the requests
+    
+    //fetches the pick up requests
     func fetchRequests(request:[RideRequests]) {
         requestList = request
         self.tableView.reloadData()

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 
-
+// Operation protocol to assign delegation authority
 @objc protocol Operation{
     func onSuccess(sender:AnyObject)
     func onError(message:String)
@@ -19,15 +19,16 @@ import UIKit
     
 }
 
+//class to perform kinvey operation - create, fetch and for updating the data in to collection
 class KinveyOperations {
     
-    var storeDriver:KCSAppdataStore!
-    var storeDriverStatus:KCSAppdataStore!
-    var storeLocation:KCSAppdataStore!
-    var storeRequests:KCSAppdataStore!
-    var operationDelegate:Operation!
+    var storeDriver:KCSAppdataStore!       // Collection for Storing Registered driver data
+    var storeDriverStatus:KCSAppdataStore! // Collection for Updating driver status whether he is on rie or not
+    var storeLocation:KCSAppdataStore!     // Colllection for storing driver location
+    var storeRequests:KCSAppdataStore!     //Collection for storing pick up requests
+    var operationDelegate:Operation!        // Reference for Operation delegate
     
-    let defaults = NSUserDefaults.standardUserDefaults()
+    
     
     init(operations:Operation)
     {
@@ -54,10 +55,8 @@ class KinveyOperations {
             ])
         
     }
-    //For adding commit
     
-    
-    
+// Fetching Pick up requests send by user
     func retrieveData() {
         print("inretrieve data")
         let query = KCSQuery()
@@ -87,7 +86,7 @@ class KinveyOperations {
         
     }
     
-    
+ // Adding driver registered to the Collection "Registered Drivers" and also KCSUser
     func addDriver(driver:DriverData) {
         
         KCSUser.userWithUsername(
@@ -125,6 +124,7 @@ class KinveyOperations {
         )
     }
     
+    //Fetching driver details from collection to display for Admin
     func fetchingDriverDetails() {
         
         let query = KCSQuery()
@@ -149,23 +149,7 @@ class KinveyOperations {
         
     }
     
-    func driverStatusUpdate (driver:DriverStatus) {
-        storeDriverStatus.saveObject(
-            driver,
-            withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
-                if errorOrNil != nil {
-                    //save failed
-                    print("Save failed, with error: %@", errorOrNil.localizedFailureReason)
-                } else {
-                    //save was successful
-                    print("Successfully saved event (id='%@').", (objectsOrNil[0] as! NSObject).kinveyObjectId())
-                }
-            },
-            withProgressBlock: nil )
-        
-    }
-    
-    
+ //Fetching Driver Current Location stored in kinvey
     func driverLocation (driver:Driver) {
         storeLocation.saveObject(
             driver,
@@ -183,8 +167,8 @@ class KinveyOperations {
     }
     
     
-    
-    
+    // Deleting existing location of driver
+   // And updating the driver location with current location
     func updateDriverLocation(driver:Driver)
     {
         var driverLocation:[Driver]!
@@ -236,7 +220,7 @@ class KinveyOperations {
             withProgressBlock: nil)
     }
     
-    
+    // Method for Deleting existing object in kinvey-here deleting driver previous location object 
     func deleteExistingLocation(driverLocation:[Driver])
     {
         storeLocation.removeObject(

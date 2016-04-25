@@ -4,7 +4,8 @@
 //
 //  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+
+//View Controller to authenticate the User -Login page
 
 import UIKit
 
@@ -21,15 +22,8 @@ class UserLoginViewController: UIViewController {
     var store:KCSAppdataStore!
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    override func viewWillAppear(animated: Bool) {
-        self.navigationItem.setHidesBackButton(true, animated: true)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
         
+        super.viewDidLoad()
         store = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "RegisteredUsers",
             KCSStoreKeyCollectionTemplateClass : Driver.self
@@ -37,6 +31,16 @@ class UserLoginViewController: UIViewController {
         self.navigationItem.title = "User Login"
         self.navigationItem.backBarButtonItem = nil
     }
+    override func viewWillAppear(animated: Bool) {
+        self.navigationItem.setHidesBackButton(true, animated: true)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+   
+    }
+    
+    // Action method for SignIn method, validates the user details entered in KCSUser
     
     @IBAction func signInBTN(sender: AnyObject) {
         KCSUser.loginWithUsername(useLoginTF.text!,password: userPasswordTF.text!,withCompletionBlock:
@@ -53,6 +57,7 @@ class UserLoginViewController: UIViewController {
         )
     }
     
+    // Alert method shown when after successful login
     func displayAlertControllerWithTitle(title:String, message:String) {
         let uiAlertController:UIAlertController = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         uiAlertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler:{(action:UIAlertAction)->Void in  }))

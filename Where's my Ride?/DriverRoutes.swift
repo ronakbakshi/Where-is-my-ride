@@ -4,7 +4,7 @@
 //
 //  Created by Bakshi,Ronak on 3/13/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+//Model class for Driver Routes 
 
 import Foundation
 //contains the route details

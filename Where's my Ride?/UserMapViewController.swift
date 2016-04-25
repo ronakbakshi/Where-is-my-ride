@@ -4,14 +4,13 @@
 //
 //  Created by Alle,Sai Teja on 3/12/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
-//
+
+//View Controller for User Map view which displays the current location of drivers 
+
 
 import UIKit
-
 import MapKit
-
 import CoreLocation
-
 
 class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManagerDelegate {
     
@@ -23,6 +22,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let leftButton = UIBarButtonItem(title: "Sign Out", style: UIBarButtonItemStyle.Plain, target: self, action: "logout:")
         leftButton.tintColor = UIColor.redColor()
         navigationItem.leftBarButtonItem  = leftButton
@@ -33,16 +33,19 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.startUpdatingLocation()
         self.locationView.showsUserLocation = true
+        
         locationService = KCSAppdataStore.storeWithOptions([ // a store represents a local connection to the cloud data base
             KCSStoreKeyCollectionName : "DriversLocation",
             KCSStoreKeyCollectionTemplateClass : Driver.self
             ])
+        
         self.driversLocations()
         self.navigationItem.title = "User Map View"
         let rightButton = UIBarButtonItem(title: "Request A Ride", style: UIBarButtonItemStyle.Plain, target: self, action: "nextViewController:")
         self.navigationItem.rightBarButtonItem = rightButton
     }
     
+    //Method to logout active user
     func logout(Any:AnyObject){
         if KCSUser.activeUser() != nil {
             KCSUser.activeUser().logout()
@@ -60,18 +63,9 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         super.didReceiveMemoryWarning()
     }
     
-//    override func viewDidAppear(animated: Bool) {
-//        let backButton = UIBarButtonItem(title: "Sign Out", style: UIBarButtonItemStyle.Plain, target: self, action: "previousViewController:")
-//        self.navigationItem.backBarButtonItem = backButton
-//        self.navigationItem.backBarButtonItem?.title = "Sign Out"
-//    }
+
     
-    
-//    func previousViewController(sender: AnyObject){
-//        let pvc:UserLoginViewController = self.storyboard?.instantiateViewControllerWithIdentifier("UserLoginViewController") as! UserLoginViewController
-//        self.navigationController?.pushViewController(pvc, animated: true)
-//    }
-    
+    //To update the location of the user
     func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations.last
         let center = CLLocationCoordinate2D(latitude: (location?.coordinate.latitude)!, longitude: (location?.coordinate.longitude)!)
@@ -84,6 +78,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.locationManager.stopUpdatingLocation()
     }
     
+    // To draw the overlay around the user location
     func mapView(mapView: MKMapView, rendererForOverlay overlay: MKOverlay) -> MKOverlayRenderer! {
         if overlay is MKCircle {
             let circleRenderer = MKCircleRenderer(overlay: overlay)
@@ -96,6 +91,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         return nil
     }
     
+    // Fetching driver locations
     func driversLocations() {
         let query:KCSQuery = KCSQuery()
         locationService.queryWithQuery(query, withCompletionBlock: { (objectsOrNil: [AnyObject]!, errorOrNil: NSError!) -> Void in
@@ -117,6 +113,7 @@ class UserMapViewController: UIViewController,MKMapViewDelegate,CLLocationManage
         self.presentViewController(uiAlertController, animated: true, completion: nil)
     }
     
+  // To display the driver location on map with annotation
     func mapView(mapView: MKMapView!, viewForAnnotation annotation: MKAnnotation!)
         -> MKAnnotationView! {
             let annotationReuseId = "Place"

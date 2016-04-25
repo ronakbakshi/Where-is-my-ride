@@ -5,6 +5,7 @@
 //  Created by Mogalipuvvu,Abhinaya Kamakshi Ammal on 4/19/16.
 //  Copyright © 2016 Alle,Sai Teja. All rights reserved.
 //
+//View Controller to send the ride request by User
 
 import UIKit
 
@@ -25,7 +26,7 @@ class RideRequestViewController: UIViewController,Operation{
         pickupArray = []
         self.kinveyObject = KinveyOperations(operations: self)
         store = KCSAppdataStore.storeWithOptions([
-            KCSStoreKeyCollectionName : "RideRequests",
+            KCSStoreKeyCollectionName : "RideRequests",    // Collection to store the requests created by user
             KCSStoreKeyCollectionTemplateClass : RideRequests.self
             ])
     }
@@ -38,7 +39,8 @@ class RideRequestViewController: UIViewController,Operation{
         super.didReceiveMemoryWarning()
     }
     
-    
+    //Validates the request details entered by user
+    //And request send by User stored in Collection
     @IBAction func submitBTN(sender: AnyObject) {
         
         request = RideRequests(pickUp: pickUpLocationTF.text!, dropOffLocation: dropLocationTF.text!,noOfPassengers: passengersTF.text!, phone: contactNumberTF.text!)
